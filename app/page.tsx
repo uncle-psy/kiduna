@@ -221,7 +221,7 @@ export default function Home() {
 
       <footer>
         <Image src="/kiduna-mark.svg" alt="" width={34} height={34} />
-        <p>Kiduna · The agentic internet starts here.</p>
+        <p>(c) 2026 Kinship Duna, WV Org ID 628407. All Rights Reserved. Kiduna(tm) is a trademark of Kiduna Club.</p>
         <a href="mailto:hello@kiduna.ai">hello@kiduna.ai</a>
       </footer>
     </main>
