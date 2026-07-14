@@ -1,12 +1,11 @@
-import { sql } from "drizzle-orm";
-import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
 
-export const earlyAccessRequests = sqliteTable("early_access_requests", {
-  id: integer("id").primaryKey({ autoIncrement: true }),
+export const earlyAccessRequests = pgTable("early_access_requests", {
+  id: serial("id").primaryKey(),
   name: text("name").notNull(),
   email: text("email").notNull().unique(),
   message: text("message").notNull(),
   referredBy: text("referred_by"),
-  createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
-  updatedAt: text("updated_at").notNull().default(sql`CURRENT_TIMESTAMP`),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 });

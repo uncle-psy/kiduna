@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Image from "next/image";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -61,7 +62,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Kiduna home">
-          <img src="/kiduna-logo.svg" alt="Kiduna" />
+          <Image src="/kiduna-logo.svg" alt="Kiduna" width={168} height={56} priority />
         </a>
         <a className="header-link" href="#early-access">
           Request early access <span aria-hidden="true">↘</span>
@@ -219,7 +220,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <img src="/kiduna-mark.svg" alt="" />
+        <Image src="/kiduna-mark.svg" alt="" width={34} height={34} />
         <p>Kiduna · The agentic internet starts here.</p>
         <a href="mailto:hello@kiduna.ai">hello@kiduna.ai</a>
       </footer>

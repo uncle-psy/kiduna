@@ -1,4 +1,3 @@
-import { sql } from "drizzle-orm";
 import { getDb } from "@/db";
 import { earlyAccessRequests } from "@/db/schema";
 
@@ -41,13 +40,15 @@ export async function POST(request: Request) {
       .values({ name, email, message, referredBy: referredBy || null })
       .onConflictDoUpdate({
         target: earlyAccessRequests.email,
-        set: { name, message, referredBy: referredBy || null, updatedAt: sql`CURRENT_TIMESTAMP` },
+        set: { name, message, referredBy: referredBy || null, updatedAt: new Date() },
       });
 
     return Response.json({ ok: true }, { status: 201 });
   } catch (error) {
     const details = error instanceof Error ? error.message : "";
-    const unavailable = details.includes("no such table") || details.includes("binding `DB` is unavailable");
+    const unavailable =
+      details.includes("DATABASE_URL is not set") ||
+      details.includes('relation "early_access_requests" does not exist');
     return Response.json(
       { error: unavailable ? "Early access is being connected. Please try again shortly." : "We couldn't save that just now. Please try again." },
       { status: 500 },
