@@ -1,5 +1,6 @@
 import { getDb } from "@/db";
 import { earlyAccessRequests } from "@/db/schema";
+import { sendEarlyAccessEmails } from "@/lib/email";
 
 type Submission = {
   name?: unknown;
@@ -35,13 +36,22 @@ export async function POST(request: Request) {
     }
 
     const db = getDb();
-    await db
+    const [submission] = await db
       .insert(earlyAccessRequests)
       .values({ name, email, message, referredBy: referredBy || null })
       .onConflictDoUpdate({
         target: earlyAccessRequests.email,
         set: { name, message, referredBy: referredBy || null, updatedAt: new Date() },
+      })
+      .returning({
+        id: earlyAccessRequests.id,
+        name: earlyAccessRequests.name,
+        email: earlyAccessRequests.email,
+        message: earlyAccessRequests.message,
+        referredBy: earlyAccessRequests.referredBy,
       });
+
+    await sendEarlyAccessEmails(submission);
 
     return Response.json({ ok: true }, { status: 201 });
   } catch (error) {
