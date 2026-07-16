@@ -144,6 +144,7 @@ export default function NightpaperPage() {
         <aside className={styles.toc} aria-label="Nightpaper contents">
           <p>Contents</p>
           <ol>
+            <li><a href="#abstract">Abstract</a></li>
             <li><a href="#agency">Agency all the way down</a></li>
             <li><a href="#ages">Three ages measured by agency</a></li>
             <li><a href="#technology">The technology, in plain language</a></li>
@@ -154,10 +155,18 @@ export default function NightpaperPage() {
         </aside>
 
         <article className={styles.article}>
+          <section id="abstract" className={`${styles.section} ${styles.abstract}`}>
+            <h2>Abstract</h2>
+            <p><strong>Human civilization has historically faced a tradeoff between agency and scale. Kinship systems preserved the agency of individuals through direct, accountable relationships but could coordinate only relatively small groups. Institutions overcame that limitation by coordinating strangers across vast distances, but did so by concentrating authority and reducing people to the limited forms of participation those institutions could process. The emergence of intelligent agents creates the possibility of a third model: coordination at planetary scale without requiring individuals, organizations, communities, or ecosystems to surrender their agency.</strong></p>
+            <p><strong>This nightpaper presents the Kidunaverse, an open sociotechnical architecture for that Agentic Age. Each person is represented by an Ally—an intelligent agent instructed by one human Source and constrained by explicit permissions enforced in deterministic code. People and agents coordinate through legally accountable, member-governed organizations; relationship-based identity, authority, provenance, and graduated trust; and community-owned economies that transform raw machine intelligence into useful agency. These organizations form a distributed mesh rather than a centralized platform, with public systems recording what must be provable while intimate information remains private.</strong></p>
+            <p><strong>The architecture extends accountability beyond individual transactions to the human and living relationships affected by them. Its interfaces make organizations, projects, information, and decisions spatially navigable, while its Sentinel function protects the integrity of human and agentic relationships without reducing people to rankings or engagement metrics.</strong></p>
+            <p><strong>The Kidunaverse is designed to recover the relational accountability of kinship, preserve the durable coordination of institutions, and add the reach of intelligent software—making agency and scale complementary rather than opposing forces.</strong></p>
+          </section>
+
           <section id="agency" className={styles.section}>
             <p className={styles.sectionNumber}>I.</p>
             <h2>Agency all the way down</h2>
-            <p className={styles.lede}><strong>Politics is composed of cells.</strong></p>
+            <p className={styles.lede}><strong>Life is composed of cells.</strong></p>
             <p>A single bacterium, too simple to have anything we&apos;d call a mind, senses a sugar gradient in the water around it and swims toward the food. It senses a toxin and swims away. Nobody tells it to. Nothing outside it decides for it. It carries its own sensing, its own deciding, and its own acting inside its own membrane - and that little loop, sense-decide-act, run for its own sake, is agency. Agency is the signature of being alive.</p>
             <p>The pattern repeats at every scale. An organism is billions of cells, each with local agency, coordinated into something that can want waffles for breakfast. A forest is organisms coordinating - nutrients traded through fungal networks, warnings passed through chemistry - without any tree, sparrow, or fox being demoted to just a part. Each remains whole.</p>
             <p>An ecosystem holds all of its members in balance without even the illusion of an executive function. Life&apos;s trick, refined over about four billion years, is that <em>coordination doesn&apos;t have to diminish the agency of the elements being coordinated.</em> The cell keeps its membrane. The tree keeps its roots. The sparrow keeps its wings. The fox keeps its cunning. The system works because its parts stay whole.</p>
@@ -250,7 +259,7 @@ export default function NightpaperPage() {
             <p>The Kidunaverse works the same way. Nobody joins through a form; you join through a <strong>Kinship Code</strong> - a unique invitation, made for you by someone who knows you, carrying their name and their organization&apos;s standing behind it. It&apos;s the oldest social technology we have, finally given infrastructure worthy of it.</p>
             <p>This paper is one of those invitations. If the age we&apos;ve described is one you&apos;d rather shape than inherit, someone will be glad to offer you a code.</p>
             <div className={styles.invitationCta}>
-              <p>Shape the age rather than inherit it.</p>
+              <p>Shape the agentic age or inherit it. The choice is yours.</p>
               <Link href="/#early-access">Request early access <span aria-hidden="true">→</span></Link>
             </div>
           </section>

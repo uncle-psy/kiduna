@@ -429,6 +429,9 @@
   .section h3 { margin: .34in 0 .14in; font-size: 13pt; break-after: avoid; }
   .section h3 span { color: #007f88; }
   .section p { margin-bottom: .16in; orphans: 3; widows: 3; }
+  .abstract { padding-top: .28in; }
+  .abstract h2 { margin-bottom: .18in; font-size: 26pt; }
+  .abstract p { margin-bottom: .12in; font-size: 9.5pt; line-height: 1.35; }
   .sectionNumber { color: #8a6412; }
   .statement, .section blockquote { color: #111; break-inside: avoid; }
   .statement { background: #f1f1ef; border-color: #007f88; }
