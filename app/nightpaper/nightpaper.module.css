@@ -355,7 +355,11 @@
 .invitationCta a { flex: 0 0 auto; font-size: 13px; font-weight: 700; text-decoration: none; }
 
 .paperFooter {
+  width: 100%;
+  min-height: 0;
+  margin: 0;
   padding-top: 32px;
+  display: block;
   border-top: 1px solid var(--border-strong);
   color: var(--fg-dim);
   font-family: var(--sans);
@@ -364,6 +368,7 @@
 }
 
 .paperFooter a { color: var(--accent); }
+.paperFooter sup { font-size: .7em; line-height: 0; vertical-align: super; }
 
 :global([data-theme="light"]) .page {
   background:
