@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import Image from "next/image";
+import SiteHeader from "@/components/site-header";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -60,14 +61,7 @@ export default function Home() {
 
   return (
     <main>
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="Kiduna home">
-          <Image src="/kiduna-logo.svg" alt="Kiduna" width={168} height={56} priority />
-        </a>
-        <a className="header-link" href="#early-access">
-          Request early access <span aria-hidden="true">↘</span>
-        </a>
-      </header>
+      <SiteHeader />
 
       <section className="hero" id="top">
         <div className="hero-copy">
