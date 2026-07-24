@@ -66,8 +66,9 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow"><span className="live-dot" /> The power of collective agency</p>
-          <h1>
-            Organize <em>what comes next.</em>
+          <h1 className="hero-headline">
+            <span>Create intelligent agents</span>
+            <span>Build powerful movements</span>
           </h1>
           <p className="hero-lead">
             Kiduna is where people and their intelligent allies build trust,
