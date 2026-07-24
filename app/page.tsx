@@ -108,7 +108,7 @@ export default function Home() {
       <section className="explanation" id="why-kiduna">
         <div className="section-intro">
           <p className="eyebrow">Why Kiduna</p>
-          <h2>Not another AI tool. <em>A place to belong and build.</em></h2>
+          <h2>Not another AI tool. <span className="section-tagline">A place to build and belong.</span></h2>
           <p>
             Today’s internet gives us accounts, audiences, systems, and software.
             Kiduna adds persistent relationships between people and their agentic
