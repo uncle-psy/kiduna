@@ -65,7 +65,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="live-dot" /> The power of collective agency</p>
+          <p className="eyebrow"><span className="live-dot" /> Collective intelligence, individual agency, effective organization</p>
           <h1 className="hero-headline">
             <span>Create intelligent agents</span>
             <span>Build powerful movements</span>
