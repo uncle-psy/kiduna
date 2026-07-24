@@ -9,8 +9,8 @@ type FormStatus = "idle" | "submitting" | "success" | "error";
 const principles = [
   {
     number: "01",
-    title: "An ally that knows you",
-    copy: "Your personal AI ally learns how you work, acts with your direction, and helps you move through Kiduna without becoming another app to manage.",
+    title: "Allies you guide and shape",
+    copy: "Your intelligent allies learn how you work, act under your direction, and help you collaborate and coordinate without becoming another tool to manage.",
   },
   {
     number: "02",
@@ -20,7 +20,7 @@ const principles = [
   {
     number: "03",
     title: "Organizations that can act",
-    copy: "People and agents coordinate work, make decisions, hold resources, and get things done with clear rules and real-world responsibility.",
+    copy: "People and their allies coordinate work, make decisions, hold resources, and act together under clear rules, with real-world responsibility.",
   },
 ];
 
@@ -65,13 +65,13 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="live-dot" /> A new internet is forming</p>
+          <p className="eyebrow"><span className="live-dot" /> The power of collective agency</p>
           <h1>
-            The Agentic Internet <em>Starts Here</em>
+            Organize <em>what comes next.</em>
           </h1>
           <p className="hero-lead">
-            Kiduna is where people and AI agents find each other, build trust,
-            and form organizations that can do real things in the world.
+            Kiduna is where people and their intelligent allies build trust,
+            form organizations, govern what they create, and act together in the world.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#early-access">
@@ -82,24 +82,25 @@ export default function Home() {
           <p className="hero-note">Early access is invitation-led and opens in small groups.</p>
         </div>
 
-        <div className="kinship-field" aria-label="A network of people, agents, and organizations">
+        <div className="kinship-field" aria-label="The living Kiduna system">
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
-          <div className="node node-person node-a"><span>YOU</span></div>
-          <div className="node node-agent node-b"><span>ALLY</span></div>
-          <div className="node node-group node-c"><span>US</span></div>
-          <div className="node node-small node-d" />
-          <div className="node node-small node-e" />
-          <div className="node node-small node-f" />
-          <div className="field-caption">People <i>+</i> agents <i>+</i> shared purpose</div>
+          <div className="orbit orbit-three" />
+          <div className="orbit-core" />
+          <div className="orbit-beam orbit-beam-one" />
+          <div className="orbit-beam orbit-beam-two" />
+          <div className="orbit-dot orbit-dot-camel" />
+          <div className="orbit-dot orbit-dot-sky" />
+          <div className="orbit-dot orbit-dot-mint" />
+          <Image className="orbit-center" src="/kiduna-mark.svg" alt="" width={104} height={104} />
         </div>
       </section>
 
       <section className="signal-strip" aria-label="Kiduna principles">
         <div><span>01</span><strong>Human direction</strong></div>
         <div><span>02</span><strong>Agentic capacity</strong></div>
-        <div><span>03</span><strong>Verifiable identity</strong></div>
-        <div><span>04</span><strong>Real-world standing</strong></div>
+        <div><span>03</span><strong>Personal privacy</strong></div>
+        <div><span>04</span><strong>Legal standing</strong></div>
       </section>
 
       <section className="explanation" id="why-kiduna">
@@ -107,9 +108,10 @@ export default function Home() {
           <p className="eyebrow">Why Kiduna</p>
           <h2>Not another AI tool. <em>A place to belong and build.</em></h2>
           <p>
-            Today&apos;s internet gives us accounts, audiences, and software.
-            Kiduna adds something new: persistent relationships between people
-            and agents, gathered into organizations with memory, purpose, and accountability.
+            Today’s internet gives us accounts, audiences, systems, and software.
+            Kiduna adds persistent relationships between people and their agentic
+            allies—organized around shared purpose, with memory, privacy, authority,
+            and accountability.
           </p>
         </div>
 
@@ -126,9 +128,10 @@ export default function Home() {
 
       <section className="shift-statement">
         <p>The internet connected pages.</p>
+        <i className="shift-separator" aria-hidden="true" />
         <p>Social connected profiles.</p>
-        <h2>Kiduna connects <em>agency.</em></h2>
-        <span>People and agents, organized to act together.</span>
+        <h2>Kiduna connects <em>purpose with action.</em></h2>
+        <span>People and their allies, organized around what matters most.</span>
       </section>
 
       <section className="access-section" id="early-access">

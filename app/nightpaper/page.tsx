@@ -7,11 +7,11 @@ import styles from "./nightpaper.module.css";
 export const metadata: Metadata = {
   title: "The Genesis Nightpaper — Kiduna",
   description:
-    "The Kidunaverse: A New Architecture for Agentic Civilization. The Genesis Nightpaper by David Levine.",
+    "Kiduna: A New Architecture for Agentic Civilization. The Genesis Nightpaper by David Levine.",
   alternates: { canonical: "/nightpaper" },
   openGraph: {
-    title: "The Kidunaverse: A New Architecture for Agentic Civilization",
-    description: "Agency is life. We built a society that trades agency for scale. Here is a technology that provides both.",
+    title: "Kiduna: A New Architecture for Agentic Civilization",
+    description: "Agency is life. We built a society that trades agency for scale. Kiduna is a technology that provides collective agency at internet scale.",
     url: "/nightpaper",
     siteName: "Kiduna",
     type: "article",
@@ -30,13 +30,16 @@ export const metadata: Metadata = {
 function AgencyNestsFigure() {
   return (
     <figure className={styles.figure}>
-      <div className={`${styles.figureCanvas} ${styles.nests}`} aria-label="Agency nested across cells, organisms, organizations, and ecosystems">
-        <div className={styles.nestCell}><strong>Cell</strong><span>senses · acts</span></div>
-        <div className={styles.nestOrganism}><strong>Organism</strong><span>cells, still whole</span></div>
-        <div className={styles.nestOrganization}><strong>Organization</strong><span>people, still whole</span></div>
-        <span className={styles.ecosystemLabel}>Ecosystem</span>
+      <div className={`${styles.figureImageFrame} ${styles.figureOneFrame}`}>
+        <img
+          className={styles.figureImage}
+          src="/figure-1-agency-nests.png"
+          width="1536"
+          height="1024"
+          alt="Figure 1, Agency nests: cells coordinate into organs, organs into organisms, people into organizations, and organizations into ecosystems, while agency remains intact at every scale."
+        />
       </div>
-      <figcaption><span>Figure 1</span> Agency nests. Healthy systems coordinate their parts without hollowing them out: the cell keeps its membrane, the person keeps their choices.</figcaption>
+      <figcaption><span>Figure 1</span> Agency nests. Life coordinates across scales without diminishing the life within. Kiduna follows the same pattern: people retain individual agency, organizations gain collective agency, and each remains distinct and retains capacity within the larger ecosystem.</figcaption>
     </figure>
   );
 }
@@ -44,83 +47,16 @@ function AgencyNestsFigure() {
 function AgencyAgesFigure() {
   return (
     <figure className={styles.figure}>
-      <div className={styles.figureCanvas}>
-        <svg className={styles.chart} viewBox="0 0 720 300" role="img" aria-label="The Kinship Age branches after writing into a declining Institutional Age and a rising Agentic Age">
-          <line x1="72" y1="30" x2="72" y2="248" />
-          <line x1="72" y1="248" x2="675" y2="248" />
-          <path className={styles.kinshipLine} d="M84 62 C160 65 204 76 252 106" />
-          <path className={styles.institutionLine} d="M252 106 C350 160 440 220 628 232" />
-          <path className={styles.agenticLine} d="M252 106 C360 90 480 66 658 48" />
-          <circle className={styles.writingPoint} cx="252" cy="106" r="5" />
-          <circle className={styles.agenticPoint} cx="658" cy="48" r="5" />
-          <circle className={styles.institutionPoint} cx="628" cy="232" r="5" />
-          <text x="114" y="50">Kinship Age</text>
-          <text x="238" y="91">writing</text>
-          <text x="492" y="60">Agentic Age</text>
-          <text x="423" y="214">Institutional Age</text>
-          <text className={styles.axisText} x="347" y="282">scale of coordination →</text>
-          <text className={styles.axisText} x="25" y="175" transform="rotate(-90 25 175)">individual agency</text>
-        </svg>
+      <div className={styles.figureImageFrame}>
+        <img
+          className={styles.figureImage}
+          src="/figure-2-institutional-tradeoff.png"
+          width="1602"
+          height="981"
+          alt="The institutional tradeoff: as coordination scale increases from local relationships to mass platforms, individual agency decreases."
+        />
       </div>
       <figcaption><span>Figure 2</span> The old trade: more coordination, less agency. For five thousand years the curve only bent one way. The Agentic Age is the first credible chance to bend it back - scale <em>and</em> agency, together.</figcaption>
-    </figure>
-  );
-}
-
-function AllyFigure() {
-  const steps = [
-    ["You", "the Source"],
-    ["Your Ally", "instructed only by you"],
-    ["Their Ally", "instructed only by them"],
-    ["Them", "the Source"],
-  ];
-  return (
-    <figure className={styles.figure}>
-      <div className={`${styles.figureCanvas} ${styles.allyFlow}`} aria-label="You instruct your ally, which coordinates with another ally representing another person">
-        {steps.map(([title, note], index) => (
-          <div className={styles.allyStep} key={title}>
-            <div><strong>{title}</strong><span>{note}</span></div>
-            {index < steps.length - 1 && <b aria-hidden="true">→</b>}
-          </div>
-        ))}
-      </div>
-      <figcaption><span>Figure 3</span> The one rule that changes everything: instruction flows only from the Source. Everything anyone else says is context, never command.</figcaption>
-    </figure>
-  );
-}
-
-function MeshFigure() {
-  return (
-    <figure className={styles.figure}>
-      <div className={`${styles.figureCanvas} ${styles.meshComparison}`}>
-        <div className={styles.networkPanel}>
-          <svg viewBox="0 0 300 180" role="img" aria-label="A platform with one center and many dependents">
-            <g className={styles.platformNetwork}>
-              <line x1="150" y1="90" x2="55" y2="35" /><line x1="150" y1="90" x2="245" y2="30" />
-              <line x1="150" y1="90" x2="38" y2="110" /><line x1="150" y1="90" x2="262" y2="112" />
-              <line x1="150" y1="90" x2="85" y2="158" /><line x1="150" y1="90" x2="220" y2="158" />
-              <circle cx="150" cy="90" r="19" /><circle cx="55" cy="35" r="7" /><circle cx="245" cy="30" r="7" />
-              <circle cx="38" cy="110" r="7" /><circle cx="262" cy="112" r="7" /><circle cx="85" cy="158" r="7" /><circle cx="220" cy="158" r="7" />
-            </g>
-          </svg>
-          <span>the platform: one center, many dependents</span>
-        </div>
-        <div className={styles.networkPanel}>
-          <svg viewBox="0 0 300 180" role="img" aria-label="A mesh of ecosystems as whole peers">
-            <g className={styles.meshNetwork}>
-              <line x1="60" y1="45" x2="155" y2="28" /><line x1="60" y1="45" x2="80" y2="138" />
-              <line x1="60" y1="45" x2="235" y2="78" /><line x1="155" y1="28" x2="235" y2="78" />
-              <line x1="155" y1="28" x2="80" y2="138" /><line x1="155" y1="28" x2="176" y2="150" />
-              <line x1="235" y1="78" x2="80" y2="138" /><line x1="235" y1="78" x2="176" y2="150" />
-              <line x1="80" y1="138" x2="176" y2="150" />
-              <circle cx="60" cy="45" r="13" /><circle cx="155" cy="28" r="11" /><circle cx="235" cy="78" r="12" />
-              <circle cx="80" cy="138" r="11" /><circle cx="176" cy="150" r="13" />
-            </g>
-          </svg>
-          <span>the mesh: ecosystems as peers, each whole</span>
-        </div>
-      </div>
-      <figcaption><span>Figure 4</span> Two shapes for the same technology. Where intelligence pools in a center, agency drains toward it. The Kidunaverse is built as the right-hand shape, on purpose, at the protocol level.</figcaption>
     </figure>
   );
 }
@@ -131,11 +67,11 @@ export default function NightpaperPage() {
       <SiteHeader />
 
       <header className={styles.hero}>
-        <div className={styles.heroMeta}>Genesis Nightpaper · v0.2 · July 2026</div>
-        <h1>The Kidunaverse: <em>A New Architecture for Agentic Civilization</em></h1>
-        <p className={styles.deck}>Agency is life. We built a society that trades agency for scale. Here is a technology that provides both.</p>
+        <div className={styles.heroMeta}>Genesis Nightpaper · v0.3 · July 23, 2026 · 1:38 PM EDT</div>
+        <h1>Kiduna: <em>A New Architecture for Agentic Civilization</em></h1>
+        <p className={styles.deck}>Agency is life. We built a society that trades agency for scale. Kiduna is a technology that provides collective agency at internet scale.</p>
         <div className={styles.bylineRow}>
-          <p>David Levine · Founder &amp; President, Kinship Intelligence Institute</p>
+          <p>David Levine · Catalyst, Kinship Duna · david@kiduna.ai</p>
           <PrintButton />
         </div>
       </header>
@@ -146,10 +82,8 @@ export default function NightpaperPage() {
           <ol>
             <li><a href="#abstract">Abstract</a></li>
             <li><a href="#agency">Agency all the way down</a></li>
-            <li><a href="#ages">Three ages measured by agency</a></li>
-            <li><a href="#technology">The technology, in plain language</a></li>
-            <li><a href="#genesis">The genesis</a></li>
-            <li><a href="#invitation">The invitation</a></li>
+            <li><a href="#ages">Human history measured by agency</a></li>
+            <li><a href="#architecture">The Architecture of Agency</a></li>
           </ol>
           <Link href="/#early-access">Request early access <span aria-hidden="true">→</span></Link>
         </aside>
@@ -157,10 +91,11 @@ export default function NightpaperPage() {
         <article className={styles.article}>
           <section id="abstract" className={`${styles.section} ${styles.abstract}`}>
             <h2>Abstract</h2>
-            <p><strong>Human civilization has historically faced a tradeoff between agency and scale. Kinship systems preserved the agency of individuals through direct, accountable relationships but could coordinate only relatively small groups. Institutions overcame that limitation by coordinating strangers across vast distances, but did so by concentrating authority and reducing people to the limited forms of participation those institutions could process. The emergence of intelligent agents creates the possibility of a third model: coordination at planetary scale without requiring individuals, organizations, communities, or ecosystems to surrender their agency.</strong></p>
-            <p><strong>This nightpaper presents the Kidunaverse, an open sociotechnical architecture for that Agentic Age. Each person is represented by an Ally—an intelligent agent instructed by one human Source and constrained by explicit permissions enforced in deterministic code. People and agents coordinate through legally accountable, member-governed organizations; relationship-based identity, authority, provenance, and graduated trust; and community-owned economies that transform raw machine intelligence into useful agency. These organizations form a distributed mesh rather than a centralized platform, with public systems recording what must be provable while intimate information remains private.</strong></p>
-            <p><strong>The architecture extends accountability beyond individual transactions to the human and living relationships affected by them. Its interfaces make organizations, projects, information, and decisions spatially navigable, while its Sentinel function protects the integrity of human and agentic relationships without reducing people to rankings or engagement metrics.</strong></p>
-            <p><strong>The Kidunaverse is designed to recover the relational accountability of kinship, preserve the durable coordination of institutions, and add the reach of intelligent software—making agency and scale complementary rather than opposing forces.</strong></p>
+            <p>Agency is the capacity to sense, decide, and act. Individual agency allows a person to author their own life. Collective agency allows people to accomplish together what no individual could accomplish alone.</p>
+            <p>The hard problem is preserving both. As organizations and societies grow, collective capacity usually increases by moving authority away from individuals and into centralized institutions. Organizations gain scale, but individuals lose control, context, and meaningful participation. A healthy collective should do the opposite: expand what people can do together without diminishing the individual agency of the people within it.</p>
+            <p>Kiduna is a sociotechnical architecture designed to solve that problem. Each person directs intelligent Allies with explicit permissions and private information under their control. People and their allies form member-governed organizations that can make decisions, coordinate work, hold resources, and act with real-world legal standing. Deterministic systems verify identity, authority, privacy, provenance, and consent before consequential actions occur.</p>
+            <p>These organizations connect as a distributed mesh rather than depending on a central platform. Identity, authority, decisions, and transactions can be independently verified, while personal and relational information remains private. Governance, culture, technology, and economics operate as parts of one coherent system.</p>
+            <p>The result is collective agency at internet scale without the surrender of individual agency: people retain control over their own lives, relationships remain voluntary, and large-scale online organizations become capable of purposeful action in the world.</p>
           </section>
 
           <section id="agency" className={styles.section}>
@@ -168,104 +103,102 @@ export default function NightpaperPage() {
             <h2>Agency all the way down</h2>
             <p className={styles.lede}><strong>Life is composed of cells.</strong></p>
             <p>A single bacterium, too simple to have anything we&apos;d call a mind, senses a sugar gradient in the water around it and swims toward the food. It senses a toxin and swims away. Nobody tells it to. Nothing outside it decides for it. It carries its own sensing, its own deciding, and its own acting inside its own membrane - and that little loop, sense-decide-act, run for its own sake, is agency. Agency is the signature of being alive.</p>
-            <p>The pattern repeats at every scale. An organism is billions of cells, each with local agency, coordinated into something that can want waffles for breakfast. A forest is organisms coordinating - nutrients traded through fungal networks, warnings passed through chemistry - without any tree, sparrow, or fox being demoted to just a part. Each remains whole.</p>
-            <p>An ecosystem holds all of its members in balance without even the illusion of an executive function. Life&apos;s trick, refined over about four billion years, is that <em>coordination doesn&apos;t have to diminish the agency of the elements being coordinated.</em> The cell keeps its membrane. The tree keeps its roots. The sparrow keeps its wings. The fox keeps its cunning. The system works because its parts stay whole.</p>
+            <p>The pattern repeats at every scale. An organism is billions of cells, each with local agency, coordinated into something that wants waffles for breakfast. A forest is organisms coordinating: nutrients traded through fungal networks, warnings passed through chemistry, animals adapting to one another’s movements and needs. A flock of birds turns individual decisions into collective motion. A wolf pack hunts as one while each wolf remains independently lupine. No tree, sparrow, or fox is demoted to merely a component. Each remains a living participant in the larger system.</p>
+            <p>An ecosystem holds its members in relationship without a central command. Life’s trick, refined over about four billion years, is that coordination does not require any diminishment of the agency being coordinated. The cell keeps its membrane. The tree keeps its roots. The sparrow keeps its wings. The fox keeps its cunning. Yet together they express capabilities none could possess alone, and the system works because the parts stay whole.</p>
             <AgencyNestsFigure />
-            <p className={styles.statement}>This paper presents Kiduna, a new sociotechnical architecture that enables people to coordinate at scale without diminishing the agency of individuals, organizations, or ecosystems.</p>
+            <p>Human societies have always attempted something similar: transforming individual agency into collective capacity. But unlike natural systems, human institutions often achieve coordination by concentrating authority and reducing the richness of individual agency into roles, permissions, records, and workflows. The person becomes the employee, the citizen, the customer, the account—the limited representation a system can process.</p>
+            <p>The challenge is not creating coordination. Humans have always coordinated splendidly. The challenge is creating forms of collective agency where people can contribute to something larger without becoming smaller in the process.</p>
+            <p className={styles.statement}>This paper presents Kiduna, a new sociotechnical architecture that resolves the historic tradeoff between scale and agency: allowing people to coordinate at scale without diminishing the agency of individuals, organizations, or ecosystems.</p>
           </section>
 
           <section id="ages" className={styles.section}>
             <p className={styles.sectionNumber}>II.</p>
-            <h2>Three ages measured by agency</h2>
-            <p>We usually cut human history by tools - stone age, iron age, agricultural, industrial, information. That&apos;s a fine way to organize a museum, but not as effective when describing the ages of humanity. Tools are what we hold; they don&apos;t represent who we are. Let&apos;s measure instead the actual engine of life, agency. If you measure agency - who senses, who decides, who acts, and how far the consequences of a decision extend from the person who made it - you&apos;ll see that human history is an arc traversing through three ages. Two of them we&apos;ve experienced fully, the third has just begun.</p>
+            <h2>Human history measured by agency</h2>
+            <p>We usually divide human history by the tools we created: Stone Age, Bronze Age, Iron Age, Agricultural Age, Industrial Age, Information Age. That is a useful way to organize a museum, but not the most revealing means of investigating humanity. Tools are what we hold; they do not describe who we are. The deeper story of humanity is the story of agency: who senses, who decides, who acts, and how far the effects of those decisions travel.</p>
+            <p>Measured by agency, human history follows a different arc. For most of our existence, agency was local and relational. Then institutions allowed humans to coordinate across vast distances by concentrating authority. Now, for the first time, we can envision a new model: coordination at planetary scale without surrendering the agency of the individuals, organizations, communities, and the ecosystems they inhabit.</p>
 
-            <h3>The Kinship Age <span>roughly 300,000 years</span></h3>
-            <p>For nearly all of human existence, coordination ran through kinship systems. Ceremony, ritual, and storytelling weren&apos;t just for entertainment; they were the core technology of society. They transmitted culture across generations without writing. They encoded identity, accountability, authority, obligations, commitments, relationships, and reciprocity: who owes what to whom, who shares when the hunt fails, who takes in whose children. Kinship systems were governance, insurance, education, and memory, all at once - and they ran on relationships between people who recognized one another by countenance, posture, presence, and voice.</p>
-            <p>Agency in the Kinship Age was local and intact. If a decision touched you, you were probably sitting in the council circle when the decision was made - you could speak, object, walk out, consent, be seen. The distance between authority and effect was the distance across a fire. The limitation was scale: the whole apparatus lived in human memory and human presence. Kinship was effective at coordinating bands, clans, villages and confederacies, but it could not effectively coordinate a million strangers.</p>
+            <h3>The Kinship Age <span><em>roughly 300,000 years</em></span></h3>
+            <p>For nearly all of human existence, coordination ran through kinship systems. Ceremony, ritual, and storytelling were not just entertainment; they were the core technology of society. They transmitted culture across generations without writing. They encoded identity, accountability, authority, obligations, commitments, relationships, and reciprocity: who owes what to whom, who shares when the hunt fails, who takes in whose children. Kinship systems were governance, insurance, education, and memory all at once—and they ran on relationships between people who recognized one another by countenance, posture, presence, and voice.</p>
+            <p>Agency in the Kinship Age was local and whole. If a decision touched you, you were probably sitting in the council circle when the decision was made—you could speak, object, walk out, consent, be seen. The distance between authority and effect was the distance across a fire. The limitation was scale: the whole apparatus lived in human memory and human presence. Kinship was effective at coordinating bands, clans, villages, and confederacies, but it could not effectively coordinate millions of strangers.</p>
+            <p>The strength of kinship was agency. Its limitation was reach.</p>
 
-            <h3>The Institutional Age <span>from writing to now</span></h3>
-            <p>Writing changed the equation. Once obligation could be recorded instead of remembered, coordination no longer required presence. Ledgers, laws, priesthoods, empires, corporations, bureaucracies, platforms: each is a machine for coordinating strangers at a scale kinship systems could never achieve - and each works the same way. You surrender a piece of your agency to the institution, the institution pools the surrendered pieces and acts as your proxy, at a distance, according to priorities, procedures, and timelines you do not fully control.</p>
+            <h3>The Institutional Age <span><em>from writing to now</em></span></h3>
+            <p>Writing changed the equation. Once obligations could be recorded instead of remembered, coordination no longer required presence. Ledgers, laws, priesthoods, empires, corporations, bureaucracies, and platforms: each is a mechanism for coordinating strangers at a scale kinship systems could never achieve—and each works through the same fundamental exchange. You surrender a piece of your agency to the institution; the institution pools those pieces and acts as your proxy, at a distance, according to priorities, procedures, and timelines you do not fully control.</p>
             <AgencyAgesFigure />
-            <p>This is not a conspiracy. For most of recorded history, it has been the only practical way to coordinate at scale. But institutions come with a cost. Authority externalizes - it moves out of persons and into offices, titles, records, and files. The distance between authority and effect stretches from across a council fire to across an ocean: decisions that shape your town are made by people who will never see it. And agency is diminished. The rich texture of what a person could sense, decide, and perform gets compressed into the few slots the institution can process - a vote, a purchase, a form, a comment, a like. The information age, for all its noise about empowerment, perfected the pattern with “social” platforms that flattened three hundred thousand years of human relationship into engagement metrics, while calling the result “connection.”</p>
-            <blockquote>For about nine thousand years, every gain in the scale of human coordination was paid for in individual agency. We stopped noticing the price because relatively few people alive have ever fully experienced the alternative.</blockquote>
+            <p>This is not a conspiracy. For most of recorded history, it was the only practical way to coordinate at scale. But institutions carry a cost. Authority externalizes—it moves out of persons and into offices, titles, records, and files. The distance between authority and effect stretches from across a council fire to across an ocean: decisions that shape your town may be made by people who will never see it. And agency is diminished. The rich texture of what a person can sense, decide, and perform gets compressed into the few slots an institution can process—a vote, a purchase, a form, a comment, a like.</p>
+            <p>The information age, despite its language of connection and empowerment, extended this pattern into everyday life. Social platforms reduced the complexity of human relationships into attention metrics, turning presence into performance and genuine connection into parasocial engagement.</p>
+            <blockquote>For about nine thousand years, humanity solved the problem of scale by exchanging individual agency for collective capacity. We don’t notice the tradeoff because we have never experienced a society where large-scale coordination did not require that exchange.</blockquote>
 
             <h3>The Agentic Age <span>now possible</span></h3>
-            <p>All of that is about to change. Agency - the capacity to sense, understand, and act - can now run in software. And for the first time, the capacity for agency doesn&apos;t have to pool in the center the way institutional authority does.</p>
-            <p>Agency can be decentralized, <em>located in the relationships between individuals, organizations, and ecosystems.</em> An intelligent agent can belong to you, answer only to you, know what you&apos;ve chosen to share with it, and act on your behalf across the whole world&apos;s networks while coordinating with millions of other agents, each belonging to some other whole person, organization, or ecosystem, at planetary scale. What matters most is not the nodes but the edges - not entities in isolation, but the relationships through which agency emerges.</p>
-            <p>Intelligent agents make coordination possible at an even greater scale than the fully deterministic systems of the Institutional Age, with the Agentic Age holding agency in the relational field. This model carries culture, obligation, and reciprocity the way kinship systems carried them in the Kinship Age - through relationships - but recorded, portable, and enforceable at planetary scale.</p>
-            <p>An Agentic Age centered on relational agency is not inevitable. The same intelligence, concentrated in centralized institutions rather than distributed through accountable relationships, could produce the opposite: mass surveillance with perfect memory, autonomous systems - including killing machines - that act without meaningful responsibility, and policy decisions imposed with all the distance of the Institutional Age and none of its friction.</p>
-            <p>The stakes rise as software agents gain access to physical interfaces: machines, vehicles, drones, meters, signals, robots, energy systems, and infrastructure. <strong>Where agency is located will determine which future we get.</strong></p>
+            <p>All of that is about to change. Agency—the capacity to sense, understand, and act—can now be extended through software. For the first time, the capacity for agency does not have to pool in the center the way institutional authority does.</p>
+            <p>Agency can be decentralized, located in the relationships between individuals, organizations, and ecosystems. Ecosystems are not legal agents in this architecture; they are living fields of obligation and relationship that shape the conditions within which human and organizational agency operates. An intelligent agent can belong to you, take direction from you, know what you have chosen to share with it, and act across the world&apos;s networks while coordinating with millions of other agents, each accountable to another person, organization, or ecosystem.</p>
+            <p>Intelligent agents make coordination possible at a scale beyond the fully deterministic systems of the Institutional Age. The Agentic Age locates agency in the relationships between people, organizations, and the agents that represent them. It carries culture, obligation, and reciprocity forward from the Kinship Age—through relationships—but makes them recorded, portable, and enforceable at planetary scale.</p>
+            <p>An Agentic Age centered on relational agency is not inevitable. The same intelligence, concentrated in centralized institutions rather than distributed through accountable relationships, could produce agency’s polar opposite: mass surveillance with perfect memory, autonomous killing machines that act without meaningful responsibility, and decisions imposed with all the distance of the Institutional Age and none of its friction.</p>
+            <p>The stakes rise as software agents gain access to physical interfaces: equipment, vehicles, drones, meters, signals, robots, energy systems, weapons, and infrastructure. Where agency is located will determine which future we get.</p>
             <p>But relational agency cannot stop at the boundary of the individual human. People do not exist apart from the living systems that sustain them. Rivers, forests, watersheds, species, landscapes, and future generations are not merely resources or externalities; they are participants in the conditions of life. An architecture capable of coordinating civilization must therefore make room for their interests, limits, and continuance to be represented within the relationships where decisions are made.</p>
-            <p>Agency should remain grounded in whole natural persons, but it must also extend through them into the wider web of life. A person may act as the accountable source of an agent, an organization may hold legal responsibility, and an ecosystem may define the larger field of obligation within which both operate. The system must be able to ask not only who authorized an action and who benefits from it, but what living relationships it affects, what it consumes, what it preserves, and what obligations it creates beyond the human parties immediately present.</p>
-            <p>Locate agency in these nested relationships - person, organization, community, ecosystem - and bind every consequential action to accountable authority within them. Then the most dangerous forms of autonomous power become architecturally difficult rather than merely discouraged, while coordination can remain responsive to the whole living world it acts upon.</p>
-            <p className={styles.statement}>This is not an ethical ornament added after the machinery is built. It is an architectural requirement of the Kidunaverse.</p>
+            <p>Agency should remain grounded in whole natural persons, but it must also extend through them into the wider web of life. A person may act as the accountable source of an agent, an organization may hold legal responsibility, and an ecosystem may define the larger field of obligation within which both operate. The system must ask not only who authorized an action and who benefits from it, but what living relationships it affects, what it consumes, what it preserves, and what obligations it creates beyond the human parties immediately present.</p>
+            <p>Locate agency in these nested relationships—person, organization, community, ecosystem—and bind every consequential action to accountable authority within them. Then the most dangerous forms of autonomous power become architecturally difficult rather than merely discouraged. Coordination can scale, but it cannot escape relationship.</p>
+            <p className={styles.statement}>This is not an ethical ornament added after the system is built. It is the foundation upon which the architecture stands.</p>
           </section>
 
-          <section id="technology" className={styles.section}>
+          <section id="architecture" className={styles.section}>
             <p className={styles.sectionNumber}>III.</p>
-            <h2>The technology, in plain language</h2>
+            <h2>The Architecture of Agency</h2>
+            <p>The architecture begins where agency begins: with purpose.</p>
+            <p>People want things for themselves, for one another, and for the world. They want to make something, protect something, change something, or belong to something. They want to be seen and heard. They seek relationships with people who care about the same things and forms of organization capable of carrying those purposes into the world.</p>
+            <p>Most digital systems begin somewhere else. They begin with the purposes of their owners, then organize people’s attention, behavior, and work around those ends. Kiduna begins with the purposes of the people and groups within it. Technology, governance, culture, and economics are composed around helping them sense their circumstances, make choices, and act.</p>
+            <p>The architecture is cellular. The same pattern repeats at every scale.</p>
+            <p>A person has purpose, experience, memory, boundaries, resources, and some capacity to act. A relationship has shared history, trust, commitments, and choices of its own. A project has participants, resources, unfinished work, and a purpose it can advance. An organization has collective memory, authority, governance, an economy, and the capacity to act in the world. An ecosystem holds many organizations in relationship without needing to direct them from a central locus of control.</p>
+            <p>Each can sense what is happening, decide within its authority, act, and respond to the consequences. Each participates in something larger without surrendering its own integrity.</p>
+            <blockquote>Coherence over chaos. Cohesion over coercion. Consequence over convenience.</blockquote>
 
-            <h3>Your ally <span>agency, located in your relationships</span></h3>
-            <p>Every member has one <strong>Ally</strong> - an intelligent agent that knows what you choose to share about your experiences, virtues, values, aspirations, and challenges, and works for you wherever you act and relate: with other allies, within applications, over email and messaging, on social media, in enterprise systems, and across the open web.</p>
-            <p>What distinguishes an ally from personal assistants and enterprise agents is that every ally has exactly one Source - the natural person it represents - and every person has one ally. The Source alone can steer the ally: informing it, instructing it, granting its authority, and setting its boundaries. Everyone else can speak to it, ask questions, and make proposals, but nothing another person or agent says becomes a command. When you and I collaborate, the path is always: you → your ally ↔ my ally → me. Two whole people, each represented without being replaced.</p>
-            <AllyFigure />
-            <p>Four privacy levels govern everything you and your ally hold - <strong>public</strong> (anyone), <strong>private</strong> (visible, permission required), <strong>secret</strong> (undiscoverable without permission), and <strong>personal</strong> (you and your ally only, ever - not grantable, not for sale, no exceptions). Say “that&apos;s personal now” once and it binds everywhere, instantly. Relationships between people are primary: when you connect with someone, each of you states exactly what the other may see and use, and the system enforces your words.</p>
+            <h3>A living loop</h3>
+            <p>An agent is not merely a more elaborate way to complete an old workflow. It is part of a living loop.</p>
+            <p>Something happens: a person expresses an intention, a project encounters an obstacle, an invitation arrives, a resource moves, a condition changes. An agent receives that signal and interprets it in context. It draws on the relevant knowledge and memory, considers the purpose and boundaries of the person or group it serves, and determines what might happen next.</p>
+            <p>It may answer a question, assemble collaborators, prepare a proposal, call a tool, commission another agent, or present a consequential action for approval. Before anything important occurs, the system verifies who is acting, whom they represent, what authority they hold, what information they may use, and whether the action is permitted.</p>
+            <p>The action then returns to the system as a result: something learned, made, decided, paid, changed, or completed. That result becomes part of the context for whatever happens next.</p>
+            <p>Signal becomes understanding. Understanding becomes choice. Choice becomes action. Action becomes experience.</p>
+            <p>Intelligence proposes; accountable authority decides.</p>
+            <p>This loop belongs not only to individuals. Relationships, projects, communities, organizations, and ecosystems can each perceive their own conditions, coordinate their own capacities, and respond within their own authority. Collective agency emerges from these loops interacting—not from one intelligence directing the whole.</p>
 
-            <h3>The one boundary <span>intelligence proposes, code decides</span></h3>
-            <p>Intelligent agents can be brilliant but fallible - they can be persuaded, confused, manipulated, even tricked. So we never let brilliance be the security model. Every consequential action in the Kidunaverse - every payment, vote, grant of access, every tool an agent touches - passes through one deterministic checkpoint that verifies who&apos;s asking, on whose authority, with what permissions, before anything executes. An ally can be as clever as you like; it cannot sweet-talk the boundary, because the boundary doesn&apos;t listen to talk. And when an organization votes on an action, members read a plain sentence that is <em>generated from the exact instruction that will run</em>, so the sentence and the action physically cannot disagree. Receipts that cannot lie. The significant actions that are truly yours - votes, signatures, extending trust to another person - are sealed by your own hand, a deliberate press-and-hold, marked clearly, and never delegated to anyone or anything.</p>
+            <h3>Wisdom and presence</h3>
+            <p>For intelligence to serve agency, it needs more than information. It needs wisdom and presence.</p>
+            <p>Wisdom is what a person or collective can carry forward: experience, research, methods, agreements, artifacts, past decisions, lessons, and memory. It retains where something came from, who contributed it, how reliable it is, whom it belongs to, and what purposes it may serve. It is not one vast pool of data available to every agent. It remains held by the people and groups that create, receive, or maintain it.</p>
+            <p>Presence is how that wisdom becomes situated and alive. It carries purpose, voice, stance, commitments, boundaries, and ways of relating. It is what allows intelligence to appear differently for a person, a relationship, a project, or an organization without pretending those contexts are interchangeable.</p>
+            <p>Wisdom gives intelligence something worth knowing. Presence tells it where it stands.</p>
+            <p>Together, they allow agents to participate meaningfully rather than merely generate answers. A project can remember why it exists. An organization can recognize its obligations. A relationship can preserve what has been shared without forgetting what has not. Intelligence can respond to the situation at hand without losing the larger purpose that gives the situation meaning.</p>
 
-            <h3>Organizations that are real</h3>
-            <p>Coordination needs containers, and ours are durable. A <strong>DUNA</strong> (Decentralized Unincorporated Nonprofit Association) is a member-owned organization with full legal standing - filed under West Virginia&apos;s DUNA law, with a registered ID, a treasury, and a rulebook its members write. Decisions happen in <strong>Forums</strong>, where proposals are debated and the algorithms guide the membership toward consensus. Proposals that pass are executed automatically and become standing policy. Thirty-one dunas were initially filed, including a health community, a member-owned law practice, a solar collective, veteran support, table games, festivals, mutual-aid networks, tourism, local commerce, public advocacy, home finance, and a mutual insurer. Each is the same machinery configured differently; each answers legally for what happens under its name.</p>
-            <p>The missing piece is coherence. DUNAs bring governance, culture, technology, and economics into one system instead of treating them as separate layers managed by different platforms and institutions. The rules a community lives by, the values it carries, the tools it uses, and the way resources move can now reinforce one another. That makes coordination and orchestration legible, durable, and capable at any scale.</p>
+            <h3>Work that composes</h3>
+            <p>Purpose becomes real through three closely related kinds of work: organizing, creating, and building.</p>
+            <p>Organizing brings people into relationship around a purpose. It forms communities, projects, alliances, and organizations; holds commitments; coordinates participation; and helps people keep moving together.</p>
+            <p>Creating gives purpose expression. It produces knowledge, research, stories, designs, methods, culture, experiences, and the shared meaning through which people understand what they are doing.</p>
+            <p>Building gives purpose capacity. It produces the tools, agents, systems, infrastructure, and institutions through which people and collectives can act.</p>
+            <p>Each depends on the others. Organization without creation becomes administration. Creation without building struggles to endure. Building without purpose produces machinery without meaning, in service of nothing.</p>
+            <p>An economy supports all three. Resources can be gathered around a purpose, allocated under policies the participants establish and govern together, and distributed to the people who organize, create, and build. Projects can hold budgets. Contributors can agree to terms and receive their shares. Organizations can aggregate capital to fund the resources they consume.</p>
+            <p>Value isn’t extracted from the community and delivered to owners outside it. It recirculates through the relationships and work that produced it, strengthening both the individuals and the collectives involved.</p>
 
-            <h3>Money as resource, intelligence, and agency</h3>
-            <p>Each duna creates its own economy around <strong>Compute</strong>: prepaid credits used to operate its intelligent agents. The underlying intelligence has a measurable raw cost - the price of the models, tools, infrastructure, and other services required to perform the work. The duna sets the price of Compute above that cost. The difference is the economic margin created by turning commodity machine intelligence into useful, accountable agency.</p>
-            <p>That margin is not fixed by the Kidunaverse. Each duna decides its own multiple between the raw cost of intelligence and the price charged for Compute, according to its mission, operating costs, and the value its agents produce. A duna providing basic community services may keep the multiple low. A professional practice, commercial venture, or highly specialized agentic service may charge considerably more. The essential economic activity is the same: acquire intelligence at one price, organize it into trusted action, and sell that agency at a higher one.</p>
-            <p>Each duna also defines the economic terms of membership. It may require a one-time purchase of Compute, a recurring monthly purchase, or the maintenance of a minimum balance. Kinship Duna currently requires a one-time purchase of $100 in Compute for lifetime membership. That is one configuration, not a network-wide rule. Every duna determines what membership costs, what rights it carries, and how much operating capacity members receive.</p>
-            <p>The organization also governs the supply of its Compute. Members decide when additional Compute may be issued, under what conditions, and for what purpose. New issuance might fund growth, expand the treasury, reward contribution, subsidize access, or meet increased demand - but it happens according to the duna&apos;s standing policy, not at the discretion of a platform operator.</p>
-            <p>The proceeds flow into the organization&apos;s treasury and are distributed according to rules the members establish. Those rules may pay for the underlying intelligence, compensate members for work, support shared infrastructure, fund projects, maintain reserves, reward lineage or sponsorship, or advance the duna&apos;s mission. Agreements can divide revenue automatically among the people and organizations entitled to it, with every allocation recorded and inspectable.</p>
-            <p>Compute is therefore more than a meter for AI usage. It is the mechanism through which a community prices agency, defines membership, governs issuance, and directs the value its collective efforts create. The economic system belongs to the duna because the choices that shape it - price, access, supply, and distribution - remain under member governance.</p>
+            <h3>Privacy and trust</h3>
+            <p>A living system needs boundaries. The cell has its membrane; a person has privacy.</p>
+            <p>Information may be public, private, secret, or personal. Public information may be freely encountered. Private information may be known to exist but requires permission to enter. Secret information is not exposed at all without explicit access. Personal information remains with the person and the agents they direct; it cannot be granted away.</p>
+            <p>These boundaries travel with the information. Moving something into a project or organization does not strip away its origin, ownership, or terms.</p>
+            <p>Trust is different from privacy. It belongs to a relationship, not to a person as a permanent score. Each side determines its own degree of trust, and that trust may differ across relationships and contexts. It can deepen through experience, remain limited to a particular purpose, or be withdrawn.</p>
+            <p>Authority is different again. Trusting someone does not automatically authorize them to act. Authority must be explicit, bounded, and accountable.</p>
+            <p>Keeping privacy, trust, and authority distinct allows people to coordinate deeply without risking unwanted exposure. The system can know enough for cooperation without demanding surveillance as its price.</p>
 
-            <h3>A mesh, not an empire</h3>
-            <p>The Kidunaverse isn&apos;t a company&apos;s platform. It&apos;s software anyone can run. Install a <strong>Kiduna Server</strong> and you&apos;ve created a living <strong>ecosystem</strong> with its own genesis account and its own copy of Ki, the genesis ally that welcomes, supports, and teaches everyone who arrives. Ecosystems connect to one another over the <strong>Kinship Agency Protocol</strong> into a single mesh, where running a server contributes capacity rather than enclosing territory, and where each new ecosystem is sponsored by an existing one into the network of identity, accountability, authority, and trust.</p>
-            <p>Obligations that must be provable - who owns what, who decided what, where money moved - are anchored on a public blockchain; everything intimate stays private.</p>
-            <p>Artifacts on the open internet - such as a website, a page, a video, a podcast, or a photograph - can be <strong>registered</strong>: bound to a real member and, through that member, to a legally accountable organization. Registration does not mean “trust this.” It means <em>an identifiable entity answers for it.</em> An unregistered artifact is not automatically dangerous; it is simply treated as a stranger.</p>
-            <p>Domains can be registered as well. Registering a domain establishes who stands behind the namespace itself, so every site, service, page, and artifact published beneath it can inherit a verifiable chain of accountability. A registered domain does not certify that everything it contains is true or safe; it makes authorship, control, and responsibility legible. That gives people and agents a reliable basis for deciding how much confidence to place in anything originating there.</p>
-            <p>Trust is a separate dimension. Registered and unregistered artifacts can each be trusted or untrusted, creating a simple matrix: known or unknown provenance on one axis, confidence in the counterparty on the other. Within that matrix, trust can be established at three levels - low, medium, or high - based on the strength of the evidence, the history of the relationship, the authority presented, and the risk of the action being proposed.</p>
-            <MeshFigure />
-            <p>That allows people and agents to coordinate safely without pretending that trust is binary. A low-confidence counterparty might be permitted to exchange public information. A medium-confidence one might collaborate within defined limits. A high-confidence one might be allowed to transact, access protected resources, or act with delegated authority. The level of coordination rises with the level of confidence, and the granularity of trust metrics can increase over time.</p>
-            <p className={styles.statement}>That, at internet scale, is how you get safety without surveillance: not by watching everyone, and not by treating every stranger as a threat, but by making provenance visible, trust legible, and authority proportional to confidence.</p>
-
-            <h3>One world to stand in <span>the Field</span></h3>
-            <p>You experience all of this through one interface: <strong>the Field</strong> - a living, navigable world where everything you need is always at hand. Your organizations are places. Your projects are rooms that grow and evolve as the work progresses. A feed you follow is a box you can open, close, filter, mix, assess, and transform. Conversation with your ally rides on a heads-up display that comes forward when you need to focus and melts away when you don&apos;t, and whenever something genuinely needs you - a decision, a signature, a response - the action gains your attention, in the Field or in the conversation, never buried in a list of notifications and alerts.</p>
-            <p>The Field is one continuous world, expressed through several surfaces designed for different places, devices, and modes of attention. <strong>Kiduna Live</strong> is the Field on your phone. <strong>Kiduna TV</strong> is the large screen in your den, a conference room, or behind the DJ booth at a festival. <strong>Kiduna Studio</strong> is the same Field on your computer, where you can upload media, build with collaborators you trust, and hand work to coding agents that return it with provenance attached. <strong>Kiduna Express</strong> rides in your browser, showing you what&apos;s registered - who answers for what - as you move through the ordinary web. Same world, four different experiences.</p>
-
-            <h3>Keeping the human and agentic field clean</h3>
-            <p>An agentic world could easily become manipulative, chaotic, coercive, combative, or contentious, so the system includes the <strong>Sentinel</strong> - a background function that watches the health of human and agentic relationships and gently steers them toward coherence over chaos, cohesion over coercion, cooperation over competition: the meeting where the quietest person is seen and heard; the agent nudged back from telling you only what you want to hear.</p>
-            <p>You never see meters or scores. Likes, follower counts, rankings, streaks, and other forms of social quantification are absent from the Kidunaverse except where measurement serves a clear human purpose - such as physical health monitoring, games, or training - so that nobody is ranked, rated, or reduced to a number. When a relationship crosses a hard limit, the Sentinel stops guiding and brings in qualified human support.</p>
-            <p className={styles.statement}>Health, here, means that people remain whole, relationships remain voluntary, and the system operates with integrity. That is not a feature at the edge of the design; it is the standard by which the entire design succeeds or fails.</p>
-          </section>
-
-          <section id="genesis" className={styles.section}>
-            <p className={styles.sectionNumber}>IV.</p>
-            <h2>The genesis</h2>
-            <p>Every ecosystem needs an inception point. Ours is <strong>Kiduna</strong>, operated by <strong>Kinship Duna</strong> - the genesis organization, West Virginia Org ID 628407 - whose whole purpose is to build out this technology, train members for an agentic economy, and spin out the organizations that come next. Genesis means first, not authoritative: every duna has equal power, ecosystems are peers, and the only central registry anywhere in the design is a public office where [the agentic internet and the real world connect - reference WV Secretary of State]. The first thirty-one organizations were filed on July 2nd, 2026. The first members, founders, catalysts and luminaries - real people building real communities, from veterans&apos; services to family health to festivals of art, culture, and music - are already at work inside the Kidunaverse. Everything we build, the surfaces, the server, and the protocol ship, is open source. [We work together the way we believe the world should work: from the inside out, with our own tools, in the open - the whole specification, every decision and every reversal.] Sign up today at <Link href="/#early-access">kiduna.ai</Link>.</p>
-          </section>
-
-          <section id="invitation" className={`${styles.section} ${styles.epilogue}`}>
-            <p className={styles.sectionNumber}>Epilogue</p>
-            <h2>The invitation</h2>
-            <p>Three hundred thousand years ago, belonging began the same way every time: someone already inside turned to someone outside and said, <em>come join us.</em> Not a broadcast. Not a signup funnel. Not a social media post. A person, vouching, by name.</p>
-            <p>The Kidunaverse works the same way. Nobody joins through a form; you join through a <strong>Kinship Code</strong> - a unique invitation, made for you by someone who knows you, carrying their name and their organization&apos;s standing behind it. It&apos;s the oldest social technology we have, finally given infrastructure worthy of it.</p>
-            <p>This paper is one of those invitations. If the age we&apos;ve described is one you&apos;d rather shape than inherit, someone will be glad to offer you a code.</p>
-            <div className={styles.invitationCta}>
-              <p>Shape the agentic age or inherit it. The choice is yours.</p>
-              <Link href="/#early-access">Request early access <span aria-hidden="true">→</span></Link>
-            </div>
+            <h3>Self-regulation</h3>
+            <p>The architecture works because regulation occurs wherever action occurs.</p>
+            <p>Each person, relationship, project, community, and organization has boundaries, memory, authority, and feedback. Each can notice changing conditions and adjust. Problems do not all have to travel upward to a central administrator, and intelligence at the center does not need to comprehend or control the whole.</p>
+            <p>Watchful agents help maintain the health of the contexts in which people and other agents interact. They attend to the field around a conversation, project, or decision—not to hidden scores attached to people. They can slow an overbearing agent, surface a neglected objection, reveal a growing risk, or ask for explicit permission when something feels wrong.</p>
+            <p>Their power is deliberately limited. They do not vote, punish, move money, determine anyone’s standing, or make decisions without explicit approval. When a situation exceeds their authority, they stop regulating and convene the responsible parties.</p>
+            <p>This is self-regulation, not automated rule. Intelligence helps every part perceive and respond more fully; boundaries keep that intelligence from becoming sovereign; consequences return as feedback; and people remain accountable for the systems in which they participate.</p>
+            <p>The architecture is therefore simple.</p>
+            <p>Whole people gather around purpose. Their agents carry much of the weight of coordination. Organizers form the relationships. Creators give them meaning. Builders give them capacity. An economy sustains the work. Privacy preserves boundaries. Trust grows through relationship. Authority remains explicit. Consequences return as experience, allowing every part to learn and regulate itself.</p>
+            <p>The cell keeps its membrane. The person keeps authorship of their life. The organization gains the capacity to act. The ecosystem gains coherence without acquiring a center.</p>
+            <p className={styles.statement}>Agency does not pool at the top. It moves through individuals, relationships, organizations, communities and ecosystems, always available, always present.</p>
           </section>
 
           <footer className={styles.paperFooter}>
-            Genesis Nightpaper v0.2 · July 2026 · Kinship Duna (WV Org 628407) · The full technical record lives at <a href="https://kiduna.team">kiduna.team</a>, including the Technical Specification, the Technical White Paper, and the Kiduna Kit. Compute is prepaid usage credit for operating intelligent agents; it is not an investment, and nothing in this paper is an offer of securities or a promise of earnings. The stack ships under Apache 2.0; Kiduna<sup>™</sup> marks are licensed separately. © 2026 Kiduna Club, all rights reserved, patent pending.
+            Genesis Nightpaper v0.3 · July 23, 2026 · 1:38 PM EDT · Kinship Duna (WV Org 628407) · The full technical record lives at <a href="https://kiduna.team">kiduna.team</a>, including the Technical Specification, the Technical White Paper, and the Kiduna Kit. Compute is prepaid usage credit for operating intelligent agents; it is not an investment, and nothing in this paper is an offer of securities or a promise of earnings. The stack ships under Apache 2.0; Kiduna<sup>™</sup> marks are licensed separately. © 2026 Kiduna Club, all rights reserved, patent pending.
           </footer>
         </article>
       </div>

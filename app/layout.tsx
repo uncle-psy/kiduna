@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import "@fontsource/ibm-plex-sans/400.css";
+import "@fontsource/ibm-plex-sans/400-italic.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,14 +26,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" data-theme="dark" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('kiduna-theme');document.documentElement.dataset.theme=t==='light'?'light':'dark'}catch(e){}})()`,
-          }}
-        />
-      </head>
+    <html lang="en">
       <body>{children}</body>
     </html>
   );

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import ThemeToggle from "./theme-toggle";
 
 type SiteHeaderProps = {
   showEarlyAccess?: boolean;
@@ -19,7 +18,6 @@ export default function SiteHeader({ showEarlyAccess = true }: SiteHeaderProps) 
             Request early access <span aria-hidden="true">↘</span>
           </Link>
         )}
-        <ThemeToggle />
       </nav>
     </header>
   );
