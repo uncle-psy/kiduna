@@ -71,8 +71,9 @@ export default function Home() {
             <span>Build powerful movements</span>
           </h1>
           <p className="hero-lead">
-            Kiduna is where people and their intelligent allies build trust,
-            form organizations, govern what they create, and act together in the world.
+            Kiduna is where you can build trust, form organizations, govern what
+            you create, and act together with like-minded people and intelligent
+            agents to make your mark on the world.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#early-access">
