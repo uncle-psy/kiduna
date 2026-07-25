@@ -130,7 +130,7 @@
 
 .article {
   min-width: 0;
-  color: var(--fg-muted);
+  color: #FFFFE6;
   font-family: var(--sans);
   font-size: clamp(18px, 1.55vw, 21px);
   line-height: 1.78;
