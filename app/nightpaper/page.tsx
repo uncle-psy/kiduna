@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/nightpaper" },
   openGraph: {
     title: "Kiduna: A New Architecture for Agentic Civilization",
-    description: "Agency is life. We built a society that trades agency for scale. Kiduna is a technology that provides collective agency at internet scale.",
+    description: "Agency is life. We built a society that trades agency for scale. Kiduna is a technology that compounds agency with scale.",
     url: "/nightpaper",
     siteName: "Kiduna",
     type: "article",
@@ -69,7 +69,7 @@ export default function NightpaperPage() {
       <header className={styles.hero}>
         <div className={styles.heroMeta}>Genesis Nightpaper · v0.3 · July 23, 2026 · 1:38 PM EDT</div>
         <h1>Kiduna: <span className={styles.subtitle}>A New Architecture for Agentic Civilization</span></h1>
-        <p className={styles.deck}>Agency is life. We built a society that trades agency for scale. Kiduna is a technology that provides collective agency at internet scale.</p>
+        <p className={styles.deck}>Agency is life. We built a society that trades agency for scale. Kiduna is a technology that compounds agency with scale.</p>
         <div className={styles.bylineRow}>
           <p>David Levine · Catalyst, Kinship Duna · david@kiduna.ai</p>
           <PrintButton />
