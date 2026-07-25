@@ -157,7 +157,7 @@
 
 .section h2 {
   margin: 0 0 46px;
-  color: var(--fg);
+  color: #EAAA00;
   font-size: clamp(44px, 5vw, 70px);
   line-height: 1;
   letter-spacing: -.018em;
@@ -512,7 +512,7 @@
   .section { padding: .5in 0 0; scroll-margin: 0; }
   .section + .section { margin-top: .45in; border-color: #aaa; break-before: page; }
   .section h2, .section h3, .section strong { color: #111; }
-  .section h2 { margin-bottom: .28in; font-size: 30pt; }
+  .section h2 { margin-bottom: .28in; color: #9f7418; font-size: 30pt; }
   .section h3 { margin: .34in 0 .14in; color: #007f88; font-size: 13pt; font-weight: 700; break-after: avoid; }
   .section h3 span { color: #007f88; }
   .section p { margin-bottom: .16in; orphans: 3; widows: 3; }
