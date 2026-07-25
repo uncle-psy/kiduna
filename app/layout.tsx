@@ -4,7 +4,7 @@ import "@fontsource/ibm-plex-sans/400-italic.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kiduna.ai"),
+  metadataBase: new URL("https://www.kiduna.ai"),
   title: "Kiduna — Create Intelligent Allies. Build Powerful Movements.",
   description: "Kiduna is where you can build trust, form organizations, govern what you create, and act together with like-minded people and intelligent allies to make your mark on the world.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg", apple: "/apple-touch-icon.png" },
