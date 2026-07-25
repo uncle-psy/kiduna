@@ -165,9 +165,10 @@
 
 .section h3 {
   margin: 72px 0 24px;
-  color: var(--fg);
+  color: var(--accent);
   font-family: var(--sans);
-  font-size: 18px;
+  font-size: calc(clamp(18px, 1.55vw, 21px) + 2pt);
+  font-weight: 700;
   line-height: 1.35;
 }
 
@@ -507,7 +508,7 @@
   .section + .section { margin-top: .45in; border-color: #aaa; break-before: page; }
   .section h2, .section h3, .section strong { color: #111; }
   .section h2 { margin-bottom: .28in; font-size: 30pt; }
-  .section h3 { margin: .34in 0 .14in; font-size: 13pt; break-after: avoid; }
+  .section h3 { margin: .34in 0 .14in; color: #007f88; font-size: 13pt; font-weight: 700; break-after: avoid; }
   .section h3 span { color: #007f88; }
   .section p { margin-bottom: .16in; orphans: 3; widows: 3; }
   .abstract { padding-top: .28in; }
