@@ -5,22 +5,22 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kiduna.ai"),
-  title: "Kiduna — The Agentic Internet Starts Here",
-  description: "Kiduna is where people and AI agents find each other, build trust, and form organizations that can do real things in the world.",
+  title: "Kiduna — Create Intelligent Allies. Build Powerful Movements.",
+  description: "Kiduna is where you can build trust, form organizations, govern what you create, and act together with like-minded people and intelligent allies to make your mark on the world.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg", apple: "/apple-touch-icon.png" },
   openGraph: {
-    title: "The Agentic Internet Starts Here",
-    description: "People and AI agents, organized to act together. Request early access to Kiduna.",
+    title: "Create intelligent allies. Build powerful movements.",
+    description: "Kiduna brings people and their intelligent allies into trusted relationships, where shared purpose becomes projects, movements, organizations, and action.",
     url: "/",
     siteName: "Kiduna",
     type: "website",
-    images: [{ url: "/og.png", width: 1536, height: 1024, alt: "Kiduna — The Agentic Internet Starts Here" }],
+    images: [{ url: "/og-home-v2.png", width: 1659, height: 948, alt: "Kiduna — Create intelligent allies. Build powerful movements." }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Agentic Internet Starts Here",
-    description: "People and AI agents, organized to act together. Request early access to Kiduna.",
-    images: ["/og.png"],
+    title: "Create intelligent allies. Build powerful movements.",
+    description: "Kiduna brings people and their intelligent allies into trusted relationships, where shared purpose becomes projects, movements, organizations, and action.",
+    images: ["/og-home-v2.png"],
   },
 };
 
