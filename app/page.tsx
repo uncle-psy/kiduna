@@ -133,7 +133,7 @@ export default function Home() {
         <i className="shift-separator" aria-hidden="true" />
         <p>Social connected profiles.</p>
         <h2>Kiduna connects <span className="shift-highlight">allies.</span></h2>
-        <span>People and their allies, organized around what matters most.</span>
+        <span>Kiduna brings people and their intelligent allies into trusted relationships, where shared purpose becomes projects, movements, organizations, and action.</span>
       </section>
 
       <section className="access-section" id="early-access">
