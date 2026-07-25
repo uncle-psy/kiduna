@@ -132,7 +132,7 @@ export default function Home() {
         <p>The internet connected pages.</p>
         <i className="shift-separator" aria-hidden="true" />
         <p>Social connected profiles.</p>
-        <h2>Kiduna connects <em>purpose with action.</em></h2>
+        <h2>Kiduna connects <span className="shift-highlight">allies.</span></h2>
         <span>People and their allies, organized around what matters most.</span>
       </section>
 

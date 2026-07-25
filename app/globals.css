@@ -206,7 +206,8 @@ h1 em, h2 em { display: block; color: var(--accent); font-weight: inherit; }
 .shift-separator { width: 7px; height: 7px; margin: 0 7px 1px; display: inline-block; border-radius: 50%; background: var(--camel); box-shadow: 0 0 12px rgba(193,154,107,.38); }
 .shift-statement h2 { margin: 28px 0 14px; font-size: clamp(54px, 7vw, 92px); line-height: .95; }
 .shift-statement h2 em { display: inline; }
-.shift-statement span { color: var(--fg-muted); font-size: 17px; }
+.shift-statement .shift-highlight { color: #eaaa00; font-style: normal; }
+.shift-statement > span { color: var(--fg-muted); font-size: 17px; }
 
 .access-section { width: min(1180px, calc(100% - 64px)); margin: 0 auto; padding: 148px 0 130px; display: grid; grid-template-columns: .72fr 1.28fr; gap: 78px; align-items: start; }
 .access-copy { position: sticky; top: 30px; }
