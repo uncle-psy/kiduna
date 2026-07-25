@@ -94,7 +94,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  counter-reset: contents;
+  counter-reset: contents -1;
 }
 
 .toc li {
