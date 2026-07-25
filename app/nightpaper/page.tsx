@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-07-01T00:00:00.000Z",
     authors: ["David Levine"],
-    images: [{ url: "/og-nightpaper-v2.png", width: 1536, height: 1024, alt: "Kiduna — The Genesis Nightpaper: A New Architecture for Agentic Civilization" }],
+    images: [{ url: "/og-nightpaper-design-system.png", width: 1536, height: 1024, alt: "Kiduna — The Genesis Nightpaper: A New Architecture for Agentic Civilization" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "The Genesis Nightpaper — Kiduna",
     description: "A new architecture for agentic civilization.",
-    images: ["/og-nightpaper-v2.png"],
+    images: ["/og-nightpaper-design-system.png"],
   },
 };
 
