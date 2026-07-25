@@ -85,6 +85,7 @@ export default function NightpaperPage() {
             <li><a href="#ages">Human history measured by agency</a></li>
             <li><a href="#architecture">The Architecture of Agency</a></li>
             <li><a href="#care">Machineries of Care</a></li>
+            <li><a href="#action">Agency in Action</a></li>
           </ol>
           <Link href="/#early-access">Request early access <span aria-hidden="true">→</span></Link>
         </aside>
@@ -275,6 +276,22 @@ export default function NightpaperPage() {
             <p>A machinery of care accepts a more demanding standard, measuring success according to the levels of individual and collective agency at every scale: people become more able to author their lives; relationships remain voluntary, truthful, and capable of repair; agents remain legible and steerable while remaining capable; projects and organizations govern what their systems learn and how their rules change; collectives gain capacity without diminishing their members; and anyone can leave without surrendering their identity, relationships, work, or history.</p>
             <p>Kiduna will prove itself when people can coordinate across greater complexity while becoming more self-authoring, capable, connected, and creative—free to dissent, repair, join, leave, and form the relationships, projects, and organizations that carry their missions into the world.</p>
             <p>The measure is whether scale compounds agency: whether every increase in collective capacity makes people, relationships, projects, and organizations more capable of sensing, deciding, acting, and learning.</p>
+          </section>
+
+          <section id="action" className={styles.section}>
+            <p className={styles.sectionNumber}>V.</p>
+            <h2>Agency in Action</h2>
+            <p>The architecture now closes its loop.</p>
+            <p>Purpose supplies direction. Wisdom supplies memory and context. Presence gives each person and collective a recognizable way of standing in relationship with the world. Kinship agents extend perception, understanding, coordination, and action. The Field keeps people, work, resources, decisions, and consequences present in relation to one another. Ki orchestrates their activity. The Elements give everything that exists and acts a legible place within the whole.</p>
+            <p>Privacy gives every person, relationship, project, and organization a boundary. Public knowledge may circulate. Private knowledge moves by permission. Secret knowledge cannot be discovered unless deliberately revealed. Personal knowledge remains with the individual alone. Sentinels protect these boundaries and the coherence of the Realms they serve under rules established by their members. Influence becomes visible, permissions remain revocable, and no outside Institution gains the ability to aggregate intimate knowledge merely because it supplies capital, infrastructure, or intelligence.</p>
+            <p>Compute supplies the system’s metabolism. Its use sustains the people who organize, create, build, and catalyze, while strengthening the collectives in which their work occurs. Governance Forums turn equal member authority into collective decisions, with Envoys reducing the burden of participation without replacing human judgment. Capital cannot purchase voice. The DUNA gives those decisions legal standing and a body capable of holding resources, entering agreements, accepting responsibility, and acting beyond the screen.</p>
+            <p>Every consequential action passes through an accountable boundary. The system verifies who is acting, whom they represent, what authority they hold, and whether the action is permitted. What follows returns as consequence, memory, and learning.</p>
+            <p className={styles.statement}>Sense. Decide. Act. Learn.</p>
+            <p>No central owner has to comprehend, administer, or direct the whole. People govern their participation. Relationships govern trust and disclosure. Projects govern work and resources. Organizations govern policy, economics, and collective action. Ecosystems establish the conditions under which many organizations can cooperate without becoming one organization. Each regulates itself while remaining accountable for consequences that cross its boundaries.</p>
+            <p>Care therefore becomes something the architecture practices rather than something its operators promise. Every cell has the context, intelligence, authority, limits, and feedback required to act purposefully in relationship with the others.</p>
+            <p>The person becomes more capable because collective forms exist. The collective becomes more capable because the person retains authorship, judgment, boundaries, and the freedom to dissent, leave, and begin again.</p>
+            <p>Agency does not pool at the center or descend from above. It circulates through the living system—deepening within every person, relationship, project, organization, and ecosystem as the scale of coordination grows.</p>
+            <p className={styles.statement}><strong>Scale compounds agency when every increase in collective capacity makes each participant more capable of sensing, deciding, acting, and learning.</strong></p>
           </section>
 
           <footer className={styles.paperFooter}>
