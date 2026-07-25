@@ -111,9 +111,9 @@ export default function Home() {
           <h2>Not another AI tool. <span className="section-tagline">A place to build and belong.</span></h2>
           <p>
             Today’s internet gives us accounts, audiences, systems, and software.
-            Kiduna adds persistent relationships between people and their agentic
-            allies—organized around shared purpose, with memory, privacy, authority,
-            and accountability.
+            Kiduna adds persistent relationships between communities of people and
+            their agentic allies—organized around shared purpose, with memory,
+            privacy, authority, and accountability.
           </p>
         </div>
 
