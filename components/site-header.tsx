@@ -12,6 +12,7 @@ export default function SiteHeader({ showEarlyAccess = true }: SiteHeaderProps) 
         <Image src="/kiduna-logo.svg" alt="Kiduna" width={168} height={56} priority />
       </Link>
       <nav className="site-nav" aria-label="Primary navigation">
+        <a className="nav-link" href="/how-we-work">How We Work</a>
         <a className="nav-link" href="/nightpaper">The Nightpaper</a>
         {showEarlyAccess && (
           <Link className="header-link" href="/#early-access">
