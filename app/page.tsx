@@ -67,8 +67,8 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="live-dot" /> Organize people and allies for action!</p>
           <h1 className="hero-headline">
-            <span>Create intelligent allies</span>
-            <span>Build powerful movements</span>
+            <span>Create intelligent<br />allies.</span>
+            <span>Build powerful<br />movements.</span>
           </h1>
           <p className="hero-lead">
             Kiduna is where you can build trust, form organizations, govern what
