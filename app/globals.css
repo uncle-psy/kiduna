@@ -309,6 +309,8 @@ footer a:hover { color: var(--accent); }
   color: #eaaa00;
   font-style: normal;
 }
+.work-heading-line { white-space: nowrap; }
+.work-heading-line em { display: inline; }
 .work-page h2 {
   margin-bottom: 0;
   font-size: clamp(46px, 5.2vw, 72px);

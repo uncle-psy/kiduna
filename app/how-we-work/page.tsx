@@ -139,7 +139,7 @@ export default function HowWeWork() {
         <div className="work-section-intro">
           <div>
             <p className="eyebrow">From intention to action</p>
-            <h2>Action grows from <em>caring.</em></h2>
+            <h2>Action grows<br /><span className="work-heading-line">from <em>caring.</em></span></h2>
           </div>
           <p>
             Other systems begin with corporate templates or platform
