@@ -304,6 +304,11 @@ footer a:hover { color: var(--accent); }
 }
 .work-page h2,
 .work-page h3 { margin-top: 0; }
+.work-page h1 em,
+.work-page h2 em {
+  color: #eaaa00;
+  font-style: normal;
+}
 .work-page h2 {
   margin-bottom: 0;
   font-size: clamp(46px, 5.2vw, 72px);
