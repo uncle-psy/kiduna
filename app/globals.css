@@ -509,7 +509,7 @@ footer a:hover { color: var(--accent); }
   color: var(--fg);
   font-family: "IBM Plex Sans", var(--sans);
   font-size: 17px;
-  font-style: italic;
+  font-style: normal;
   line-height: 1.5;
 }
 .work-step-purpose .work-step-number { color: #eaaa00; }
@@ -548,6 +548,7 @@ footer a:hover { color: var(--accent); }
   align-items: center;
 }
 .work-callout-mark {
+  position: relative;
   width: 180px;
   height: 180px;
   display: grid;
@@ -556,9 +557,23 @@ footer a:hover { color: var(--accent); }
   border-radius: 50%;
   background: radial-gradient(circle, rgba(234,170,0,.16), transparent 72%);
 }
+.work-callout-mark::before,
+.work-callout-mark::after {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+.work-callout-mark::before { inset: 22px; border-style: dashed; }
+.work-callout-mark::after { inset: 52px; }
+.work-callout-mark img { position: relative; z-index: 2; }
 .work-living-field h2 { max-width: 760px; }
 .work-living-field > div:last-child > p:last-child {
-  margin: 32px 0 0;
+  max-width: 820px;
+  margin: 36px 0 0;
+  padding: 24px 28px;
+  border-left: 2px solid #eaaa00;
+  background: rgba(39,27,17,.76);
   color: var(--fg-muted);
   font-family: "IBM Plex Sans", var(--sans);
   font-size: 19px;
