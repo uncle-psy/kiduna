@@ -58,6 +58,8 @@
 
 .catalystSection { width: 100%; padding: 148px max(32px,calc((100vw - 1180px) / 2)); display: grid; grid-template-columns: .72fr 1.28fr; column-gap: 90px; background: linear-gradient(145deg,rgba(42,26,43,.92),rgba(18,12,7,.97)); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .catalystHeading { align-self: start; position: sticky; top: 40px; }
+.founderPortrait { width: min(100%,420px); aspect-ratio: 4 / 5; margin-top: 44px; overflow: hidden; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+.founderPortrait img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: 50% 38%; }
 .catalystBody { max-width: 760px; }
 .catalystBody p { margin: 0 0 26px; color: var(--fg-muted); font-size: 17px; line-height: 1.78; }
 .catalystBody .lead { color: var(--fg); font-family: var(--display); font-size: 31px; line-height: 1.25; }
@@ -111,6 +113,7 @@
   .sectionIntro { grid-template-columns: 1fr; gap: 32px; }
   .catalystSection { grid-template-columns: 1fr; row-gap: 52px; }
   .catalystHeading { position: static; max-width: 780px; }
+  .founderPortrait { width: min(100%,560px); aspect-ratio: 4 / 3; }
   .catalystBody { max-width: 820px; }
   .careerLine { grid-template-columns: 1fr 1fr; }
   .organizationMap { padding-left: 0; }
@@ -152,6 +155,7 @@
   .loveCallout > div:last-child > p:last-child { margin-top: 24px; font-size: 16px; line-height: 1.66; }
   .catalystSection { padding: 82px 18px; row-gap: 42px; }
   .catalystBody p { font-size: 16px; line-height: 1.7; }
+  .founderPortrait { margin-top: 34px; border-radius: 10px; }
   .catalystBody .lead { font-size: 27px; line-height: 1.28; }
   .catalystBody .invitation { margin-top: 34px; padding: 24px 22px; font-size: 18px; }
   .careerLine { margin-top: 58px; grid-template-columns: 1fr; }

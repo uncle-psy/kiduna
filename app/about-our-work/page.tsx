@@ -135,7 +135,13 @@ export default function AboutOurWork() {
       </section>
 
       <section className={styles.catalystSection} id="catalyst">
-        <div className={styles.catalystHeading}><p className="eyebrow">About the founder · David Levine</p><h2>Thirty Years to Build<span>One Thing.</span></h2></div>
+        <div className={styles.catalystHeading}>
+          <p className="eyebrow">About the founder · David Levine</p>
+          <h2>Thirty Years to Build<span>One Thing.</span></h2>
+          <div className={styles.founderPortrait}>
+            <Image src="/david-levine-headshot.png" alt="David Levine seated on a staircase" width={1600} height={1067} sizes="(max-width: 1100px) 82vw, 34vw" />
+          </div>
+        </div>
         <div className={styles.catalystBody}>
           <p className={styles.lead}>I’ve spent more than three decades building internet companies, platforms, and technologies while searching for something that grew ever more elusive: a way to unite purpose and prosperity without sacrificing either.</p>
           <p>My work began at the birth of the commercial web. I founded one of the first web development companies, presented at the first International Conference on the World Wide Web at CERN in 1994, and wrote one of the earliest books on the Java programming language. Since then, I’ve built and patented technologies for financial markets, massively multiplayer online games, renewable energy, geospatial intelligence, decentralized infrastructure, and agentic AI.</p>
