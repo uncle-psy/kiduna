@@ -49,7 +49,8 @@
 .horizon { margin-top: 72px; padding: 42px 48px; border-left: 2px solid var(--accent); background: rgba(3,204,217,.055); }
 .horizon p { max-width: 920px; margin: 0; color: var(--fg-muted); font-size: 18px; line-height: 1.72; }
 .horizon strong { display: block; margin-top: 22px; color: var(--fg); font-family: var(--display); font-size: clamp(26px,3vw,40px); font-weight: 400; line-height: 1.08; }
-.loveCallout { margin-top: 110px; padding: 62px 70px; display: grid; grid-template-columns: 170px 1fr; gap: 56px; align-items: center; border-left: 2px solid #eaaa00; background: radial-gradient(circle at 12% 50%,rgba(234,170,0,.13),transparent 15rem),rgba(39,27,17,.74); }
+.loveSection { width: min(1180px,calc(100% - 64px)); margin: 0 auto; padding: 110px 0 0; }
+.loveCallout { padding: 62px 70px; display: grid; grid-template-columns: 170px 1fr; gap: 56px; align-items: center; border-left: 2px solid #eaaa00; background: radial-gradient(circle at 12% 50%,rgba(234,170,0,.13),transparent 15rem),rgba(39,27,17,.74); }
 .loveMark { position: relative; width: 150px; height: 150px; padding: 30px; display: grid; place-items: center; border: 1px solid rgba(234,170,0,.4); border-radius: 50%; }
 .loveMark::before { content:""; position: absolute; inset: 17px; border: 1px dashed var(--border-strong); border-radius: 50%; }
 .loveMark img { position: relative; z-index: 2; }
@@ -117,7 +118,7 @@
 }
 
 @media (max-width:760px) {
-  .hero, .dunaSection, .relatedSection, .footer { width: min(100% - 36px,1180px); }
+  .hero, .dunaSection, .loveSection, .relatedSection, .footer { width: min(100% - 36px,1180px); }
   .hero { min-height: 0; gap: 42px; padding: 58px 0 68px; }
   .hero h1 { font-size: clamp(45px,12.2vw,60px); line-height: .97; }
   .heroLead { margin-top: 27px; font-size: 17px; line-height: 1.64; }
@@ -145,7 +146,8 @@
   .dimensionGrid article > p:last-child { font-size: 15px; line-height: 1.68; }
   .horizon { margin-top: 44px; padding: 30px 24px; }
   .horizon p { font-size: 16px; line-height: 1.66; }
-  .loveCallout { margin-top: 62px; padding: 34px 24px; grid-template-columns: 1fr; gap: 32px; }
+  .loveSection { padding-top: 62px; }
+  .loveCallout { padding: 34px 24px; grid-template-columns: 1fr; gap: 32px; }
   .loveMark { width: 118px; height: 118px; padding: 25px; }
   .loveCallout > div:last-child > p:last-child { margin-top: 24px; font-size: 16px; line-height: 1.66; }
   .catalystSection { padding: 82px 18px; row-gap: 42px; }

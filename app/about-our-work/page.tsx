@@ -132,10 +132,6 @@ export default function AboutOurWork() {
           <strong>The whole world, coordinated, connected, and free.</strong>
         </aside>
 
-        <aside className={styles.loveCallout}>
-          <div className={styles.loveMark}><Image src="/kiduna-mark.svg" alt="" width={90} height={90} /></div>
-          <div><p className="eyebrow">The software embodiment of love</p><h2>Coordinate everything.<span>Control no one.</span></h2><p>Love is not an ornament added after the system is built. Love is the foundation. Love is what Kiduna does by recognizing every person as whole, protecting the boundaries that make love possible, connecting actions to relationships and consequences, sharing authority, rewarding contribution, preserving the freedom to choose, and supporting every part of the living system to flourish among the others.</p></div>
-        </aside>
       </section>
 
       <section className={styles.catalystSection} id="catalyst">
@@ -151,6 +147,13 @@ export default function AboutOurWork() {
         </div>
         <div className={styles.careerLine}>{milestones.map(([year, title, copy]) => <article key={year}><span>{year}</span><strong>{title}</strong><p>{copy}</p></article>)}</div>
         <div className={styles.catalystLinks}><a href="https://www.linkedin.com/in/motodave" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="mailto:david@kiduna.ai">david@kiduna.ai <span aria-hidden="true">→</span></a></div>
+      </section>
+
+      <section className={styles.loveSection}>
+        <aside className={styles.loveCallout}>
+          <div className={styles.loveMark}><Image src="/kiduna-mark.svg" alt="" width={90} height={90} /></div>
+          <div><p className="eyebrow">The software embodiment of love</p><h2>Coordinate everything.<span>Control no one.</span></h2><p>Love is not an ornament added after the system is built. Love is the foundation. Love is what Kiduna does by recognizing every person as whole, protecting the boundaries that make love possible, connecting actions to relationships and consequences, sharing authority, rewarding contribution, preserving the freedom to choose, and supporting every part of the living system to flourish among the others.</p></div>
+        </aside>
       </section>
 
       <section className={styles.relatedSection} id="related-organizations">
