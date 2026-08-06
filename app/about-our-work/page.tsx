@@ -134,7 +134,7 @@ export default function AboutOurWork() {
 
         <aside className={styles.loveCallout}>
           <div className={styles.loveMark}><Image src="/kiduna-mark.svg" alt="" width={90} height={90} /></div>
-          <div><p className="eyebrow">The software embodiment of love</p><h2>Coordinate everything.<span>Control no one.</span></h2><p>Love is not an ornament added after the system is built. It is what the architecture does: recognize every person as whole, protect the boundaries that make trust possible, connect action to relationship and consequence, share authority, reward contribution, preserve the freedom to choose, and help every part of the living system flourish with the others.</p></div>
+          <div><p className="eyebrow">The software embodiment of love</p><h2>Coordinate everything.<span>Control no one.</span></h2><p>Love is not an ornament added after the system is built. Love is the foundation. Love is what Kiduna does by recognizing every person as whole, protecting the boundaries that make love possible, connecting actions to relationships and consequences, sharing authority, rewarding contribution, preserving the freedom to choose, and supporting every part of the living system to flourish among the others.</p></div>
         </aside>
       </section>
 
