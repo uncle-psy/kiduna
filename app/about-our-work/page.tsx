@@ -177,9 +177,9 @@ export default function AboutOurWork() {
       </section>
 
       <section className={styles.closing}>
-        <p className="eyebrow">This one we build together</p>
-        <h2>Software as big as the world.<span>An organization intimate enough to care.</span></h2>
-        <p>Bring a purpose, a body of wisdom, a community, a capability, or a question worth living into. Become a member. Help govern what we build. Help create a world capable of acting together without becoming controlled from above.</p>
+        <p className="eyebrow">Acting together for the benefit of all.</p>
+        <h2>Software as big as the world.</h2>
+        <p>Bring a purpose, a body of wisdom, a community, a capability, or just your curiosity, wonder, and openness to possibility. Become a member. Govern, organize, create, and build. Design the world you want to live in with the people you trust to make it real.</p>
         <div className={styles.closingActions}><Link className="button button-primary" href="/#early-access">Request early access <span aria-hidden="true">→</span></Link><Link className="text-link" href="/nightpaper">Read the Nightpaper</Link></div>
       </section>
 
