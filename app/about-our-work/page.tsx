@@ -52,10 +52,10 @@ const dimensions = [
 ];
 
 const milestones = [
-  ["1993", "The early web", "Founded HuskyLabs, built pioneering public and enterprise web systems, and helped shape the internet’s first commercial era."],
+  ["1993-1998", "The early web", "Founded HuskyLabs, built pioneering public and enterprise web systems, and helped shape the internet’s first commercial era."],
   ["1998–2005", "Markets and worlds", "Created patented financial-market infrastructure and founded a platform for massively multiplayer online games and early cloud computing."],
-  ["2005–2018", "Public purpose and climate", "Led technology commercialization and public-sector transformation, then built big-data geomatics systems that made solar energy easier to understand and adopt."],
-  ["2017–today", "The agentic organization", "Explored blockchain, intelligent infrastructure, governance, culture, and AI—bringing them together in Kinship Duna and Kiduna."],
+  ["2005–2017", "Public purpose and climate", "Led technology commercialization and public-sector transformation, then built big-data geomatics systems that made solar energy easier to model and deploy."],
+  ["2017–today", "The agentic organization", "Explored blockchain, intelligent infrastructure, governance, culture, and agentic systems—bringing them together right here, right now, in Kiduna AI."],
 ];
 
 const organizations = [
