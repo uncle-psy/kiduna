@@ -61,15 +61,15 @@ const milestones = [
 const organizations = [
   {
     number: "01", role: "Builds and maintains", title: "Kiduna Club", href: "https://kiduna.club", link: "Visit Kiduna Club",
-    copy: "Kiduna Club holds and stewards the core intellectual property behind Kiduna. It develops, maintains, secures, and continually upgrades the software, protocols, orchestration, identity, governance, and economic infrastructure on which the ecosystem depends. Its responsibility is to keep the shared technology powerful, dependable, and evolving—while serving organizations that remain governed by their own members.",
+    copy: "Kiduna Club stewards the core intellectual property behind Kiduna. It develops, maintains, secures, and continually upgrades the software, protocols, orchestration, identity, governance, and economic infrastructure on which the ecosystem depends. Its responsibility is to keep the shared technology powerful, dependable, and evolving—while serving organizations that remain governed by their own members.",
   },
   {
     number: "02", role: "Aligns and challenges", title: "Kinship Intelligence Institute", href: "https://kinship.institute", link: "Visit the Institute",
-    copy: "The Kinship Intelligence Institute is an independent 501(c)(3) nonprofit public charity working to ensure the agentic era expands human, organizational, and ecological agency. Through research, ethics, policy, education, measurement, and public-interest deployment, it asks whom intelligent systems serve, how their consequences are understood, and whether they leave people and living systems more capable than before.",
+    copy: "The Kinship Intelligence Institute is an independent 501(c)(3) nonprofit public charity working to ensure the agentic era expands human, organizational, and ecological agency. Through research, ethics, policy, education, measurement, and public-interest deployment, it advances equitable access to intelligent technologies and aligns their incentives, governance, and behavior with the communities they serve and the living systems they affect. Success means technologies that expand human agency, strengthen collective capacity, and help individuals, communities, and ecosystems flourish.",
   },
   {
     number: "03", role: "Integrates and deploys", title: "Kinship Systems", href: "https://kinship.systems", link: "Visit Kinship Systems",
-    copy: "Kinship Systems brings the work into governments, companies, nonprofits, healthcare systems, financial institutions, critical infrastructure, communities, and AI-native ventures. It combines custom development, agentic systems integration, strategy, coaching, and organizational transformation so that intelligent agents become part of a coherent operating model—not another disconnected layer of tools.",
+    copy: "Kinship Systems brings the work into governments, companies, nonprofits, healthcare systems, financial institutions, critical infrastructure, communities, and AI-native ventures. It combines custom development, agentic systems integration, strategy, coaching, and organizational transformation so that intelligent agents become part of a coherent operating model and cohesive culture.",
   },
 ];
 
@@ -164,8 +164,11 @@ export default function AboutOurWork() {
 
       <section className={styles.relatedSection} id="related-organizations">
         <div className={styles.sectionIntro}>
-          <div><p className="eyebrow">A living institutional ecosystem</p><h2>One purpose.<span>Distinct responsibilities.</span></h2></div>
-          <div className={styles.introCopy}><p>Kinship Duna belongs to its members. Three related organizations provide the specialized stewardship required to keep the ecosystem capable, aligned, and useful in the world—without becoming the authority over it.</p></div>
+          <div><p className="eyebrow">The Infrastructure of Agency</p><h2>Built to support the people<span>who rise to the moment.</span></h2></div>
+          <div className={styles.introCopy}>
+            <p>Kinship Duna and the wider ecosystem continually evolve through the work of our members. Together, we design, develop, and deploy new capabilities, worlds, and experiences that respond to emerging needs, challenges, and possibilities.</p>
+            <p>Three supporting organizations provide distinct forms of stewardship—advancing the core technology, safeguarding its alignment, and bringing its capabilities into practice. Together, they keep the ecosystem capable, stable, coherent, and powerfully present, giving member-governed, decentralized online organizations the infrastructure they need to fulfill their missions, adapt as circumstances change, and rise with the courage and power the moment demands.</p>
+          </div>
         </div>
         <div className={styles.organizationMap}>
           <div className={styles.mapCenter}><Image src="/kiduna-mark.svg" alt="" width={76} height={76} /><span>Kinship Duna</span><strong>Member-governed ecosystem</strong></div>
