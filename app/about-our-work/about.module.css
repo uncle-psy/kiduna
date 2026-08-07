@@ -86,9 +86,6 @@
 .organizationRole { margin: 3px 0 0; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 .organizationCard h3 { margin: 20px 0 0; font-size: 40px; line-height: 1; }
 .organizationCard > p { margin: 0; color: var(--fg-muted); font-size: 16px; line-height: 1.72; }
-.organizationCard a { margin-top: 34px; display: inline-block; color: var(--fg); font-size: 13px; font-weight: 700; }
-.organizationCard a:hover { color: var(--accent); }
-.organizationCard a span { margin-left: 8px; color: var(--accent); }
 .organizationCard:nth-child(2) .organizationNumber, .organizationCard:nth-child(2) .organizationRole { color: #9d7be8; }
 .organizationCard:nth-child(3) .organizationNumber, .organizationCard:nth-child(3) .organizationRole { color: var(--mint); }
 

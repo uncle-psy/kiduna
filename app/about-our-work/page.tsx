@@ -60,15 +60,15 @@ const milestones = [
 
 const organizations = [
   {
-    number: "01", role: "Builds and maintains", title: "Kiduna Club", href: "https://kiduna.club", link: "Visit Kiduna Club",
+    number: "01", role: "Builds and maintains", title: "Kiduna Club",
     copy: "Kiduna Club stewards the core intellectual property behind Kiduna. It develops, maintains, secures, and continually upgrades the software, protocols, orchestration, identity, governance, and economic infrastructure on which the ecosystem depends. Its responsibility is to keep the shared technology powerful, dependable, and evolving—while serving organizations that remain governed by their own members.",
   },
   {
-    number: "02", role: "Aligns and challenges", title: "Kinship Intelligence Institute", href: "https://kinship.institute", link: "Visit the Institute",
+    number: "02", role: "Aligns and challenges", title: "Kinship Intelligence Institute",
     copy: "The Kinship Intelligence Institute is an independent 501(c)(3) nonprofit public charity working to ensure the agentic era expands human, organizational, and ecological agency. Through research, ethics, policy, education, measurement, and public-interest deployment, it advances equitable access to intelligent technologies and aligns their incentives, governance, and behavior with the communities they serve and the living systems they affect. Success means technologies that expand human agency, strengthen collective capacity, and help individuals, communities, and ecosystems flourish.",
   },
   {
-    number: "03", role: "Integrates and deploys", title: "Kinship Systems", href: "https://kinship.systems", link: "Visit Kinship Systems",
+    number: "03", role: "Integrates and deploys", title: "Kinship Systems",
     copy: "Kinship Systems brings the work into governments, companies, nonprofits, healthcare systems, financial institutions, critical infrastructure, communities, and AI-native ventures. It combines custom development, agentic systems integration, strategy, coaching, and organizational transformation so that intelligent agents become part of a coherent operating model and cohesive culture.",
   },
 ];
@@ -172,7 +172,7 @@ export default function AboutOurWork() {
         </div>
         <div className={styles.organizationMap}>
           <div className={styles.mapCenter}><Image src="/kiduna-mark.svg" alt="" width={76} height={76} /><span>Kinship Duna</span><strong>Member-governed ecosystem</strong></div>
-          <div className={styles.organizationList}>{organizations.map((item) => <article className={styles.organizationCard} key={item.number}><span className={styles.organizationNumber}>{item.number}</span><div><p className={styles.organizationRole}>{item.role}</p><h3>{item.title}</h3><a href={item.href} target="_blank" rel="noreferrer">{item.link} <span aria-hidden="true">↗</span></a></div><p>{item.copy}</p></article>)}</div>
+          <div className={styles.organizationList}>{organizations.map((item) => <article className={styles.organizationCard} key={item.number}><span className={styles.organizationNumber}>{item.number}</span><div><p className={styles.organizationRole}>{item.role}</p><h3>{item.title}</h3></div><p>{item.copy}</p></article>)}</div>
         </div>
       </section>
 
