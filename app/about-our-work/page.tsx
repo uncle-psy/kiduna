@@ -72,8 +72,8 @@ const organizations = [
     copy: "Kinship Systems brings the work into governments, companies, nonprofits, healthcare systems, financial institutions, critical infrastructure, communities, and AI-native ventures. It combines custom development, agentic systems integration, strategy, coaching, and organizational transformation so that intelligent agents become part of a coherent operating model and cohesive culture.",
   },
   {
-    number: "04", role: "Governs and publishes", title: "Kinship Agents DAO LLC",
-    copy: "Kinship Agents DAO LLC is a member-governed decentralized autonomous organization chartered and licensed in the Republic of the Marshall Islands. It develops, governs, and publishes the Kinship Agency Protocol: decentralized, composable, and permissionless software connecting Kinship Intelligence, Kinship Media, compute, identity, access, provenance, attribution, and the programmatic distribution of commissions, royalties, and incentives. Through on-chain governance, it coordinates protocol upgrades, treasury stewardship, economic parameters, open-source development, and protocol tokens so the shared network can evolve without becoming controlled by a central platform.",
+    number: "04", role: "Decentralizes and connects", title: "Kinship Agents DAO LLC",
+    copy: "Kinship Agents DAO LLC is a member-governed decentralized autonomous organization chartered and licensed in the Republic of the Marshall Islands. It develops, governs, and publishes the Kinship Agency Protocol: decentralized, composable, and permissionless software connecting Kiduna ecosystems with compute, identity, access, provenance, attribution, and the programmatic distribution of commissions, royalties, and incentives. Through on-chain governance, it coordinates protocol upgrades, treasury stewardship, economic parameters, open-source development, and protocol tokens so the shared network of ecosystems can evolve without becoming controlled by a central platform.",
   },
 ];
 
