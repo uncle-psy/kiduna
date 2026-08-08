@@ -71,6 +71,10 @@ const organizations = [
     number: "03", role: "Integrates and deploys", title: "Kinship Systems",
     copy: "Kinship Systems brings the work into governments, companies, nonprofits, healthcare systems, financial institutions, critical infrastructure, communities, and AI-native ventures. It combines custom development, agentic systems integration, strategy, coaching, and organizational transformation so that intelligent agents become part of a coherent operating model and cohesive culture.",
   },
+  {
+    number: "04", role: "Governs and publishes", title: "Kinship Agents DAO LLC",
+    copy: "Kinship Agents DAO LLC is a member-governed decentralized autonomous organization chartered and licensed in the Republic of the Marshall Islands. It develops, governs, and publishes the Kinship Agency Protocol: decentralized, composable, and permissionless software connecting Kinship Intelligence, Kinship Media, compute, identity, access, provenance, attribution, and the programmatic distribution of commissions, royalties, and incentives. Through on-chain governance, it coordinates protocol upgrades, treasury stewardship, economic parameters, open-source development, and protocol tokens so the shared network can evolve without becoming controlled by a central platform.",
+  },
 ];
 
 export default function AboutOurWork() {
@@ -167,7 +171,7 @@ export default function AboutOurWork() {
           <div><p className="eyebrow">The Infrastructure of Agency</p><h2>Built to support the people<span>who rise to the moment.</span></h2></div>
           <div className={styles.introCopy}>
             <p>Kinship Duna and the wider ecosystem continually evolve through the work of our members. Together, we design, develop, and deploy new capabilities, worlds, and experiences that respond to emerging needs, challenges, and possibilities.</p>
-            <p>Three supporting organizations provide distinct forms of stewardship—advancing the core technology, safeguarding its alignment, and bringing its capabilities into practice. Together, they keep the ecosystem capable, stable, coherent, and powerfully present, giving member-governed, decentralized online organizations the infrastructure they need to fulfill their missions, adapt as circumstances change, and rise with the courage and power the moment demands.</p>
+            <p>Four supporting organizations provide distinct forms of stewardship—advancing the core technology, safeguarding its alignment, bringing its capabilities into practice, and governing the shared protocol. Together, they keep the ecosystem capable, stable, coherent, and powerfully present, giving member-governed, decentralized online organizations the infrastructure they need to fulfill their missions, adapt as circumstances change, and rise with the courage and power the moment demands.</p>
           </div>
         </div>
         <div className={styles.organizationMap}>

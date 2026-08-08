@@ -88,6 +88,7 @@
 .organizationCard > p { margin: 0; color: var(--fg-muted); font-size: 16px; line-height: 1.72; }
 .organizationCard:nth-child(2) .organizationNumber, .organizationCard:nth-child(2) .organizationRole { color: #9d7be8; }
 .organizationCard:nth-child(3) .organizationNumber, .organizationCard:nth-child(3) .organizationRole { color: var(--mint); }
+.organizationCard:nth-child(4) .organizationNumber, .organizationCard:nth-child(4) .organizationRole { color: #eaaa00; }
 
 .closing { padding: 140px 32px; text-align: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: radial-gradient(circle at 50% 48%,rgba(42,26,43,.84),transparent 34rem),var(--bg-deep); }
 .closing h2 { max-width: 1100px; margin: 0 auto; font-size: clamp(52px,7vw,90px); line-height: .97; }
