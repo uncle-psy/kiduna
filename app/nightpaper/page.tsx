@@ -4,6 +4,10 @@ import PrintButton from "@/components/print-button";
 import SiteHeader from "@/components/site-header";
 import styles from "./nightpaper.module.css";
 
+// Maintainer note: increment the version and refresh the timestamp whenever the Nightpaper changes.
+const NIGHTPAPER_VERSION = "v0.4";
+const NIGHTPAPER_TIMESTAMP = "August, 2026 · 5:13 PM EDT";
+
 export const metadata: Metadata = {
   title: "The Genesis Nightpaper — Kiduna",
   description:
@@ -67,7 +71,7 @@ export default function NightpaperPage() {
       <SiteHeader />
 
       <header className={styles.hero}>
-        <div className={styles.heroMeta}>Genesis Nightpaper · v0.3 · July 23, 2026 · 1:38 PM EDT</div>
+        <div className={styles.heroMeta}>Genesis Nightpaper · {NIGHTPAPER_VERSION} · {NIGHTPAPER_TIMESTAMP}</div>
         <h1>Kiduna: <span className={styles.subtitle}>A New Architecture for Agentic Civilization</span></h1>
         <p className={styles.deck}>Agency is life. We built a society that trades agency for scale. Kiduna is a technology that compounds agency with scale.</p>
         <div className={styles.bylineRow}>
@@ -295,7 +299,7 @@ export default function NightpaperPage() {
           </section>
 
           <footer className={styles.paperFooter}>
-            Genesis Nightpaper v0.3 · July 23, 2026 · 1:38 PM EDT · Kinship Duna (WV Org 628407) · The full technical record lives at <a href="https://kiduna.team">kiduna.team</a>, including the Technical Specification, the Technical White Paper, and the Kiduna Kit. Compute is prepaid usage credit for operating intelligent agents; it is not an investment, and nothing in this paper is an offer of securities or a promise of earnings. The stack ships under Apache 2.0; Kiduna<sup>™</sup> marks are licensed separately. © 2026 Kiduna Club, all rights reserved, patent pending.
+            Genesis Nightpaper {NIGHTPAPER_VERSION} · {NIGHTPAPER_TIMESTAMP} · Kinship Duna (WV Org 628407) · The full technical record lives at <a href="https://kiduna.team">kiduna.team</a>, including the Technical Specification, the Technical White Paper, and the Kiduna Kit. Compute is prepaid usage credit for operating intelligent agents; it is not an investment, and nothing in this paper is an offer of securities or a promise of earnings. The stack ships under Apache 2.0; Kiduna<sup>™</sup> marks are licensed separately. © 2026 Kiduna Club, all rights reserved, patent pending.
           </footer>
         </article>
       </div>
