@@ -291,7 +291,7 @@ export default function NightpaperPage() {
             <p>Care therefore becomes something the architecture practices rather than something its operators promise. Every cell has the context, intelligence, authority, limits, and feedback required to act purposefully in relationship with the others.</p>
             <p>The person becomes more capable because collective forms exist. The collective becomes more capable because the person retains authorship, judgment, boundaries, and the freedom to dissent, leave, and begin again.</p>
             <p>Agency does not pool at the center or descend from above. It circulates through the living system—deepening within every person, relationship, project, organization, and ecosystem as the scale of coordination grows.</p>
-            <p className={styles.statement}><strong>Scale compounds agency when every increase in collective capacity makes each participant more capable of sensing, deciding, acting, and learning.</strong></p>
+            <p className={styles.statement}><strong>Scale compounds agency when every increase in collective capacity makes each participant more capable of sensing, choosing, acting, and learning.</strong></p>
           </section>
 
           <footer className={styles.paperFooter}>
