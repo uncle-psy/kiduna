@@ -4,9 +4,10 @@ import PrintButton from "@/components/print-button";
 import SiteHeader from "@/components/site-header";
 import styles from "./nightpaper.module.css";
 
-// Maintainer note: increment the version and refresh the timestamp whenever the Nightpaper changes.
+// Maintainer note: whenever the Nightpaper changes, increment the version and refresh the full timestamp,
+// including month, day, year, time, and timezone.
 const NIGHTPAPER_VERSION = "v0.4";
-const NIGHTPAPER_TIMESTAMP = "August, 2026 · 5:13 PM EDT";
+const NIGHTPAPER_TIMESTAMP = "August 9, 2026 · 5:13 PM EDT";
 
 export const metadata: Metadata = {
   title: "The Genesis Nightpaper — Kiduna",
