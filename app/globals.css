@@ -203,7 +203,7 @@ h1 em, h2 em { display: block; color: var(--accent); font-weight: inherit; }
 .principle-card p { margin: 0; color: var(--fg-soft); font-size: 14px; line-height: 1.7; }
 
 .shift-statement { padding: 130px 32px; text-align: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: radial-gradient(circle at 50% 45%, rgba(42,26,43,.85), rgba(18,12,7,.86) 62%); }
-.shift-statement p { display: inline; margin: 0 7px; color: var(--accent); font-size: 13px; text-transform: uppercase; letter-spacing: .11em; }
+.shift-statement p { display: inline; margin: 0 7px; color: var(--accent); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .11em; }
 .shift-separator { width: 7px; height: 7px; margin: 0 7px 1px; display: inline-block; border-radius: 50%; background: var(--camel); box-shadow: 0 0 12px rgba(193,154,107,.38); }
 .shift-statement h2 { margin: 28px 0 14px; font-size: clamp(54px, 7vw, 92px); line-height: .95; }
 .shift-statement h2 em { display: inline; }
