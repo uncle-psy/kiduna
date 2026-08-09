@@ -129,9 +129,9 @@ export default function Home() {
       </section>
 
       <section className="shift-statement">
-        <p>The internet connected pages.</p>
+        <p>The internet connects pages.</p>
         <i className="shift-separator" aria-hidden="true" />
-        <p>Social connected profiles.</p>
+        <p>Social connects profiles.</p>
         <h2>Kiduna connects <span className="shift-highlight">allies.</span></h2>
         <span>Kiduna brings people and their intelligent allies into trusted relationships, where shared purpose becomes projects, movements, organizations, and action.</span>
       </section>
