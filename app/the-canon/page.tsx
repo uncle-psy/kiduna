@@ -54,19 +54,23 @@ const pathways = [
   },
 ];
 
-const orbitNodes = Array.from({ length: 16 }, (_, index) => {
+const orbitSections = [
+  ["Categories", "categories"], ["Domains", "domains"], ["Themes", "themes"], ["Forces", "forces"],
+  ["Realms", "realms"], ["Elements", "elements"], ["Roles", "roles"], ["Capacities", "capacities"],
+  ["Patterns", "patterns"], ["Modes", "modes"], ["Scenes", "scenes"], ["Forms", "forms"],
+  ["Components", "components"], ["Dimensions", "dimensions"], ["Designs", "designs"], ["Surfaces", "surfaces"],
+] as const;
+
+const orbitNodes = orbitSections.map(([label, slug], index) => {
   const group = Math.floor(index / 4);
   const radius = 26 + group * 7.5;
   const angle = -78 + index * 22.5 + group * 5;
   const radians = angle * Math.PI / 180;
   return {
     number: String(index + 1).padStart(2, "0"),
-    slug: [
-      "categories", "domains", "themes", "forces",
-      "realms", "elements", "roles", "capacities",
-      "patterns", "modes", "scenes", "forms",
-      "components", "dimensions", "designs", "surfaces",
-    ][index],
+    label,
+    slug,
+    group,
     style: {
       left: `${50 + Math.cos(radians) * radius}%`,
       top: `${50 + Math.sin(radians) * radius}%`,
@@ -87,10 +91,15 @@ export default function CanonPage() {
           <p className={styles.heroMeta}>{canon.title} · {canon.version} · {canon.displayTimestamp}</p>
           <p className="eyebrow"><span className="live-dot" aria-hidden="true" /> The shared language of Kiduna</p>
           <h1>Name the parts.<span>See the whole.</span></h1>
-          <p className={styles.heroLead}>The Canon is the authoritative language for understanding and building Kiduna: what exists, how it relates, what acts upon it, what people can do, and how one living world takes shape across every experience.</p>
+          <p className={styles.heroLead}>The Canon is the authoritative language for understanding and building Kiduna: what it is, how it relates, what acts upon it, what you can do, and how one living world takes shape across every experience. Prepare for our launch! Download the Kiduna Kit and drop it into Claude or ChatGPT to explore the frontiers of technology, economics, governance, and culture.</p>
           <div className={styles.heroActions}>
-            <a className="button button-primary" href="#map">Explore the Canon <span aria-hidden="true">↓</span></a>
-            <a className="text-link" href="/downloads/Kiduna-Kit-V0.02-2026-08-11-1306-EDT.zip" download>Download the Kiduna Kit</a>
+            <a className={`button button-primary ${styles.heroDownload}`} href="/downloads/Kiduna-Kit-V0.02-2026-08-11-1306-EDT.zip" download>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" />
+              </svg>
+              Download the Kiduna Kit
+            </a>
+            <Link className="text-link" href="/#early-access">Request Early Access</Link>
           </div>
         </div>
 
@@ -107,8 +116,8 @@ export default function CanonPage() {
           <div className={`${styles.movingOrb} ${styles.orbFour}`} aria-hidden="true"><span /></div>
           <div className={`${styles.movingOrb} ${styles.orbFive}`} aria-hidden="true"><span /></div>
           {orbitNodes.map((node) => (
-            <a href={`#${node.slug}`} className={styles.orbitNode} style={node.style} key={node.number} aria-label={`Go to Canon section ${node.number}`}>
-              {node.number}
+            <a href={`#${node.slug}`} className={`${styles.orbitNode} ${node.group > 1 ? styles.nodeLeft : styles.nodeRight}`} style={node.style} key={node.number} aria-label={`Go to ${node.label}, Canon section ${node.number}`}>
+              <b>{node.number}</b><span>{node.label}</span>
             </a>
           ))}
           <div className={styles.orbitCenter}><Image src="/kiduna-mark.svg" alt="" width={112} height={112} priority /></div>
