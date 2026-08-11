@@ -578,7 +578,7 @@ footer a:hover { color: var(--accent); }
   color: var(--fg-muted);
   font-family: "IBM Plex Sans", var(--sans);
   font-size: 19px;
-  font-style: italic;
+  font-style: normal;
   line-height: 1.72;
 }
 .work-foundations { padding-top: 30px; }
@@ -908,7 +908,7 @@ footer a:hover { color: var(--accent); }
   .grow-governance { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1180px) {
   .site-header { width: min(100% - 36px,1320px); height: 76px; }
   .brand img { width: 138px; }
   .menu-toggle {

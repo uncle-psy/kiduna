@@ -28,7 +28,7 @@ const CANON_PATH = path.join(
   process.cwd(),
   "public",
   "downloads",
-  "Kiduna-Canon-Taxonomy-V0.11-2026-08-11-1402-EDT.md",
+  "Kiduna-Canon-Taxonomy-V0.14-2026-08-11-1718-EDT.md",
 );
 
 const standaloneHeadings = new Set([
@@ -44,7 +44,6 @@ const standaloneHeadings = new Set([
   "Place & Planet",
   "Work & Wealth",
   "Knowledge & Frontier",
-  "First-Principles Distinction",
   "Force Interaction",
   "Force Principle",
   "Realm Relationship Roles",
@@ -81,6 +80,14 @@ const standaloneHeadings = new Set([
   "Surface Principle",
 ]);
 
+const contributionRoleHeadings = new Set([
+  "Catalyst",
+  "Organizer",
+  "Creator",
+  "Builder",
+  "Luminary",
+]);
+
 function slugify(value: string) {
   return value
     .toLowerCase()
@@ -91,15 +98,21 @@ function slugify(value: string) {
 
 function isSubheading(line: string) {
   if (standaloneHeadings.has(line)) return true;
+  if ([...contributionRoleHeadings].some((role) => line.startsWith(`${role} — `))) return true;
   return line.length <= 96 && /^[A-Z0-9][^.!?;:]* — [^.!?;:]+$/.test(line);
 }
 
 function splitHeading(line: string) {
   const separator = line.indexOf(" — ");
   if (separator === -1) return { heading: line };
+  const left = line.slice(0, separator);
+  const right = line.slice(separator + 3);
+  if (/^\d{2}$/.test(left)) {
+    return { heading: right };
+  }
   return {
-    heading: line.slice(0, separator),
-    qualifier: line.slice(separator + 3),
+    heading: left,
+    qualifier: right,
   };
 }
 
@@ -153,6 +166,28 @@ export function loadCanon(): CanonDocument {
     }
 
     if (!current || !currentGroup || !line.trim()) continue;
+
+    const resourceSummary = current.number === 6
+      && /^(Capacity|Badge|Code|Coupon|Invitation|Ticket|Gift|Reward) — .+ — .+$/.test(line);
+    if (resourceSummary) {
+      currentGroup.lines.push(line);
+      continue;
+    }
+
+    const categoryDefinition = current.number === 1
+      ? line.match(/^([A-Za-z]+) — (.+)$/)
+      : null;
+    if (categoryDefinition) {
+      pushGroup();
+      const heading = categoryDefinition[1];
+      const baseId = `${current.slug}-${slugify(heading)}`;
+      currentGroup = {
+        id: baseId,
+        heading,
+        lines: [categoryDefinition[2]],
+      };
+      continue;
+    }
 
     if (isSubheading(line)) {
       pushGroup();

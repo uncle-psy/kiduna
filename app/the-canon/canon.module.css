@@ -304,7 +304,7 @@
 }
 
 .mapIntro {
-  margin-bottom: 66px;
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: .8fr 1.2fr;
   column-gap: 76px;
@@ -328,6 +328,37 @@
   color: var(--fg-muted);
   font-size: 18px;
   line-height: 1.72;
+}
+
+.languageNote {
+  max-width: 980px;
+  margin: 0 0 56px;
+  padding: 26px 30px 27px;
+  font-family: "IBM Plex Sans", var(--sans);
+  border: 1px solid rgba(234, 170, 0, .2);
+  border-left: 3px solid #eaaa00;
+  border-radius: 0 12px 12px 0;
+  background: linear-gradient(100deg, rgba(234, 170, 0, .08), rgba(39, 27, 17, .48) 58%, rgba(39, 27, 17, .18));
+}
+
+.languageNote p {
+  margin: 0;
+  color: var(--fg-muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.languageNote strong {
+  color: #eaaa00;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.languageNote b {
+  color: var(--fg);
+  font-weight: 700;
 }
 
 .pathwayGrid {
@@ -563,6 +594,15 @@
   line-height: .93;
 }
 
+.canonSection > header h2 small {
+  color: var(--fg);
+  font-family: var(--sans);
+  font-size: .31em;
+  font-weight: 700;
+  letter-spacing: .01em;
+  line-height: 1.25;
+}
+
 .canonSection > header a {
   padding-bottom: 8px;
   color: var(--fg-dim);
@@ -575,33 +615,48 @@
 
 .canonSection > header a:hover { color: var(--accent); }
 
-.sectionOverview {
-  margin-bottom: 34px;
+.sectionOrientation { margin: 0 0 54px; }
+
+.categoryStatement {
+  max-width: 810px;
   color: var(--fg-muted);
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.72;
 }
 
-.sectionOverview p { margin: 0 0 18px; }
-.sectionOverview p:first-child { color: var(--fg); font-size: 21px; }
+.categoryStatement p { margin: 0; }
+.categoryStatement p + p { margin-top: 14px; }
+.categoryStatement strong { color: var(--fg); font-weight: 700; }
 
-.canonEntry {
-  padding: 33px 34px 35px;
+.orientationCopy {
+  max-width: 790px;
+  margin: 34px 0 0;
+  color: var(--fg-muted);
+  font-size: 16px;
+  line-height: 1.76;
+}
+
+.orientationCopy p { margin: 0; }
+.orientationCopy p + p { margin-top: 14px; }
+
+.definitionCard {
+  margin-top: 16px;
+  padding: 34px 36px 37px;
   scroll-margin-top: 28px;
   border: 1px solid var(--border);
   border-radius: 14px;
-  background: rgba(39, 27, 17, .54);
+  background: linear-gradient(145deg, rgba(39, 27, 17, .66), rgba(28, 20, 13, .44));
 }
 
-.canonEntry + .canonEntry { margin-top: 14px; }
+.definitionCard:hover { border-color: rgba(3, 204, 217, .27); }
 
 .canonSubsectionHeader {
-  margin: 76px 0 26px;
-  padding: 0 0 19px;
+  margin: 84px 0 30px;
+  padding: 0 0 22px;
   border-bottom: 1px solid rgba(234, 170, 0, .3);
 }
 
-.canonSubsectionHeader h2 {
+.canonSubsectionHeader h3 {
   margin: 0;
   color: #eaaa00;
   font-family: var(--display);
@@ -610,10 +665,20 @@
   letter-spacing: -.01em;
 }
 
-.canonSubsectionHeader + .canonEntry { margin-top: 0; }
+.subsectionCopy {
+  max-width: 760px;
+  margin-top: 19px;
+  color: var(--fg-muted);
+  font-size: 15px;
+  line-height: 1.72;
+}
 
-.canonEntry h3 {
-  margin: 0 0 23px;
+.subsectionCopy p { margin: 0; }
+.subsectionCopy p + p { margin-top: 12px; }
+
+.definitionCard h3,
+.principleCard h3 {
+  margin: 11px 0 23px;
   color: var(--accent);
   font-family: var(--sans);
   font-size: 21px;
@@ -621,7 +686,9 @@
   line-height: 1.25;
 }
 
-.canonEntry h3 span {
+.definitionCard h3 { margin-top: 0; }
+
+.definitionCard h3 span {
   display: block;
   margin-top: 5px;
   color: var(--camel);
@@ -631,6 +698,58 @@
   text-transform: uppercase;
 }
 
+.definitionCard h3 span.contributionRoleSubhead {
+  margin-top: 8px;
+  color: #eaaa00;
+  font-size: 13px;
+  letter-spacing: .01em;
+  line-height: 1.4;
+  text-transform: none;
+}
+
+.principleCard {
+  margin-top: 25px;
+  padding: 38px 40px 40px;
+  scroll-margin-top: 28px;
+  font-family: "IBM Plex Sans", var(--sans);
+  font-style: normal;
+  border: 1px solid rgba(3, 204, 217, .24);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px 14px 14px 4px;
+  background:
+    radial-gradient(circle at 97% 12%, rgba(3, 204, 217, .075), transparent 18rem),
+    rgba(39, 27, 17, .58);
+}
+
+.principleCard h3 { margin-top: 0; color: var(--fg); font-family: var(--display); font-size: 31px; font-weight: 400; }
+
+.explanationBlock {
+  max-width: 800px;
+  margin: 68px 0 0;
+  padding: 0 4px;
+  scroll-margin-top: 28px;
+}
+
+.explanationBlock h3 {
+  margin: 0 0 23px;
+  color: var(--fg);
+  font-size: 31px;
+  line-height: 1.12;
+}
+
+.taxonomyList {
+  margin: 0;
+  padding: 25px 4px 26px;
+  display: grid;
+  grid-template-columns: minmax(180px, .7fr) 1.3fr;
+  gap: 32px;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 28px;
+}
+
+.taxonomyList h3 { margin: 0; color: var(--fg); font-size: 27px; line-height: 1.08; }
+.taxonomyList .entryCopy { padding-top: 3px; color: var(--fg-muted); }
+
 .entryCopy {
   color: var(--fg-muted);
   font-size: 15px;
@@ -639,6 +758,45 @@
 
 .entryCopy p { margin: 0; }
 .entryCopy p + p { margin-top: 13px; }
+
+.entryCopy .entryQuestion {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--fg);
+  font-family: "IBM Plex Sans", var(--sans);
+  font-style: normal;
+}
+
+.entryCopy .exampleLabel {
+  width: max-content;
+  margin-top: 24px;
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.entryCopy .keyDistinction {
+  margin-top: 25px;
+  padding: 18px 20px;
+  border-left: 2px solid var(--camel);
+  background: rgba(193, 154, 107, .06);
+  color: var(--fg);
+  font-family: "IBM Plex Sans", var(--sans);
+}
+
+.entryCopy .lifecycleLine {
+  margin-top: 22px;
+  padding: 18px 20px;
+  border: 1px solid rgba(234, 170, 0, .2);
+  border-radius: 8px;
+  color: #eaaa00;
+  font-family: "IBM Plex Sans", var(--sans);
+  font-weight: 700;
+  letter-spacing: .02em;
+}
 
 .canonListBlock + p,
 .entryCopy p + .canonListBlock,
@@ -671,6 +829,14 @@
   border-radius: 50%;
   background: var(--camel);
 }
+
+.resourceIndex { margin-top: 24px; }
+.resourceIndex > p { color: var(--fg); }
+.resourceIndex dl { margin: 16px 0 0; border-top: 1px solid var(--border); }
+.resourceIndex dl > div { min-height: 52px; display: grid; grid-template-columns: 150px 1fr; border-bottom: 1px solid var(--border); }
+.resourceIndex dt { padding: 15px 18px 13px 0; color: var(--accent); font-weight: 700; }
+.resourceIndex dd { margin: 0; padding: 15px 0 13px; display: flex; justify-content: space-between; gap: 20px; color: var(--fg-muted); }
+.resourceIndex dd span { flex: 0 0 auto; color: var(--camel); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 
 .canonContent mark {
   border-radius: 2px;
@@ -822,6 +988,8 @@
   .orbitCenter { width: 90px; height: 90px; }
   .orbitCenter img { width: 61px; height: 61px; }
   .canonMap { padding: 92px 18px; }
+  .languageNote { margin-bottom: 42px; padding: 22px 22px 23px; }
+  .languageNote p { font-size: 15px; line-height: 1.7; }
   .pathwayGrid { grid-template-columns: 1fr; }
   .pathwayGrid article { min-height: 0; }
   .explorer { padding: 96px 0 110px; }
@@ -832,9 +1000,18 @@
   .canonSection > header { grid-template-columns: auto 1fr; gap: 12px; }
   .canonSection > header h2 { font-size: 48px; }
   .canonSection > header a { display: none; }
-  .sectionOverview { font-size: 16px; }
-  .sectionOverview p:first-child { font-size: 18px; }
-  .canonEntry { padding: 27px 23px 29px; }
+  .sectionOrientation { margin-bottom: 42px; }
+  .canonSection > header h2 small { display: block; margin-top: 9px; font-size: .29em; }
+  .categoryStatement { font-size: 16px; }
+  .orientationCopy { margin-top: 28px; font-size: 15px; }
+  .definitionCard { padding: 27px 23px 29px; }
+  .principleCard { padding: 30px 24px 32px; }
+  .principleCard h3 { font-size: 28px; }
+  .explanationBlock { margin-top: 52px; }
+  .taxonomyList { grid-template-columns: 1fr; gap: 14px; }
+  .resourceIndex dl > div { grid-template-columns: 1fr; padding: 13px 0; }
+  .resourceIndex dt, .resourceIndex dd { padding: 0; }
+  .resourceIndex dd { margin-top: 4px; align-items: flex-start; flex-direction: column; gap: 5px; }
   .entryCopy { font-size: 14px; }
   .canonListBlock ul { grid-template-columns: 1fr; }
   .kitSection { margin-bottom: 90px; padding: 46px 26px; grid-template-columns: 1fr; }

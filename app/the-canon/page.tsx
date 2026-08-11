@@ -93,7 +93,7 @@ export default function CanonPage() {
           <h1>Name the parts.<span>See the whole.</span></h1>
           <p className={styles.heroLead}>The Canon is the authoritative language for understanding and building Kiduna: what it is, how it relates, what acts upon it, what you can do, and how one living world takes shape across every experience. Prepare for our launch! Download the Kiduna Kit and drop it into Claude or ChatGPT to explore the frontiers of technology, economics, governance, and culture.</p>
           <div className={styles.heroActions}>
-            <a className={`button button-primary ${styles.heroDownload}`} href="/downloads/Kiduna-Kit-V0.03-2026-08-11-1402-EDT.zip" download>
+            <a className={`button button-primary ${styles.heroDownload}`} href="/downloads/Kiduna-Kit-V0.06-2026-08-11-1718-EDT.zip" download>
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" />
               </svg>
@@ -130,6 +130,9 @@ export default function CanonPage() {
           <h2>Start anywhere.<span>Connect it all.</span></h2>
           <p>The Canon is ordered from first principles to lived experience. Move through it in sequence, choose a pathway, skip around, or search the complete taxonomy below.</p>
         </div>
+        <aside className={styles.languageNote} aria-label="A note about Kiduna language">
+          <p><strong>Note:</strong> we are very particular about our language. Words have power. There are some terms we don’t ever use, and some terms are fairly unique to us in our usage. Three of those terms are particularly significant: <b>Source</b>, <b>Realm</b>, and <b>Ally</b>. We refer to the person who is participating in Kiduna as a <b>Source</b>, not in any other way. A <b>Realm</b> is a purposeful context or container for activity. An <b>Ally</b> is an intelligent agent that is shaped and guided by one and only one <b>Source</b>.</p>
+        </aside>
         <div className={styles.pathwayGrid}>
           {pathways.map((pathway) => (
             <article key={pathway.number}>
@@ -153,16 +156,16 @@ export default function CanonPage() {
           <h2>Teach your intelligence<span>how Kiduna works.</span></h2>
           <p>The Kiduna Kit is a compact, self-contained primer you can drop into Claude or ChatGPT to help it understand Kiduna. It includes the current Canon, a human-readable orientation, working instructions, and visual examples of the five canonical Forms.</p>
           <div className={styles.kitDetails}>
-            <span>Kit V0.03</span><span>Canon V0.11</span><span>10.9 MB</span><span>Verified release</span>
+            <span>Kit V0.06</span><span>Canon V0.14</span><span>11.0 MB</span><span>Verified release</span>
           </div>
           <div className={styles.kitActions}>
-            <a className={`button button-primary ${styles.downloadButton}`} href="/downloads/Kiduna-Kit-V0.03-2026-08-11-1402-EDT.zip" download>
+            <a className={`button button-primary ${styles.downloadButton}`} href="/downloads/Kiduna-Kit-V0.06-2026-08-11-1718-EDT.zip" download>
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" />
               </svg>
               Download the Kiduna Kit
             </a>
-            <a className="text-link" href="/downloads/Kiduna-Canon-Taxonomy-V0.11-2026-08-11-1402-EDT.md" download>Download the Canon as Markdown</a>
+            <a className="text-link" href="/downloads/Kiduna-Canon-Taxonomy-V0.14-2026-08-11-1718-EDT.md" download>Download the Canon as Markdown</a>
           </div>
         </div>
       </section>
