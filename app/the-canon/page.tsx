@@ -100,6 +100,12 @@ export default function CanonPage() {
           <div className={`${styles.orbitRing} ${styles.ringThree}`} aria-hidden="true" />
           <div className={`${styles.orbitRing} ${styles.ringFour}`} aria-hidden="true" />
           <div className={styles.orbitGlow} aria-hidden="true" />
+          <div className={styles.orbitRays} aria-hidden="true" />
+          <div className={`${styles.movingOrb} ${styles.orbOne}`} aria-hidden="true"><span /></div>
+          <div className={`${styles.movingOrb} ${styles.orbTwo}`} aria-hidden="true"><span /></div>
+          <div className={`${styles.movingOrb} ${styles.orbThree}`} aria-hidden="true"><span /></div>
+          <div className={`${styles.movingOrb} ${styles.orbFour}`} aria-hidden="true"><span /></div>
+          <div className={`${styles.movingOrb} ${styles.orbFive}`} aria-hidden="true"><span /></div>
           {orbitNodes.map((node) => (
             <a href={`#${node.slug}`} className={styles.orbitNode} style={node.style} key={node.number} aria-label={`Go to Canon section ${node.number}`}>
               {node.number}
