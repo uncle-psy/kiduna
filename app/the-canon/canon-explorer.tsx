@@ -161,7 +161,7 @@ export default function CanonExplorer({ sections }: { sections: CanonSection[] }
               </ol>
             </div>
           ))}
-          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.02-2026-08-11-1306-EDT.zip" download>
+          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.03-2026-08-11-1402-EDT.zip" download>
             Download the Kit <span aria-hidden="true">↓</span>
           </a>
         </aside>
@@ -185,9 +185,13 @@ export default function CanonExplorer({ sections }: { sections: CanonSection[] }
 
               {section.groups.map((group, groupIndex) => {
                 const overview = !group.heading;
+                const subsectionHeading = group.heading === "Canonical Themes and Focuses";
                 return (
-                  <section className={overview ? styles.sectionOverview : styles.canonEntry} id={group.id} key={group.id}>
-                    {group.heading && (
+                  <section className={overview ? styles.sectionOverview : subsectionHeading ? styles.canonSubsectionHeader : styles.canonEntry} id={group.id} key={group.id}>
+                    {subsectionHeading && (
+                      <h2><Highlight query={query}>{group.heading!}</Highlight></h2>
+                    )}
+                    {group.heading && !subsectionHeading && (
                       <h3>
                         <Highlight query={query}>{group.heading}</Highlight>
                         {group.qualifier && <span><Highlight query={query}>{group.qualifier}</Highlight></span>}
