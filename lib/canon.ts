@@ -28,7 +28,7 @@ const CANON_PATH = path.join(
   process.cwd(),
   "public",
   "downloads",
-  "Kiduna-Canon-Taxonomy-V0.16-2026-08-12-0604-EDT.md",
+  "Kiduna-Canon-Taxonomy-V0.17-2026-08-12-0631-EDT.md",
 );
 
 const standaloneHeadings = new Set([
@@ -44,8 +44,8 @@ const standaloneHeadings = new Set([
   "Place & Planet",
   "Work & Wealth",
   "Knowledge & Frontier",
-  "Force Interaction",
-  "Force Principle",
+  "Forces Interact",
+  "The Key Principle of Forces",
   "Realm Relationship Roles",
   "Contribution Roles",
   "Realm-Defined Rights",

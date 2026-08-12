@@ -64,8 +64,8 @@ const explanationHeadings = new Set([
 const principleHeadings = new Set([
   "Classification Rule",
   "First-Principles Distinction",
-  "Force Interaction",
-  "Force Principle",
+  "Forces Interact",
+  "The Key Principle of Forces",
   "Realm-Defined Rights",
   "Membership Authority",
   "Role Principle",
@@ -322,7 +322,7 @@ export default function CanonExplorer({ sections }: { sections: CanonSection[] }
               </ol>
             </div>
           ))}
-          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.08-2026-08-12-0604-EDT.zip" download>
+          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.09-2026-08-12-0631-EDT.zip" download>
             Download the Kit <span aria-hidden="true">↓</span>
           </a>
         </aside>
