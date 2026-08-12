@@ -83,7 +83,7 @@ const categoryDefinitionTitles: Record<string, string> = {
   elements: "The building blocks",
   roles: "How Sources participate",
   capacities: "What brings this to life",
-  patterns: "Reusable systems for activity",
+  patterns: "Reusable Scene designs",
   modes: "How one Realm is experienced",
   scenes: "How a Realm becomes present",
   forms: "How a Scene is expressed",
@@ -322,7 +322,7 @@ export default function CanonExplorer({ sections }: { sections: CanonSection[] }
               </ol>
             </div>
           ))}
-          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.06-2026-08-11-1718-EDT.zip" download>
+          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.07-2026-08-11-1748-EDT.zip" download>
             Download the Kit <span aria-hidden="true">↓</span>
           </a>
         </aside>
