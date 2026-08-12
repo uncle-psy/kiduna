@@ -214,34 +214,6 @@ function renderLines(lines: string[], query: string, groupId: string) {
 }
 
 function renderSectionOrientation(section: CanonSection, lines: string[], query: string, groupId: string) {
-  if (section.slug === "categories") {
-    const [introduction, ...categoryLines] = lines;
-
-    return (
-      <section className={styles.sectionOrientation} key={groupId}>
-        {introduction && (
-          <div className={styles.categoryStatement}>
-            <p><Highlight query={query}>{introduction}</Highlight></p>
-          </div>
-        )}
-        <nav className={styles.categoryMenu} aria-label="Kiduna taxonomy categories">
-          {categoryLines.map((line) => {
-            const [name, description] = line.split(/ — (.+)/);
-            const slug = name.toLowerCase();
-
-            return (
-              <a href={`#${slug}`} key={name} aria-label={`Go to the ${name} definition`}>
-                <strong><Highlight query={query}>{name}</Highlight></strong>
-                <span><Highlight query={query}>{description ?? ""}</Highlight></span>
-                <i aria-hidden="true">↓</i>
-              </a>
-            );
-          })}
-        </nav>
-      </section>
-    );
-  }
-
   const definitionCount = categoryDefinitionLineCounts[section.slug] ?? 1;
   const definitionLines = lines.slice(0, definitionCount);
   const explanationLines = lines.slice(definitionCount);
@@ -267,6 +239,32 @@ function renderSectionOrientation(section: CanonSection, lines: string[], query:
         <div className={styles.orientationCopy}>{renderLines(explanationLines, query, `${groupId}-explanation`)}</div>
       )}
     </section>
+  );
+}
+
+function renderCategoryMenu(section: CanonSection, query: string) {
+  const baseSectionTitle = section.title.replace(/ — .+$/, "");
+  const orientation = section.groups.find((group) => !group.heading || group.heading === baseSectionTitle);
+  const categories = section.groups.filter((group) => group.heading && group.heading !== baseSectionTitle);
+
+  return (
+    <>
+      {orientation && renderSectionOrientation(section, orientation.lines, query, orientation.id)}
+      <nav className={styles.categoryMenu} aria-label="Kiduna taxonomy categories">
+        {categories.map((category) => {
+          const name = category.heading!;
+          const slug = name.toLowerCase();
+
+          return (
+            <a href={`#${slug}`} key={name} aria-label={`Go to the ${name} definition`}>
+              <strong><Highlight query={query}>{name}</Highlight></strong>
+              <div className={styles.categoryMenuCopy}>{renderLines(category.lines, query, `${category.id}-menu`)}</div>
+              <i aria-hidden="true">↓</i>
+            </a>
+          );
+        })}
+      </nav>
+    </>
   );
 }
 
@@ -375,7 +373,7 @@ export default function CanonExplorer({ sections }: { sections: CanonSection[] }
                 <a href="#explore">Back to index ↑</a>
               </header>
 
-              {section.groups.map((group, groupIndex) => {
+              {section.slug === "categories" ? renderCategoryMenu(section, query) : section.groups.map((group, groupIndex) => {
                 const baseSectionTitle = section.title.replace(/ — .+$/, "");
                 const orientation = !group.heading || group.heading === baseSectionTitle;
                 const subsectionHeading = !!group.heading && subsectionHeadings.has(group.heading);
