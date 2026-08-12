@@ -35,19 +35,19 @@ const pathways = [
     links: [["Categories", "categories"], ["Domains", "domains"], ["Themes", "themes"], ["Forces", "forces"]],
   },
   {
-    number: "05–08",
+    number: "05–09",
     title: "Shape participation",
-    copy: "See where activity happens, what exists there, how people participate, and what makes every Realm capable.",
-    links: [["Realms", "realms"], ["Elements", "elements"], ["Roles", "roles"], ["Capacities", "capacities"]],
+    copy: "See where activity happens, what exists there, what can be held and exchanged, how people participate, and what makes every Realm capable.",
+    links: [["Realms", "realms"], ["Elements", "elements"], ["Resources", "resources"], ["Roles", "roles"], ["Capacities", "capacities"]],
   },
   {
-    number: "09–12",
+    number: "10–13",
     title: "Organize experience",
     copy: "Follow the reusable patterns, concurrent modes, situated scenes, and visual grammars through which Kiduna works.",
     links: [["Patterns", "patterns"], ["Modes", "modes"], ["Scenes", "scenes"], ["Forms", "forms"]],
   },
   {
-    number: "13–16",
+    number: "14–17",
     title: "Express the world",
     copy: "Understand the building blocks, spatial systems, visual designs, and surfaces that let one world take many forms.",
     links: [["Components", "components"], ["Dimensions", "dimensions"], ["Designs", "designs"], ["Surfaces", "surfaces"]],
@@ -56,21 +56,22 @@ const pathways = [
 
 const orbitSections = [
   ["Categories", "categories"], ["Domains", "domains"], ["Themes", "themes"], ["Forces", "forces"],
-  ["Realms", "realms"], ["Elements", "elements"], ["Roles", "roles"], ["Capacities", "capacities"],
+  ["Realms", "realms"], ["Elements", "elements"], ["Resources", "resources"], ["Roles", "roles"], ["Capacities", "capacities"],
   ["Patterns", "patterns"], ["Modes", "modes"], ["Scenes", "scenes"], ["Forms", "forms"],
   ["Components", "components"], ["Dimensions", "dimensions"], ["Designs", "designs"], ["Surfaces", "surfaces"],
 ] as const;
 
 const orbitNodes = orbitSections.map(([label, slug], index) => {
-  const group = Math.floor(index / 4);
+  const group = index < 4 ? 0 : index < 9 ? 1 : index < 13 ? 2 : 3;
   const radius = 26 + group * 7.5;
-  const angle = -78 + index * 22.5 + group * 5;
+  const angle = -78 + index * (360 / orbitSections.length) + group * 5;
   const radians = angle * Math.PI / 180;
   return {
     number: String(index + 1).padStart(2, "0"),
     label,
     slug,
     group,
+    isLeft: Math.cos(radians) < 0,
     style: {
       left: `${50 + Math.cos(radians) * radius}%`,
       top: `${50 + Math.sin(radians) * radius}%`,
@@ -93,7 +94,7 @@ export default function CanonPage() {
           <h1>Name the parts.<span>See the whole.</span></h1>
           <p className={styles.heroLead}>The Canon is the authoritative language for understanding and building Kiduna: what it is, how it relates, what acts upon it, what you can do, and how one living world takes shape across every experience. Prepare for our launch! Download the Kiduna Kit and drop it into Claude or ChatGPT to explore the frontiers of technology, economics, governance, and culture.</p>
           <div className={styles.heroActions}>
-            <a className={`button button-primary ${styles.heroDownload}`} href="/downloads/Kiduna-Kit-V0.10-2026-08-12-1352-EDT.zip" download>
+            <a className={`button button-primary ${styles.heroDownload}`} href="/downloads/Kiduna-Kit-V0.11-2026-08-12-1527-EDT.zip" download>
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" />
               </svg>
@@ -103,7 +104,7 @@ export default function CanonPage() {
           </div>
         </div>
 
-        <div className={styles.canonOrbit} role="img" aria-label="Sixteen sections of the Kiduna Canon arranged around the Kiduna mark">
+        <div className={styles.canonOrbit} role="img" aria-label="Seventeen sections of the Kiduna Canon arranged around the Kiduna mark">
           <div className={`${styles.orbitRing} ${styles.ringOne}`} aria-hidden="true" />
           <div className={`${styles.orbitRing} ${styles.ringTwo}`} aria-hidden="true" />
           <div className={`${styles.orbitRing} ${styles.ringThree}`} aria-hidden="true" />
@@ -116,7 +117,7 @@ export default function CanonPage() {
           <div className={`${styles.movingOrb} ${styles.orbFour}`} aria-hidden="true"><span /></div>
           <div className={`${styles.movingOrb} ${styles.orbFive}`} aria-hidden="true"><span /></div>
           {orbitNodes.map((node) => (
-            <a href={`#${node.slug}`} className={`${styles.orbitNode} ${node.group > 1 ? styles.nodeLeft : styles.nodeRight}`} style={node.style} key={node.number} aria-label={`Go to ${node.label}, Canon section ${node.number}`}>
+            <a href={`#${node.slug}`} className={`${styles.orbitNode} ${node.isLeft ? styles.nodeLeft : styles.nodeRight}`} style={node.style} key={node.number} aria-label={`Go to ${node.label}, Canon section ${node.number}`}>
               <b>{node.number}</b><span>{node.label}</span>
             </a>
           ))}
@@ -156,16 +157,16 @@ export default function CanonPage() {
           <h2>Teach your intelligence<span>how Kiduna works.</span></h2>
           <p>The Kiduna Kit is a compact, self-contained primer you can drop into Claude or ChatGPT to help it understand Kiduna. It includes the current Canon, a human-readable orientation, working instructions, and visual examples of the five canonical Forms.</p>
           <div className={styles.kitDetails}>
-            <span>Kit V0.10</span><span>Canon V0.18</span><span>11.0 MB</span><span>Verified release</span>
+            <span>Kit V0.11</span><span>Canon V0.19</span><span>10.9 MB</span><span>Verified release</span>
           </div>
           <div className={styles.kitActions}>
-            <a className={`button button-primary ${styles.downloadButton}`} href="/downloads/Kiduna-Kit-V0.10-2026-08-12-1352-EDT.zip" download>
+            <a className={`button button-primary ${styles.downloadButton}`} href="/downloads/Kiduna-Kit-V0.11-2026-08-12-1527-EDT.zip" download>
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" />
               </svg>
               Download the Kiduna Kit
             </a>
-            <a className="text-link" href="/downloads/Kiduna-Canon-Taxonomy-V0.18-2026-08-12-1352-EDT.md" download>Download the Canon as Markdown</a>
+            <a className="text-link" href="/downloads/Kiduna-Canon-Taxonomy-V0.19-2026-08-12-1527-EDT.md" download>Download the Canon as Markdown</a>
           </div>
         </div>
       </section>

@@ -28,7 +28,7 @@ const CANON_PATH = path.join(
   process.cwd(),
   "public",
   "downloads",
-  "Kiduna-Canon-Taxonomy-V0.18-2026-08-12-1352-EDT.md",
+  "Kiduna-Canon-Taxonomy-V0.19-2026-08-12-1527-EDT.md",
 );
 
 const standaloneHeadings = new Set([
@@ -167,7 +167,7 @@ export function loadCanon(): CanonDocument {
 
     if (!current || !currentGroup || !line.trim()) continue;
 
-    const resourceSummary = current.number === 6
+    const resourceSummary = current.slug === "resources"
       && /^(Capacity|Badge|Code|Coupon|Invitation|Ticket|Gift|Reward) — .+ — .+$/.test(line);
     if (resourceSummary) {
       currentGroup.lines.push(line);

@@ -1028,12 +1028,12 @@
   .hero h1 { font-size: clamp(50px, 15vw, 70px); }
   .heroLead { font-size: 17px; }
   .heroActions { align-items: flex-start; flex-direction: column; }
-  .canonOrbit { width: min(68vw, 280px); }
-  .orbitNode { height: 26px; gap: 5px; }
-  .orbitNode b { width: 26px; height: 26px; flex-basis: 26px; font-size: 7px; }
-  .orbitNode span { padding-right: 6px; font-size: 6px; letter-spacing: .07em; }
-  .nodeRight { transform: translate(-13px, -50%); }
-  .nodeLeft { transform: translate(calc(-100% + 13px), -50%); }
+  .canonOrbit { width: min(78vw, 310px); }
+  .orbitNode { height: 25px; gap: 4px; }
+  .orbitNode b { width: 25px; height: 25px; flex-basis: 25px; font-size: 6px; }
+  .orbitNode span { padding-right: 5px; font-size: 5.5px; letter-spacing: .055em; }
+  .nodeRight { transform: translate(-12.5px, -50%); }
+  .nodeLeft { transform: translate(calc(-100% + 12.5px), -50%); }
   .nodeLeft span { padding-right: 0; padding-left: 6px; }
   .orbitCenter { width: 90px; height: 90px; }
   .orbitCenter img { width: 61px; height: 61px; }

@@ -12,17 +12,17 @@ const pathways = [
   },
   {
     label: "Shape participation",
-    range: "05–08",
-    sections: ["realms", "elements", "roles", "capacities"],
+    range: "05–09",
+    sections: ["realms", "elements", "resources", "roles", "capacities"],
   },
   {
     label: "Organize experience",
-    range: "09–12",
+    range: "10–13",
     sections: ["patterns", "modes", "scenes", "forms"],
   },
   {
     label: "Express the world",
-    range: "13–16",
+    range: "14–17",
     sections: ["components", "dimensions", "designs", "surfaces"],
   },
 ];
@@ -81,6 +81,7 @@ const categoryDefinitionTitles: Record<string, string> = {
   forces: "What acts upon the system",
   realms: "Where life and activity come together",
   elements: "The building blocks",
+  resources: "Usable holdings and instruments",
   roles: "How Sources participate",
   capacities: "What brings this to life",
   patterns: "Reusable Scene designs",
@@ -100,6 +101,7 @@ const categoryDefinitionLineCounts: Record<string, number> = {
   forces: 2,
   realms: 1,
   elements: 1,
+  resources: 2,
   roles: 1,
   capacities: 1,
   patterns: 2,
@@ -348,7 +350,7 @@ export default function CanonExplorer({ sections }: { sections: CanonSection[] }
               </ol>
             </div>
           ))}
-          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.10-2026-08-12-1352-EDT.zip" download>
+          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.11-2026-08-12-1527-EDT.zip" download>
             Download the Kit <span aria-hidden="true">↓</span>
           </a>
         </aside>
