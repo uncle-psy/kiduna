@@ -628,6 +628,54 @@
 .categoryStatement p + p { margin-top: 14px; }
 .categoryStatement strong { color: var(--fg); font-weight: 700; }
 
+.categoryMenu {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.categoryMenu a {
+  display: grid;
+  grid-template-columns: minmax(115px, .35fr) minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: start;
+  min-height: 112px;
+  padding: 24px 22px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(39, 27, 17, .42);
+  transition: border-color .2s ease, background-color .2s ease, transform .2s ease;
+}
+
+.categoryMenu a:hover,
+.categoryMenu a:focus-visible {
+  border-color: rgba(3, 204, 217, .42);
+  background: rgba(39, 27, 17, .68);
+  transform: translateY(-2px);
+}
+
+.categoryMenu strong {
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.categoryMenu span {
+  color: var(--fg-muted);
+  font-family: var(--body);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.categoryMenu i {
+  color: var(--camel);
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.3;
+}
+
 .orientationCopy {
   max-width: 790px;
   margin: 34px 0 0;
@@ -1003,6 +1051,8 @@
   .sectionOrientation { margin-bottom: 42px; }
   .canonSection > header h2 small { display: block; margin-top: 9px; font-size: .29em; }
   .categoryStatement { font-size: 16px; }
+  .categoryMenu { grid-template-columns: 1fr; }
+  .categoryMenu a { grid-template-columns: 105px minmax(0, 1fr) auto; min-height: 0; padding: 21px 18px; }
   .orientationCopy { margin-top: 28px; font-size: 15px; }
   .definitionCard { padding: 27px 23px 29px; }
   .principleCard { padding: 30px 24px 32px; }
