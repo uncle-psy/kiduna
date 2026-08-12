@@ -348,7 +348,7 @@ export default function CanonExplorer({ sections }: { sections: CanonSection[] }
               </ol>
             </div>
           ))}
-          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.09-2026-08-12-0631-EDT.zip" download>
+          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.10-2026-08-12-1352-EDT.zip" download>
             Download the Kit <span aria-hidden="true">↓</span>
           </a>
         </aside>

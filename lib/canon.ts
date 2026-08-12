@@ -28,7 +28,7 @@ const CANON_PATH = path.join(
   process.cwd(),
   "public",
   "downloads",
-  "Kiduna-Canon-Taxonomy-V0.17-2026-08-12-0631-EDT.md",
+  "Kiduna-Canon-Taxonomy-V0.18-2026-08-12-1352-EDT.md",
 );
 
 const standaloneHeadings = new Set([

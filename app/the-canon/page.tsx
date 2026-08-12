@@ -93,7 +93,7 @@ export default function CanonPage() {
           <h1>Name the parts.<span>See the whole.</span></h1>
           <p className={styles.heroLead}>The Canon is the authoritative language for understanding and building Kiduna: what it is, how it relates, what acts upon it, what you can do, and how one living world takes shape across every experience. Prepare for our launch! Download the Kiduna Kit and drop it into Claude or ChatGPT to explore the frontiers of technology, economics, governance, and culture.</p>
           <div className={styles.heroActions}>
-            <a className={`button button-primary ${styles.heroDownload}`} href="/downloads/Kiduna-Kit-V0.09-2026-08-12-0631-EDT.zip" download>
+            <a className={`button button-primary ${styles.heroDownload}`} href="/downloads/Kiduna-Kit-V0.10-2026-08-12-1352-EDT.zip" download>
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" />
               </svg>
@@ -156,16 +156,16 @@ export default function CanonPage() {
           <h2>Teach your intelligence<span>how Kiduna works.</span></h2>
           <p>The Kiduna Kit is a compact, self-contained primer you can drop into Claude or ChatGPT to help it understand Kiduna. It includes the current Canon, a human-readable orientation, working instructions, and visual examples of the five canonical Forms.</p>
           <div className={styles.kitDetails}>
-            <span>Kit V0.09</span><span>Canon V0.17</span><span>11.0 MB</span><span>Verified release</span>
+            <span>Kit V0.10</span><span>Canon V0.18</span><span>11.0 MB</span><span>Verified release</span>
           </div>
           <div className={styles.kitActions}>
-            <a className={`button button-primary ${styles.downloadButton}`} href="/downloads/Kiduna-Kit-V0.09-2026-08-12-0631-EDT.zip" download>
+            <a className={`button button-primary ${styles.downloadButton}`} href="/downloads/Kiduna-Kit-V0.10-2026-08-12-1352-EDT.zip" download>
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" />
               </svg>
               Download the Kiduna Kit
             </a>
-            <a className="text-link" href="/downloads/Kiduna-Canon-Taxonomy-V0.17-2026-08-12-0631-EDT.md" download>Download the Canon as Markdown</a>
+            <a className="text-link" href="/downloads/Kiduna-Canon-Taxonomy-V0.18-2026-08-12-1352-EDT.md" download>Download the Canon as Markdown</a>
           </div>
         </div>
       </section>
