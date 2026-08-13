@@ -28,7 +28,7 @@ const CANON_PATH = path.join(
   process.cwd(),
   "public",
   "downloads",
-  "Kiduna-Canon-Taxonomy-V0.19-2026-08-12-1527-EDT.md",
+  "Kiduna-Canon-Taxonomy-V0.28-2026-08-13-1138-EDT.md",
 );
 
 const standaloneHeadings = new Set([
@@ -86,6 +86,7 @@ const contributionRoleHeadings = new Set([
   "Creator",
   "Builder",
   "Luminary",
+  "Sponsor",
 ]);
 
 function slugify(value: string) {

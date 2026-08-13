@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import SiteHeader from "@/components/site-header";
 
 export const metadata: Metadata = {
@@ -93,6 +94,12 @@ const roles = [
     copy: "Contribute a defining work, body of wisdom, creative practice, or deep intellectual grounding around which a collective can form and grow. Luminaries may be supported through project budgets, royalties, repayment of development costs, or allocations established by the organization.",
     result: "Give the work depth and direction.",
   },
+  {
+    number: "06",
+    title: "Sponsor",
+    copy: "Provide agreed financial, computational, promotional, or other support to a Realm, Source, Ally, Actor, or other eligible recipient. Sponsors may pay for compute, provide Resources such as Rewards or Coupons, fund activity, or offer other agreed value. Every sponsorship follows the receiving Realm’s rules and the terms of the agreement.",
+    result: "Support participation and possibility.",
+  },
 ];
 
 const governance = [
@@ -136,7 +143,7 @@ export default function GrowWithUs() {
           <h1>Build value.<span>Advance the mission.</span><em>Share the gains.</em></h1>
           <p className="grow-hero-lead">Kiduna organizations create and compound value, then use the gains to strengthen the mission and compensate the people whose work moves it forward. Members govern shared treasuries, direct resources toward the work, are paid for the work they perform and the value they directly contribute, and participate as equals in organizations with real legal standing.</p>
           <div className="grow-actions">
-            <a className="button button-primary" href="/#early-access">Request early access <span aria-hidden="true">→</span></a>
+            <Link className="button button-primary" href="/#early-access">Request early access <span aria-hidden="true">→</span></Link>
             <a className="text-link" href="#compute">Follow the flow</a>
           </div>
         </div>
@@ -196,11 +203,11 @@ export default function GrowWithUs() {
         <div className="grow-roles-intro">
           <p className="eyebrow">Play your part</p>
           <h2>Do what moves you.<em>Share in what grows.</em></h2>
-          <p>This is not work handed down by a management class. Members choose how they want to contribute across the five roles and shape the work together. Every organization establishes transparent ways to recognize, support, and reward the people whose energy, relationships, ideas, creations, and capabilities bring the work to life.</p>
+          <p>This is not work handed down by a management class. Members choose how they want to contribute across the six contribution roles and shape the work together. Every organization establishes transparent ways to recognize, support, and reward the people whose energy, relationships, ideas, creations, capabilities, and support bring the work to life.</p>
         </div>
         <div className="grow-roles-grid">
           {roles.map((role, index) => (
-            <article className={index === roles.length - 1 ? "grow-role-card grow-role-card-wide" : "grow-role-card"} key={role.number}>
+            <article className={roles.length % 2 === 1 && index === roles.length - 1 ? "grow-role-card grow-role-card-wide" : "grow-role-card"} key={role.number}>
               <span>{role.number}</span><h3>{role.title}</h3><p>{role.copy}</p><strong>{role.result}</strong>
             </article>
           ))}
@@ -244,7 +251,7 @@ export default function GrowWithUs() {
         <h2>Put your good where<em>it does the most.</em></h2>
         <p>We’re beginning with a small number of people, projects, and organizations ready to explore and expand the frontiers of individual and collective agency.</p>
         <div className="grow-closing-actions">
-          <a className="button button-primary" href="/#early-access">Request early access <span aria-hidden="true">→</span></a>
+          <Link className="button button-primary" href="/#early-access">Request early access <span aria-hidden="true">→</span></Link>
           <a className="text-link" href="/nightpaper">Read the Nightpaper</a>
         </div>
       </section>
