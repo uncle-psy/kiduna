@@ -48,6 +48,7 @@ const contributionRoleHeadings = new Set([
   "Creator",
   "Builder",
   "Luminary",
+  "Sponsor",
 ]);
 
 const explanationHeadings = new Set([
@@ -350,7 +351,7 @@ export default function CanonExplorer({ sections }: { sections: CanonSection[] }
               </ol>
             </div>
           ))}
-          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.11-2026-08-12-1527-EDT.zip" download>
+          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.23-2026-08-14-1730-EDT.zip" download>
             Download the Kit <span aria-hidden="true">↓</span>
           </a>
         </aside>
