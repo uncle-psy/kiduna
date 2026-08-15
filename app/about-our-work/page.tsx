@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     url: "/about-our-work",
     siteName: "Kiduna",
     type: "website",
-    images: [{ url: "/og-home-design-system.png", width: 1659, height: 948, alt: "Kiduna — About Our Work" }],
+    images: [{ url: "/og/about-our-work.png", width: 1200, height: 630, alt: "Kiduna — About Our Work: Agency that compounds with scale." }],
   },
   twitter: {
     card: "summary_large_image",
     title: "About Our Work — Kiduna",
     description: "Agency that compounds with scale.",
-    images: ["/og-home-design-system.png"],
+    images: ["/og/about-our-work.png"],
   },
 };
 
