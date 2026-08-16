@@ -7,22 +7,22 @@ import styles from "./canon.module.css";
 const pathways = [
   {
     label: "Describe the system",
-    range: "01–04",
-    sections: ["categories", "domains", "themes", "forces"],
+    range: "01–05",
+    sections: ["categories", "domains", "themes", "purposes", "forces"],
   },
   {
     label: "Shape participation",
-    range: "05–09",
+    range: "06–10",
     sections: ["realms", "elements", "resources", "roles", "capacities"],
   },
   {
     label: "Organize experience",
-    range: "10–13",
+    range: "11–14",
     sections: ["patterns", "modes", "scenes", "forms"],
   },
   {
     label: "Express the world",
-    range: "14–17",
+    range: "15–18",
     sections: ["components", "dimensions", "designs", "surfaces"],
   },
 ];
@@ -45,6 +45,7 @@ const taxonomyLists = new Set([
 const contributionRoleHeadings = new Set([
   "Catalyst",
   "Organizer",
+  "Steward",
   "Creator",
   "Builder",
   "Luminary",
@@ -79,6 +80,7 @@ const principleHeadings = new Set([
 const categoryDefinitionTitles: Record<string, string> = {
   domains: "Four dimensions of every Realm",
   themes: "What a Realm is all about",
+  purposes: "Why the work exists",
   forces: "What acts upon the system",
   realms: "Where life and activity come together",
   elements: "The building blocks",
@@ -99,6 +101,7 @@ const categoryDefinitionLineCounts: Record<string, number> = {
   categories: 0,
   domains: 1,
   themes: 1,
+  purposes: 1,
   forces: 2,
   realms: 1,
   elements: 1,
@@ -351,7 +354,7 @@ export default function CanonExplorer({ sections }: { sections: CanonSection[] }
               </ol>
             </div>
           ))}
-          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.22-2026-08-13-1725-EDT.zip" download>
+          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.27-2026-08-15-2313-EDT.zip" download>
             Download the Kit <span aria-hidden="true">↓</span>
           </a>
         </aside>
