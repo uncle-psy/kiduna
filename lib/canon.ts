@@ -28,7 +28,7 @@ const CANON_PATH = path.join(
   process.cwd(),
   "public",
   "downloads",
-  "Kiduna-Canon-Taxonomy-V0.35-2026-08-15-2313-EDT.md",
+  "Kiduna-Canon-Taxonomy-V0.36-2026-08-16-1411-EDT.md",
 );
 
 const standaloneHeadings = new Set([
@@ -51,6 +51,7 @@ const standaloneHeadings = new Set([
   "Realm-Defined Rights",
   "Membership Authority",
   "Role Principle",
+  "Field Principle",
   "Publishing lifecycle",
   "Literal Spatial",
   "Symbolic",

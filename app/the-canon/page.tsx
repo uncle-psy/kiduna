@@ -29,25 +29,25 @@ export const metadata: Metadata = {
 
 const pathways = [
   {
-    number: "01–04",
+    number: "01–05",
     title: "Describe the system",
-    copy: "Begin with the categories, dimensions of design, fields of meaning, and dynamic influences that shape Kiduna.",
-    links: [["Categories", "categories"], ["Domains", "domains"], ["Themes", "themes"], ["Forces", "forces"]],
+    copy: "Begin with the categories, dimensions of design, fields of meaning, purposes, and dynamic influences that shape Kiduna.",
+    links: [["Categories", "categories"], ["Domains", "domains"], ["Themes", "themes"], ["Purposes", "purposes"], ["Forces", "forces"]],
   },
   {
-    number: "05–09",
+    number: "06–10",
     title: "Shape participation",
     copy: "See where activity happens, what exists there, what can be held and exchanged, how people participate, and what makes every Realm capable.",
     links: [["Realms", "realms"], ["Elements", "elements"], ["Resources", "resources"], ["Roles", "roles"], ["Capacities", "capacities"]],
   },
   {
-    number: "10–13",
+    number: "11–15",
     title: "Organize experience",
-    copy: "Follow the reusable patterns, concurrent modes, situated scenes, and visual grammars through which Kiduna works.",
-    links: [["Patterns", "patterns"], ["Modes", "modes"], ["Scenes", "scenes"], ["Forms", "forms"]],
+    copy: "Follow the reusable Patterns, complete Field, operational Modes, situated Scenes, and visual grammars through which Kiduna works.",
+    links: [["Patterns", "patterns"], ["Field", "field"], ["Modes", "modes"], ["Scenes", "scenes"], ["Forms", "forms"]],
   },
   {
-    number: "14–17",
+    number: "16–19",
     title: "Express the world",
     copy: "Understand the building blocks, spatial systems, visual designs, and surfaces that let one world take many forms.",
     links: [["Components", "components"], ["Dimensions", "dimensions"], ["Designs", "designs"], ["Surfaces", "surfaces"]],
@@ -55,14 +55,14 @@ const pathways = [
 ];
 
 const orbitSections = [
-  ["Categories", "categories"], ["Domains", "domains"], ["Themes", "themes"], ["Forces", "forces"],
+  ["Categories", "categories"], ["Domains", "domains"], ["Themes", "themes"], ["Purposes", "purposes"], ["Forces", "forces"],
   ["Realms", "realms"], ["Elements", "elements"], ["Resources", "resources"], ["Roles", "roles"], ["Capacities", "capacities"],
-  ["Patterns", "patterns"], ["Modes", "modes"], ["Scenes", "scenes"], ["Forms", "forms"],
+  ["Patterns", "patterns"], ["Field", "field"], ["Modes", "modes"], ["Scenes", "scenes"], ["Forms", "forms"],
   ["Components", "components"], ["Dimensions", "dimensions"], ["Designs", "designs"], ["Surfaces", "surfaces"],
 ] as const;
 
 const orbitNodes = orbitSections.map(([label, slug], index) => {
-  const group = index < 4 ? 0 : index < 9 ? 1 : index < 13 ? 2 : 3;
+  const group = index < 5 ? 0 : index < 10 ? 1 : index < 15 ? 2 : 3;
   const radius = 26 + group * 7.5;
   const angle = -78 + index * (360 / orbitSections.length) + group * 5;
   const radians = angle * Math.PI / 180;
@@ -94,7 +94,7 @@ export default function CanonPage() {
           <h1>Name the parts.<span>See the whole.</span></h1>
           <p className={styles.heroLead}>The Canon is the authoritative language for understanding and building Kiduna: what it is, how it relates, what acts upon it, what you can do, and how one living world takes shape across every experience. Prepare for our launch! Download the Kiduna Kit and drop it into Claude or ChatGPT to explore the frontiers of technology, economics, governance, and culture.</p>
           <div className={styles.heroActions}>
-            <a className={`button button-primary ${styles.heroDownload}`} href="/downloads/Kiduna-Kit-V0.27-2026-08-15-2313-EDT.zip" download>
+            <a className={`button button-primary ${styles.heroDownload}`} href="/downloads/Kiduna-Kit-V0.28-2026-08-16-1412-EDT.zip" download>
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" />
               </svg>
@@ -104,7 +104,7 @@ export default function CanonPage() {
           </div>
         </div>
 
-        <div className={styles.canonOrbit} role="img" aria-label="Seventeen sections of the Kiduna Canon arranged around the Kiduna mark">
+        <div className={styles.canonOrbit} role="img" aria-label="Nineteen sections of the Kiduna Canon arranged around the Kiduna mark">
           <div className={`${styles.orbitRing} ${styles.ringOne}`} aria-hidden="true" />
           <div className={`${styles.orbitRing} ${styles.ringTwo}`} aria-hidden="true" />
           <div className={`${styles.orbitRing} ${styles.ringThree}`} aria-hidden="true" />
@@ -157,16 +157,16 @@ export default function CanonPage() {
           <h2>Teach your intelligence<span>how Kiduna works.</span></h2>
           <p>The Kiduna Kit is a compact, self-contained primer you can drop into Claude or ChatGPT to help it understand Kiduna. It includes the current Canon, a human-readable orientation, working instructions, and visual examples of the five canonical Forms.</p>
           <div className={styles.kitDetails}>
-            <span>Kit V0.27</span><span>Canon V0.35</span><span>10.9 MB</span><span>Verified release</span>
+            <span>Kit V0.28</span><span>Canon V0.36</span><span>10.9 MB</span><span>Verified release</span>
           </div>
           <div className={styles.kitActions}>
-            <a className={`button button-primary ${styles.downloadButton}`} href="/downloads/Kiduna-Kit-V0.27-2026-08-15-2313-EDT.zip" download>
+            <a className={`button button-primary ${styles.downloadButton}`} href="/downloads/Kiduna-Kit-V0.28-2026-08-16-1412-EDT.zip" download>
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" />
               </svg>
               Download the Kiduna Kit
             </a>
-            <a className="text-link" href="/downloads/Kiduna-Canon-Taxonomy-V0.35-2026-08-15-2313-EDT.md" download>Download the Canon as Markdown</a>
+            <a className="text-link" href="/downloads/Kiduna-Canon-Taxonomy-V0.36-2026-08-16-1411-EDT.md" download>Download the Canon as Markdown</a>
           </div>
         </div>
       </section>

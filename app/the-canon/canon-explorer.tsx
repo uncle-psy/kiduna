@@ -17,12 +17,12 @@ const pathways = [
   },
   {
     label: "Organize experience",
-    range: "11–14",
-    sections: ["patterns", "modes", "scenes", "forms"],
+    range: "11–15",
+    sections: ["patterns", "field", "modes", "scenes", "forms"],
   },
   {
     label: "Express the world",
-    range: "15–18",
+    range: "16–19",
     sections: ["components", "dimensions", "designs", "surfaces"],
   },
 ];
@@ -71,6 +71,7 @@ const principleHeadings = new Set([
   "Realm-Defined Rights",
   "Membership Authority",
   "Role Principle",
+  "Field Principle",
   "Publishing lifecycle",
   "Dimensional Principle",
   "Design Principle",
@@ -87,8 +88,9 @@ const categoryDefinitionTitles: Record<string, string> = {
   resources: "Usable holdings and instruments",
   roles: "How Sources participate",
   capacities: "What brings this to life",
-  patterns: "Reusable Scene designs",
-  modes: "How one Realm is experienced",
+  patterns: "Reusable organizational templates",
+  field: "The complete operating environment",
+  modes: "Development, Rehearsal, and Live",
   scenes: "How a Realm becomes present",
   forms: "How a Scene is expressed",
   components: "What Scenes are made from",
@@ -109,7 +111,8 @@ const categoryDefinitionLineCounts: Record<string, number> = {
   roles: 1,
   capacities: 1,
   patterns: 2,
-  modes: 1,
+  field: 3,
+  modes: 3,
   scenes: 1,
   forms: 1,
   components: 2,
@@ -354,7 +357,7 @@ export default function CanonExplorer({ sections }: { sections: CanonSection[] }
               </ol>
             </div>
           ))}
-          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.27-2026-08-15-2313-EDT.zip" download>
+          <a className={styles.navDownload} href="/downloads/Kiduna-Kit-V0.28-2026-08-16-1412-EDT.zip" download>
             Download the Kit <span aria-hidden="true">↓</span>
           </a>
         </aside>
