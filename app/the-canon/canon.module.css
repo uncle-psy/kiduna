@@ -222,7 +222,7 @@
   align-items: center;
   border-radius: 999px;
   background: rgba(18, 12, 7, .78);
-  color: var(--camel);
+  color: var(--node-color, var(--camel));
   white-space: nowrap;
   transition: color .2s ease, background .2s ease, filter .2s ease;
 }
@@ -255,9 +255,6 @@
 .nodeLeft { flex-direction: row-reverse; transform: translate(calc(-100% + 15px), -50%); }
 .nodeLeft span { padding-right: 0; padding-left: 9px; }
 
-.orbitNode:nth-of-type(n + 5):nth-of-type(-n + 8) { color: var(--accent); }
-.orbitNode:nth-of-type(n + 9):nth-of-type(-n + 12) { color: #9d7be8; }
-.orbitNode:nth-of-type(n + 13) { color: var(--mint); }
 .orbitNode:hover { background: var(--surface); color: #ffffe6; filter: brightness(1.18); }
 
 @keyframes movingOrbit {

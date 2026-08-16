@@ -61,6 +61,8 @@ const orbitSections = [
   ["Components", "components"], ["Dimensions", "dimensions"], ["Designs", "designs"], ["Surfaces", "surfaces"],
 ] as const;
 
+const orbitColors = ["var(--camel)", "var(--accent)", "#9d7be8", "var(--mint)"] as const;
+
 const orbitNodes = orbitSections.map(([label, slug], index) => {
   const group = index < 5 ? 0 : index < 10 ? 1 : index < 14 ? 2 : 3;
   const radius = 26 + group * 7.5;
@@ -76,6 +78,7 @@ const orbitNodes = orbitSections.map(([label, slug], index) => {
       left: `${50 + Math.cos(radians) * radius}%`,
       top: `${50 + Math.sin(radians) * radius}%`,
       "--group": group,
+      "--node-color": orbitColors[group],
     } as CSSProperties,
   };
 });
