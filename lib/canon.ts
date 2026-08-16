@@ -54,6 +54,7 @@ const standaloneHeadings = new Set([
   "Field Principle",
   "Publishing lifecycle",
   "Literal Spatial",
+  "Realistic",
   "Symbolic",
   "Impressionistic",
   "Diagrammatic",

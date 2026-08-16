@@ -31,7 +31,7 @@ const pathways = [
   {
     number: "01–05",
     title: "Describe the system",
-    copy: "Begin with the categories, dimensions of design, fields of meaning, purposes, and dynamic influences that shape Kiduna.",
+    copy: "Begin with the categories, dimensions of design, fields of meaning, intended purposes, and dynamic influences that shape Kiduna.",
     links: [["Categories", "categories"], ["Domains", "domains"], ["Themes", "themes"], ["Purposes", "purposes"], ["Forces", "forces"]],
   },
   {
@@ -61,6 +61,8 @@ const orbitSections = [
   ["Components", "components"], ["Dimensions", "dimensions"], ["Designs", "designs"], ["Surfaces", "surfaces"],
 ] as const;
 
+const orbitColors = ["var(--camel)", "var(--accent)", "#9d7be8", "var(--mint)"] as const;
+
 const orbitNodes = orbitSections.map(([label, slug], index) => {
   const group = index < 5 ? 0 : index < 10 ? 1 : index < 15 ? 2 : 3;
   const radius = 26 + group * 7.5;
@@ -76,6 +78,7 @@ const orbitNodes = orbitSections.map(([label, slug], index) => {
       left: `${50 + Math.cos(radians) * radius}%`,
       top: `${50 + Math.sin(radians) * radius}%`,
       "--group": group,
+      "--node-color": orbitColors[group],
     } as CSSProperties,
   };
 });
@@ -155,7 +158,7 @@ export default function CanonPage() {
         <div className={styles.kitCopy}>
           <p className="eyebrow">Take the language with you</p>
           <h2>Teach your intelligence<span>how Kiduna works.</span></h2>
-          <p>The Kiduna Kit is a compact, self-contained primer you can drop into Claude or ChatGPT to help it understand Kiduna. It includes the current Canon, a human-readable orientation, working instructions, and visual examples of the five canonical Forms.</p>
+          <p>The Kiduna Kit is a compact, self-contained primer you can drop into Claude or ChatGPT to help it understand Kiduna. It includes the current Canon, a human-readable orientation, working instructions, and visual examples of Kiduna Forms.</p>
           <div className={styles.kitDetails}>
             <span>Kit V0.28</span><span>Canon V0.36</span><span>10.9 MB</span><span>Verified release</span>
           </div>
