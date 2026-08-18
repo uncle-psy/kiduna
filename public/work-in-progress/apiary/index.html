@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0d0a">
+  <title>Kiduna Chrome — Apiary Review Build 02</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m7 9 5 5 5-5"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M9 4H4v5M15 4h5v5M4 15v5h5M20 15v5h-5"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m4 11 8-7 8 7v9h-6v-6h-4v6H4Z"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="m10 7-5 5 5 5M5 12h14"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-project" viewBox="0 0 24 24"><path d="M4 7h7l2 2h7v10H4Z"/></symbol>
+    <symbol id="i-types" viewBox="0 0 24 24"><path d="M5 5h5v5H5ZM14 5h5v5h-5ZM5 14h5v5H5ZM14 14h5v5h-5Z"/></symbol>
+    <symbol id="i-my-tasks" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c.5-4 2.5-6 6-6 2 0 3.5.7 4.5 2M15 12l2 2 4-5"/></symbol>
+    <symbol id="i-active" viewBox="0 0 24 24"><path d="M13 3s1 4-2 6c-3 2-4 4-3 7 1 4 6 5 9 2 4-4 0-9-1-10 0 3-1 5-3 6 1-4 0-7 0-11Z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 14h2M14 14h2M8 18h2"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 5h16l-6 7v6l-4 2v-8Z"/></symbol>
+    <symbol id="i-sort" viewBox="0 0 24 24"><path d="M8 5v14M5 8l3-3 3 3M16 19V5M13 16l3 3 3-3"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c.5-4 2.5-6 6-6s5.5 2 6 6M15 15c3.5-.5 5.5 1.2 6 4"/></symbol>
+    <symbol id="i-meeting" viewBox="0 0 24 24"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="m17 10 4-2v8l-4-2Z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v12H9l-5 4Z"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m4 12 16-8-6 16-3-6ZM11 14l9-10"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 22 20H2ZM12 9v5M12 17h.01"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2-5.3L4 9M4 4v5h5M12 8v5l3 2"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14 8 16a4 4 0 0 1-6-6l3-3a4 4 0 0 1 6 0M14 10l2-2a4 4 0 0 1 6 6l-3 3a4 4 0 0 1-6 0M8 12h8"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+  </svg>
+
+  <header class="page-header">
+    <div class="header-meta"><span>KIDUNA CHROME</span><span>DESKTOP SURFACE</span><span>REVIEW BUILD 02</span></div>
+    <h1>Chrome specification<br><span>Apiary example Scene</span></h1>
+    <p>This page specifies the persistent Chrome, the controls contained in each area, and the panels those controls open. Task overlays are included for review.</p>
+  </header>
+
+  <main>
+    <section class="prototype-section" aria-labelledby="default-chrome-title">
+      <div class="section-header">
+        <div><span class="section-index">01</span><h2 id="default-chrome-title">Default Chrome</h2></div>
+        <p>The Scene Identifier, contextual task dock, and communications panel are visible when the Scene opens. Select any control to inspect its panel. Select a bee to open its Task overlay.</p>
+      </div>
+
+      <div class="chrome-app" id="chromeApp" role="application" aria-label="Interactive Kiduna Chrome using Apiary as the current Scene">
+        <div class="scene-surface">
+          <div class="surface-tint" aria-hidden="true"></div>
+          <div class="scene-label"><span>APIARY</span><small>Kiduna Dev</small></div>
+
+          <button class="task-bee bee-1" type="button" data-action="open-task" data-task="onboarding" aria-label="Open Task: Build invitation flow"><img src="assets/sigils/bee.png" alt=""><span>Build invitation flow</span></button>
+          <button class="task-bee bee-2" type="button" data-action="open-task" data-task="attention" aria-label="Open Task: Define attention rules"><img src="assets/sigils/bee.png" alt=""><span>Define attention rules</span></button>
+          <button class="task-bee bee-3" type="button" data-action="open-task" data-task="sigils" aria-label="Open Task: Complete functional sigils"><img src="assets/sigils/bee.png" alt=""><span>Complete functional sigils</span></button>
+          <button class="task-bee bee-4" type="button" data-action="open-task" data-task="viewport" aria-label="Open Task: Review viewport"><img src="assets/sigils/bee.png" alt=""><span>Review viewport</span></button>
+          <button class="task-bee bee-5" type="button" data-action="open-task" data-task="governance" aria-label="Open Task: Confirm governance model"><img src="assets/sigils/bee.png" alt=""><span>Confirm governance model</span></button>
+        </div>
+
+        <div class="scene-identifier" data-scene-identifier>
+          <button class="identifier-button" type="button" data-action="open-identifier" aria-expanded="false">
+            <img src="assets/sigils/bee.png" alt="Bee sigil">
+            <span class="identifier-copy">
+              <small>Archetype</small>
+              <strong>Apiary</strong>
+              <span>Kiduna Dev</span>
+            </span>
+            <svg><use href="#i-chevron-down"/></svg>
+          </button>
+        </div>
+
+        <nav class="task-dock" aria-label="Task controls">
+          <button class="dock-button new-task" type="button" data-action="new-task" aria-label="New Task"><svg><use href="#i-plus"/></svg><span>New Task</span></button>
+          <span class="dock-rule" aria-hidden="true"></span>
+          <button class="dock-button" type="button" data-action="open-dock" data-panel="projects" aria-expanded="false"><svg><use href="#i-project"/></svg><span>Projects</span></button>
+          <button class="dock-button" type="button" data-action="open-dock" data-panel="types" aria-expanded="false"><svg><use href="#i-types"/></svg><span>Task types</span></button>
+          <button class="dock-button" type="button" data-action="open-dock" data-panel="mine" aria-expanded="false"><svg><use href="#i-my-tasks"/></svg><span>My tasks</span><b>4</b></button>
+          <button class="dock-button" type="button" data-action="open-dock" data-panel="active" aria-expanded="false"><svg><use href="#i-active"/></svg><span>Active</span></button>
+          <button class="dock-button" type="button" data-action="open-dock" data-panel="calendar" aria-expanded="false"><svg><use href="#i-calendar"/></svg><span>Calendar</span></button>
+        </nav>
+
+        <aside class="communications" aria-label="Communications and Ki">
+          <header class="comms-header">
+            <div class="ki-identity"><img src="assets/sigils/ki.png" alt="Ki"><span><small>Communications</small><strong>Ki</strong></span></div>
+            <span class="locked"><svg><use href="#i-lock"/></svg>Locked open</span>
+            <button type="button" data-action="open-meeting" aria-label="Set up a meeting"><svg><use href="#i-meeting"/></svg></button>
+          </header>
+          <div class="comms-tabs" role="tablist" aria-label="Conversation type">
+            <button type="button" role="tab" data-action="comms-tab" data-tab="all" aria-selected="true">All</button>
+            <button type="button" role="tab" data-action="comms-tab" data-tab="allies" aria-selected="false">Allies</button>
+            <button type="button" role="tab" data-action="comms-tab" data-tab="actors" aria-selected="false">Actors</button>
+          </div>
+          <div class="conversation-list" data-conversation-list>
+            <button class="conversation is-selected" type="button" data-action="select-conversation" data-conversation="ki" data-kind="allies"><img src="assets/sigils/ki.png" alt=""><span><strong>Ki</strong><small>Apiary context</small></span><time>now</time></button>
+            <button class="conversation" type="button" data-action="select-conversation" data-conversation="aashik" data-kind="allies"><span class="person-avatar teal">A</span><span><strong>Aashik</strong><small>Invitation flow</small></span><time>4m</time></button>
+            <button class="conversation" type="button" data-action="select-conversation" data-conversation="attention" data-kind="actors"><img src="assets/sigils/bee.png" alt=""><span><strong>Attention rules</strong><small>Task Actor · Build</small></span><time>18m</time></button>
+            <button class="conversation" type="button" data-action="select-conversation" data-conversation="jeya" data-kind="allies"><span class="person-avatar plum">J</span><span><strong>Jeya</strong><small>Viewport review</small></span><time>1h</time></button>
+            <button class="conversation" type="button" data-action="select-conversation" data-conversation="sigils" data-kind="actors"><img src="assets/sigils/bee.png" alt=""><span><strong>Functional sigils</strong><small>Task Actor · Test</small></span><time>2h</time></button>
+          </div>
+          <div class="message-thread" data-message-thread>
+            <div class="thread-context"><span data-thread-context>Context · Apiary</span><button type="button" data-action="send-current-to-ki" aria-label="Send current Scene context to Ki"><svg><use href="#i-link"/></svg></button></div>
+            <div class="message incoming" data-thread-message>I’m available with the current Scene and Realm context. Nothing is changed unless you confirm an Action.</div>
+          </div>
+          <form class="message-composer" data-message-form>
+            <input type="text" data-message-input aria-label="Message Ki, an Ally, or a Task Actor" placeholder="Message Ki, an Ally, or a Task Actor…" autocomplete="off">
+            <button type="button" data-action="voice" aria-label="Speak"><svg><use href="#i-mic"/></svg></button>
+            <button type="submit" aria-label="Send message"><svg><use href="#i-send"/></svg></button>
+          </form>
+        </aside>
+
+        <section class="chrome-panel identifier-panel" data-panel-view="identifier" hidden aria-label="Scene Identifier details">
+          <div class="panel-controls">
+            <button type="button" data-action="close-panel" aria-label="Close Scene Identifier"><svg><use href="#i-x"/></svg></button>
+            <button type="button" data-action="minimize-panel" aria-label="Minimize Scene Identifier"><svg><use href="#i-minus"/></svg></button>
+            <button type="button" data-action="expand-panel" aria-label="Expand Scene Identifier"><svg><use href="#i-expand"/></svg></button>
+          </div>
+          <div class="panel-body">
+            <div class="panel-identifier">
+              <img src="assets/sigils/bee.png" alt="Bee sigil">
+              <div><small>Archetype</small><h3>Apiary</h3><p>Kiduna Dev</p></div>
+              <button class="send-context" type="button" data-action="send-to-ki" data-context="Scene Identifier: Archetype scene Apiary in Kiduna Dev" aria-label="Send Scene Identifier to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button>
+            </div>
+
+            <div class="recovery-actions">
+              <button type="button" data-action="navigate" data-destination="Under the Bridge"><svg><use href="#i-home"/></svg><span><small>Home</small><strong>Under the Bridge</strong></span></button>
+              <button type="button" data-action="navigate" data-destination="Firefly Meadow"><svg><use href="#i-back"/></svg><span><small>Back</small><strong>Firefly Meadow</strong></span></button>
+              <button type="button" data-action="toggle-history" aria-expanded="false" aria-label="Show longer navigation history"><svg><use href="#i-chevron-down"/></svg></button>
+            </div>
+            <div class="history-menu" data-history-menu hidden>
+              <button type="button" data-action="navigate" data-destination="Moonlit Archive">Moonlit Archive <small>18 minutes ago</small></button>
+              <button type="button" data-action="navigate" data-destination="Kinship Workshop">Kinship Workshop <small>42 minutes ago</small></button>
+              <button type="button" data-action="navigate" data-destination="Under the Bridge">Under the Bridge <small>Home</small></button>
+            </div>
+
+            <section class="info-section">
+              <div><small>Realm Type</small><strong><img src="assets/sigils/project.png" alt="">Project</strong></div>
+              <button class="send-context" type="button" data-action="send-to-ki" data-context="Realm Type: Project" aria-label="Send Realm Type to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button>
+            </section>
+
+            <section class="info-section purpose-section">
+              <div><small>Purpose</small><strong>Build Kiduna as a living environment for consequential collaboration.</strong></div>
+              <button class="send-context" type="button" data-action="send-to-ki" data-context="Realm Purpose: Build Kiduna as a living environment for consequential collaboration" aria-label="Send Realm Purpose to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button>
+            </section>
+
+            <section class="nested-section">
+              <header><small>Nested Realms</small><button class="send-context" type="button" data-action="send-to-ki" data-context="Nested Realms: The Park, Kinship Systems, Apiary" aria-label="Send nested Realms to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button></header>
+              <nav aria-label="Nested Realms">
+                <button type="button" data-action="navigate" data-destination="The Park">The Park</button><svg><use href="#i-chevron-right"/></svg>
+                <button type="button" data-action="navigate" data-destination="Kinship Systems">Kinship Systems</button><svg><use href="#i-chevron-right"/></svg>
+                <button type="button" class="current" data-action="navigate" data-destination="Apiary">Apiary</button>
+              </nav>
+            </section>
+
+            <button class="inspect-button" type="button" data-action="toggle-inspect" aria-expanded="false"><span>Inspect</span><svg><use href="#i-chevron-down"/></svg></button>
+            <div class="inspect-content" data-inspect-content hidden>
+              <section><span><small>Created</small><strong>August 14, 2026</strong></span><button class="send-context" type="button" data-action="send-to-ki" data-context="Apiary created August 14, 2026" aria-label="Send creation details to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button></section>
+              <section><span><small>Catalyst</small><strong>David</strong></span><button class="send-context" type="button" data-action="send-to-ki" data-context="Apiary Catalyst: David" aria-label="Send Catalyst to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button></section>
+              <section><span><small>Authority</small><strong>Builder · primary Role</strong></span><button class="send-context" type="button" data-action="send-to-ki" data-context="My Apiary Authority and Roles" aria-label="Send Authority to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button></section>
+              <section><span><small>Governance</small><strong>Steward Council · 3 active proposals</strong></span><button class="send-context" type="button" data-action="send-to-ki" data-context="Apiary governance and proposals" aria-label="Send governance to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button></section>
+              <section><span><small>Treasury</small><strong>Shared · 4 allocations</strong></span><button class="send-context" type="button" data-action="send-to-ki" data-context="Apiary treasury and allocations" aria-label="Send treasury to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button></section>
+            </div>
+          </div>
+        </section>
+
+        <section class="chrome-panel dock-panel" data-panel-view="dock" hidden aria-label="Task control panel">
+          <div class="panel-controls">
+            <button type="button" data-action="close-panel" aria-label="Close task panel"><svg><use href="#i-x"/></svg></button>
+            <button type="button" data-action="minimize-panel" aria-label="Minimize task panel"><svg><use href="#i-minus"/></svg></button>
+            <button type="button" data-action="expand-panel" aria-label="Expand task panel"><svg><use href="#i-expand"/></svg></button>
+          </div>
+          <div class="panel-body" data-dock-content></div>
+        </section>
+
+        <section class="task-overlay" data-task-overlay hidden aria-label="Task overlay">
+          <header>
+            <div class="task-title"><img src="assets/sigils/bee.png" alt=""><div><small data-task-type>Product Design</small><h3 data-task-title>Build invitation flow</h3><p data-task-path>Kiduna Dev · Apiary</p></div></div>
+            <span class="task-stage" data-task-stage>Build</span>
+            <button type="button" data-action="send-task-to-ki" aria-label="Send Task to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button>
+            <button type="button" data-action="close-task" aria-label="Close Task overlay"><svg><use href="#i-x"/></svg></button>
+          </header>
+          <div class="task-body">
+            <section class="your-part"><div><small>Your part</small><strong data-task-part>Review the interaction flow by 3:00 PM.</strong></div><button type="button" data-action="task-action" data-task-action="review">Start review</button></section>
+            <section><div><small>Outcome</small><p data-task-outcome>Make it possible for an invited Source to enter Apiary with explicit scope and Permission.</p></div><button class="send-context" type="button" data-action="send-to-ki" data-context="Current Task outcome" aria-label="Send Task outcome to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button></section>
+            <section><div><small>Now</small><p data-task-now>Engineering is implementing the confirmation step.</p></div><button class="send-context" type="button" data-action="send-to-ki" data-context="Current Task status" aria-label="Send Task status to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button></section>
+            <section class="people-row"><div><small>People</small><p data-task-people>Requested by David · Lead Aashik · Reviewing Morgan</p></div><button class="send-context" type="button" data-action="send-to-ki" data-context="People on current Task" aria-label="Send Task people to Ki"><svg><use href="#i-arrow-right"/></svg><span>Ki</span></button></section>
+            <section class="task-footer"><button type="button" data-action="task-action" data-task-action="follow">Follow</button><button type="button" data-action="task-action" data-task-action="help">Offer to help</button><button type="button" data-action="task-action" data-task-action="full">Open full Task</button></section>
+          </div>
+        </section>
+
+        <section class="meeting-panel" data-meeting-panel hidden aria-label="Set up a meeting">
+          <header><div><small>Communications</small><h3>Set up a meeting</h3></div><button type="button" data-action="close-meeting" aria-label="Close meeting panel"><svg><use href="#i-x"/></svg></button></header>
+          <label>With<select data-meeting-with><option>Aashik</option><option>Jeya</option><option>David</option><option>Apiary collaborators</option></select></label>
+          <label>Context<select><option>Apiary</option><option>Build invitation flow</option><option>Define attention rules</option></select></label>
+          <div class="meeting-times"><button type="button" data-action="select-time">Today · 3:30 PM</button><button type="button" data-action="select-time">Tomorrow · 10:00 AM</button><button type="button" data-action="select-time">Find another time</button></div>
+          <button class="meeting-primary" type="button" data-action="prepare-meeting">Review meeting</button>
+          <button class="send-context full-send" type="button" data-action="send-to-ki" data-context="Help me set up a meeting about Apiary" aria-label="Send meeting setup to Ki"><svg><use href="#i-arrow-right"/></svg><span>Send setup to Ki</span></button>
+        </section>
+
+        <div class="minimized-panels" data-minimized hidden></div>
+        <div class="toast" data-toast hidden role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="spec-section" aria-labelledby="identifier-spec-title">
+      <div class="section-header compact">
+        <div><span class="section-index">02</span><h2 id="identifier-spec-title">Upper left: Scene Identifier</h2></div>
+        <p>This component identifies the current Scene and opens navigation and inspection controls for that Scene and its containing Realm.</p>
+      </div>
+      <div class="spec-grid identifier-spec-grid">
+        <div class="component-sample">
+          <span class="sample-label">COMPONENT NAME · SCENE IDENTIFIER</span>
+          <div class="sample-identifier"><img src="assets/sigils/bee.png" alt=""><div><small>Archetype <b>Scene Type</b></small><strong>Apiary <b>Scene Name</b></strong><span>Kiduna Dev <b>Realm Name</b></span></div><svg><use href="#i-chevron-down"/></svg></div>
+        </div>
+        <dl class="anatomy-list">
+          <div><dt>Sigil</dt><dd>Visual identifier for Apiary.</dd></div>
+          <div><dt>Eyebrow</dt><dd>Scene Type: Archetype.</dd></div>
+          <div><dt>Headline</dt><dd>Scene Name: Apiary.</dd></div>
+          <div><dt>Supporting line</dt><dd>Realm Name: Kiduna Dev.</dd></div>
+          <div><dt>Disclosure</dt><dd>Opens the expanded Scene Identifier panel.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="spec-section" aria-labelledby="expanded-spec-title">
+      <div class="section-header compact"><div><span class="section-index">03</span><h2 id="expanded-spec-title">Expanded Scene Identifier</h2></div><p>The compact identifier is replaced by the panel while it is open. The panel does not repeat the Realm Name outside the identifier header.</p></div>
+      <div class="requirements-grid">
+        <article><h3>Header</h3><p>Bee sigil, Scene Type, Scene Name, and Realm Name. One send-to-Ki control.</p></article>
+        <article><h3>Recovery</h3><p>Home: Under the Bridge. Back: Firefly Meadow. History disclosure shows earlier locations.</p></article>
+        <article><h3>Realm information</h3><p>Realm Type and Purpose remain visible as separate sections.</p></article>
+        <article><h3>Nested Realms</h3><p>The Park → Kinship Systems → Apiary. Each parent is navigable.</p></article>
+        <article><h3>Inspect</h3><p>Creation, Catalyst, Authority, governance, and treasury remain collapsed until requested.</p></article>
+        <article><h3>Ki handoff</h3><p>Every information section can send its exact context into the locked communications panel.</p></article>
+      </div>
+    </section>
+
+    <section class="spec-section" aria-labelledby="dock-spec-title">
+      <div class="section-header compact"><div><span class="section-index">04</span><h2 id="dock-spec-title">Bottom center: contextual Task controls</h2></div><p>The dock is organized around Tasks. The contents of each panel are filters, navigation, or Task creation—not general Scene editing tools.</p></div>
+      <div class="control-table" role="table" aria-label="Task dock controls">
+        <div role="row"><strong role="cell">New Task</strong><span role="cell">Starts Task creation.</span><span role="cell">Primary control at the left edge.</span></div>
+        <div role="row"><strong role="cell">Projects</strong><span role="cell">Select the current Project.</span><span role="cell">Apiary, Kiduna Mobile, Sigil System, Royals &amp; Rogues.</span></div>
+        <div role="row"><strong role="cell">Task types</strong><span role="cell">Show Tasks of a selected functional type.</span><span role="cell">Scope can be this Project or all Projects.</span></div>
+        <div role="row"><strong role="cell">My tasks</strong><span role="cell">Show Tasks where the Source has a Task responsibility.</span><span role="cell">Grouped by Do now, Review, Waiting, Following.</span></div>
+        <div role="row"><strong role="cell">Active</strong><span role="cell">Sort by activity, risk, stage, or recency.</span><span role="cell">Can include Tasks across Projects.</span></div>
+        <div role="row"><strong role="cell">Calendar</strong><span role="cell">Show due dates, reviews, releases, and meetings.</span><span role="cell">Day, week, and commitment views.</span></div>
+      </div>
+    </section>
+
+    <section class="spec-section" aria-labelledby="comms-spec-title">
+      <div class="section-header compact"><div><span class="section-index">05</span><h2 id="comms-spec-title">Upper right: Communications and Ki</h2></div><p>The panel stays open on the right. It combines Ki, Allies, and Task Actors in one communication surface and provides meeting setup.</p></div>
+      <div class="requirements-grid three">
+        <article><h3>Locked position</h3><p>The panel stays on the right across Scenes. It does not become a floating response window.</p></article>
+        <article><h3>Conversation types</h3><p>Allies are people or intelligences. Actors are Task-scoped intelligences. They are labeled separately.</p></article>
+        <article><h3>Context handoff</h3><p>Send-to-Ki controls add structured context to the thread without performing an Action.</p></article>
+        <article><h3>Meetings</h3><p>The meeting control selects participants and Task or Scene context before review.</p></article>
+        <article><h3>Task continuity</h3><p>Opening a Task Actor conversation can reopen and highlight the related bee.</p></article>
+        <article><h3>Confirmation</h3><p>Messages can prepare Actions. Consequential changes remain subject to explicit confirmation.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Kiduna Chrome · Apiary Review Build 02</span><span>Local prototype · Goudy Heavyface + Avenir</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

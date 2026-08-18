@@ -103,7 +103,7 @@ export default function CanonPage() {
               </svg>
               Download the Kiduna Kit
             </a>
-            <Link className="text-link" href="/#early-access">Request Early Access</Link>
+            <Link className="text-link" href="/build-with-us">Build With Us</Link>
           </div>
         </div>
 
