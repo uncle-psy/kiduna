@@ -79,6 +79,22 @@ export default function SigilsPage() {
         </aside>
       </section>
 
+      <section className={styles.publishedIdentity} aria-labelledby="royals-and-rogues-title">
+        <div className={styles.publishedArt}>
+          <Image src="/sigils/royals-and-rogues.png" alt="Royals & Rogues sigil" width={2048} height={2048} />
+        </div>
+        <div className={styles.publishedCopy}>
+          <p className="eyebrow">Published named identity</p>
+          <h2 id="royals-and-rogues-title">Royals &amp; Rogues</h2>
+          <strong>Deal the hand — change the world around it.</strong>
+          <p>This production identity sigil was published concurrently with Library v0.31 and is preserved here with its full entry and original 2048 × 2048 artwork.</p>
+          <div>
+            <Link className="button button-primary" href="/sigils/royals-and-rogues">Read the entry</Link>
+            <a className="text-link" href="/sigils/royals-and-rogues.png" download>Download 2048px PNG</a>
+          </div>
+        </div>
+      </section>
+
       <SigilLibrary sigils={sigils} portraits={portraits} />
 
       <section className={styles.downloadBand}>
