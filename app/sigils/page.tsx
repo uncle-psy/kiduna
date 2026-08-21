@@ -7,6 +7,7 @@ import Link from "next/link";
 import SiteHeader from "@/components/site-header";
 import SigilLibrary, { type LibraryEntry } from "./sigil-library";
 import styles from "./sigils.module.css";
+import { royalsAndRoguesRoles } from "./royals-and-rogues-roles";
 
 export const metadata: Metadata = {
   title: "Sigil Library — Kiduna",
@@ -54,7 +55,7 @@ export default function SigilsPage() {
           <p className={styles.heroLead}>Sigils give Kiduna a stable symbolic vocabulary. Portraits carry recognizable identity across changing states. Together they help Sources understand what is present, what it means, and how it can be approached.</p>
           <div className={styles.heroActions}>
             <a className="button button-primary" href="https://github.com/uncle-psy/kiduna/releases/download/sigils-v1.5/Kiduna-Sigils-Kit-v1.5-2026-08-21.zip">Download the complete Sigil Kit</a>
-            <a className="text-link" href="/downloads/Kiduna-Sigil-Lexicon-V1.5-2026-08-21.md" download>Download the Lexicon</a>
+            <a className="text-link" href="/downloads/Kiduna-Sigil-Lexicon-V1.7-2026-08-21.md" download>Download the Lexicon</a>
           </div>
         </div>
         <div className={styles.heroPortraits} aria-label="Six Kiduna enamel portrait examples in their Open state">
@@ -95,6 +96,34 @@ export default function SigilsPage() {
         </div>
       </section>
 
+      <section className={styles.roleFamily} aria-labelledby="royals-and-rogues-roles-title">
+        <div className={styles.roleFamilyIntro}>
+          <div>
+            <p className="eyebrow">Royals &amp; Rogues · Role family</p>
+            <h2 id="royals-and-rogues-roles-title">Four ways to play the field.</h2>
+          </div>
+          <p>These marks belong specifically to Royals &amp; Rogues. They identify roles inside that world without replacing Kiduna&apos;s general Role taxonomy.</p>
+        </div>
+        <div className={styles.roleGrid}>
+          {royalsAndRoguesRoles.map((role) => (
+            <article className={styles.roleCard} key={role.slug}>
+              <Link className={styles.roleArt} href={`/sigils/${role.slug}`} aria-label={`Read the ${role.name} sigil entry`}>
+                <Image src={`/sigils/${role.slug}.png`} alt={`${role.name} sigil`} width={2048} height={2048} />
+              </Link>
+              <div className={styles.roleCopy}>
+                <p>Royals &amp; Rogues role</p>
+                <h3>{role.name}</h3>
+                <strong>{role.essence}</strong>
+                <div>
+                  <Link className="text-link" href={`/sigils/${role.slug}`}>Read the entry</Link>
+                  <a className="text-link" href={`/sigils/${role.slug}.png`} download>Download PNG</a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <SigilLibrary sigils={sigils} portraits={portraits} />
 
       <section className={styles.downloadBand}>
@@ -102,11 +131,11 @@ export default function SigilsPage() {
         <div>
           <p className="eyebrow">A complete, verified release</p>
           <h2>Take the library with you.</h2>
-          <p>The v1.5 kit includes the generated Lexicon, machine-readable catalog, 194 sigils, six portrait families, original portrait boards, high-resolution approved masters, reference artwork, metadata, provenance, and checksums.</p>
+          <p>The complete catalog now includes 198 sigils and six portrait families. The downloadable v1.5 kit remains available as the last packaged release; the current Lexicon is V1.7.</p>
         </div>
         <div className={styles.downloadActions}>
           <a className="button button-primary" href="https://github.com/uncle-psy/kiduna/releases/download/sigils-v1.5/Kiduna-Sigils-Kit-v1.5-2026-08-21.zip">Download 1.5</a>
-          <a className="text-link" href="/downloads/Kiduna-Sigil-Lexicon-V1.5-2026-08-21.md" download>Lexicon Markdown</a>
+          <a className="text-link" href="/downloads/Kiduna-Sigil-Lexicon-V1.7-2026-08-21.md" download>Lexicon V1.7 Markdown</a>
         </div>
       </section>
 
