@@ -90,7 +90,7 @@ export default function SigilLibrary({ sigils, portraits }: { sigils: LibraryEnt
             <p className="eyebrow">Complete library</p>
             <h2>Find the mark.<span>Understand the meaning.</span></h2>
           </div>
-          <p>The full v0.31 visual catalog is here, including the new card suits, archetypes, Major Arcana, Tarot suits, Alchemy, and classical elements. Search by name, meaning, association, or category.</p>
+          <p>The full v0.34 visual catalog is here, including the Royals &amp; Rogues role family, card suits, archetypes, Major Arcana, Tarot suits, Alchemy, and classical elements. Search by name, meaning, association, or category.</p>
         </div>
 
         <div className={styles.libraryTools}>
@@ -119,7 +119,7 @@ export default function SigilLibrary({ sigils, portraits }: { sigils: LibraryEnt
                     <h3>{entry.name}</h3>
                     <span>{entry.essence}</span>
                   </div>
-                  {entry.masterAsset && <small className={styles.newBadge}>New in v0.31</small>}
+                  {entry.category === "Named identities › Royals & Rogues › Roles" && <small className={styles.newBadge}>New in v0.34</small>}
                 </article>
               );
             })}

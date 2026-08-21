@@ -1,12 +1,12 @@
 {
   "title": "Kiduna Sigil Catalog",
-  "version": "V1.5",
-  "timestamp": "2026-08-21 11:34 EDT",
+  "version": "V1.7",
+  "timestamp": "2026-08-21 11:32 EDT",
   "timezone": "America/New_York",
-  "sigilLibraryVersion": "v0.31",
+  "sigilLibraryVersion": "v0.34",
   "taxonomyCanonVersion": "V0.37",
-  "count": 200,
-  "sigilCount": 194,
+  "count": 204,
+  "sigilCount": 198,
   "portraitCount": 6,
   "portraitStateAssetCount": 24,
   "portraitSystem": {
@@ -4150,6 +4150,90 @@
       "status": "canonical",
       "referenceMaster": "assets/sigils-v031/reference/png128/earth-elemental.png",
       "masterAsset": "assets/sigils-v031/masters/png1254/earth-elemental.png",
+      "portraitStates": null,
+      "functional": null
+    },
+    {
+      "id": "sigil.identity.royals-and-rogues.role.warrior",
+      "name": "Warrior",
+      "slug": "warrior",
+      "type": "sigil",
+      "category": "Named identities › Royals & Rogues › Roles",
+      "essence": "Resolve — meet danger with disciplined force",
+      "meaning": "A Royals & Rogues role for direct protection, decisive action, and controlled force. The Warrior accepts exposure in order to hold ground, answer danger, or create room for others.",
+      "associations": [
+        "Resolve",
+        "Protection",
+        "Readiness",
+        "Decisive action"
+      ],
+      "usage": "Use only for the Warrior role, cards, characters, abilities, and game states within Royals & Rogues. Do not use it as a generic mark for violence, war, military authority, or security.",
+      "status": "canonical",
+      "referenceMaster": "assets/sigils-v034/reference/png128/warrior.png",
+      "masterAsset": "assets/sigils-v034/masters/png2048/warrior.png",
+      "portraitStates": null,
+      "functional": null
+    },
+    {
+      "id": "sigil.identity.royals-and-rogues.role.noble",
+      "name": "Noble",
+      "slug": "noble",
+      "type": "sigil",
+      "category": "Named identities › Royals & Rogues › Roles",
+      "essence": "Stewardship — carry rank as responsibility",
+      "meaning": "A Royals & Rogues role for position, authority, obligation, and the consequences of visible standing. The Noble can direct attention and resources, but rank creates duties as well as privileges.",
+      "associations": [
+        "Stewardship",
+        "Rank",
+        "Authority",
+        "Obligation"
+      ],
+      "usage": "Use only for the Noble role, cards, characters, abilities, and game states within Royals & Rogues. Do not use it as a generic seal of leadership, social superiority, monarchy, or inherited legitimacy.",
+      "status": "canonical",
+      "referenceMaster": "assets/sigils-v034/reference/png128/noble.png",
+      "masterAsset": "assets/sigils-v034/masters/png2048/noble.png",
+      "portraitStates": null,
+      "functional": null
+    },
+    {
+      "id": "sigil.identity.royals-and-rogues.role.rogue",
+      "name": "Rogue",
+      "slug": "rogue",
+      "type": "sigil",
+      "category": "Named identities › Royals & Rogues › Roles",
+      "essence": "Maneuver — change the path before it closes",
+      "meaning": "A Royals & Rogues role for evasion, opportunism, inversion, and acting through openings others overlook. The Rogue changes position, expectation, or advantage without promising loyalty to the obvious route.",
+      "associations": [
+        "Maneuver",
+        "Evasion",
+        "Opportunity",
+        "Inversion"
+      ],
+      "usage": "Use only for the Rogue role, cards, characters, abilities, and game states within Royals & Rogues. Do not use it as a generic mark for crime, secrecy, betrayal, deception, or moral failure.",
+      "status": "canonical",
+      "referenceMaster": "assets/sigils-v034/reference/png128/rogue.png",
+      "masterAsset": "assets/sigils-v034/masters/png2048/rogue.png",
+      "portraitStates": null,
+      "functional": null
+    },
+    {
+      "id": "sigil.identity.royals-and-rogues.role.merchant",
+      "name": "Merchant",
+      "slug": "merchant",
+      "type": "sigil",
+      "category": "Named identities › Royals & Rogues › Roles",
+      "essence": "Exchange — move value through measured agreement",
+      "meaning": "A Royals & Rogues role for trade, negotiation, circulation, and turning differences in need or value into consequential exchange. The Merchant works through terms, timing, leverage, and reciprocal movement.",
+      "associations": [
+        "Exchange",
+        "Negotiation",
+        "Circulation",
+        "Measured value"
+      ],
+      "usage": "Use only for the Merchant role, cards, characters, abilities, and game states within Royals & Rogues. Do not use it as a generic currency, wallet, marketplace, wealth, or financial-services mark.",
+      "status": "canonical",
+      "referenceMaster": "assets/sigils-v034/reference/png128/merchant.png",
+      "masterAsset": "assets/sigils-v034/masters/png2048/merchant.png",
       "portraitStates": null,
       "functional": null
     },
