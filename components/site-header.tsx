@@ -31,6 +31,7 @@ export default function SiteHeader({ showEarlyAccess = true }: SiteHeaderProps) 
         <a className="nav-link" href="/grow-with-us" onClick={() => setMenuOpen(false)}>Grow With Us</a>
         <a className="nav-link" href="/about-our-work" onClick={() => setMenuOpen(false)}>About Our Work</a>
         <a className="nav-link" href="/the-canon" onClick={() => setMenuOpen(false)}>The Canon</a>
+        <a className="nav-link" href="/sigils" onClick={() => setMenuOpen(false)}>Sigils</a>
         <a className="nav-link" href="/nightpaper" onClick={() => setMenuOpen(false)}>The Nightpaper</a>
         <a className="nav-link" href="/events" onClick={() => setMenuOpen(false)}>Events</a>
         {showEarlyAccess && (
