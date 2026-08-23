@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     url: "/",
     siteName: "Kiduna",
     type: "website",
-    images: [{ url: "/og-home-design-system.png", width: 1659, height: 948, alt: "Kiduna — Create intelligent allies. Build powerful movements." }],
+    images: [{ url: "/og/home.png", width: 1200, height: 630, alt: "Kiduna — Create intelligent allies. Build powerful movements." }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Create intelligent allies. Build powerful movements.",
     description: "Kiduna brings people and their intelligent allies into trusted relationships, where shared purpose becomes projects, movements, organizations, and action.",
-    images: ["/og-home-design-system.png"],
+    images: ["/og/home.png"],
   },
 };
 

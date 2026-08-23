@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-home-design-system.png",
-        width: 1659,
-        height: 948,
+        url: "/og/how-we-work.png",
+        width: 1200,
+        height: 630,
         alt: "Kiduna — People and intelligent allies acting together on purpose.",
       },
     ],
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How We Work — Kiduna",
     description: "People and intelligent allies acting together on purpose.",
-    images: ["/og-home-design-system.png"],
+    images: ["/og/how-we-work.png"],
   },
 };
 
