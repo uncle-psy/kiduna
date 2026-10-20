@@ -1,0 +1,90 @@
+/* Warm Black Aurora: Source-approved application theme, 2026-09-10. */
+html[data-kiduna-variant="warm-black-aurora"] {
+  --option-ground: #030101;
+  --option-surface: #1c131d;
+  --option-elevated: #271d28;
+  --option-line: #2f2730;
+  --m-bg: var(--option-ground);
+  --m-panel: var(--option-surface);
+  --m-high: var(--option-elevated);
+  --m-line: var(--option-line);
+  --bg: var(--option-ground);
+  --surface: var(--option-surface);
+  --line: var(--option-line);
+}
+[data-kiduna-variant="warm-black-aurora"] .mobile-app {
+  --m-bg: var(--option-ground);
+  --m-panel: var(--option-surface);
+  --m-high: var(--option-elevated);
+}
+[data-kiduna-variant="warm-black-aurora"] .top-app-bar,
+[data-kiduna-variant="warm-black-aurora"] .bottom-app-bar,
+[data-kiduna-variant="warm-black-aurora"] .beacon-tabs {background:var(--option-ground)}
+[data-kiduna-variant="warm-black-aurora"] .phone {
+  --c-bg: var(--option-ground);
+  --c-header: var(--option-ground);
+  --c-surface: var(--option-surface);
+  --c-elev: var(--option-elevated);
+  --c-line: var(--option-line);
+  --c-soft: var(--option-line);
+}
+[data-kiduna-variant="warm-black-aurora"] .theme-choice:not(.selected),
+[data-kiduna-variant="warm-black-aurora"] .beacon-item,
+[data-kiduna-variant="warm-black-aurora"] .form-field select {background:var(--option-surface)}
+[data-kiduna-variant="warm-black-aurora"] .intention-options button:not([aria-pressed=true]),
+[data-kiduna-variant="warm-black-aurora"] .chips button {background:var(--option-elevated)}
+[data-kiduna-variant="warm-black-aurora"] .signin-shade {background:linear-gradient(#03010155 0%,#03010100 20%,#030101d9 53%,#030101 83%)}
+[data-kiduna-variant="warm-black-aurora"] .splash .signin-shade {background:linear-gradient(#16263515 0%,#03010100 23%,#030101d9 47%,#030101 84%)}
+[data-kiduna-variant="warm-black-aurora"] .arrival-picture:after {background:linear-gradient(transparent 30%,#030101)}
+/* Approved colored surfaces and light, with inherited geometry. */
+html[data-kiduna-variant="warm-black-aurora"] {
+  --option-blue-green: #10232d;
+  --option-violet: #9367fa;
+  --option-turquoise: #03d9df;
+  --option-action-gradient: linear-gradient(105deg, #03d9df 0%, #43b3ee 48%, #9367fa 100%);
+  --option-panel-gradient: linear-gradient(125deg, #10232d 0%, #10212b 42%, #160e21 100%);
+}
+[data-kiduna-variant="warm-black-aurora"] .top-app-bar,
+[data-kiduna-variant="warm-black-aurora"] .bottom-app-bar {
+  background: #1c131d;
+  border-color: #9367fa2e;
+}
+[data-kiduna-variant="warm-black-aurora"] .theme-choice:not(.selected),
+[data-kiduna-variant="warm-black-aurora"] .beacon-item,
+[data-kiduna-variant="warm-black-aurora"] .recommendation-row,
+[data-kiduna-variant="warm-black-aurora"] .role-options button:not(.selected),
+[data-kiduna-variant="warm-black-aurora"] .avatar-review,
+[data-kiduna-variant="warm-black-aurora"] .ki-proposal,
+[data-kiduna-variant="warm-black-aurora"] .ki-context,
+[data-kiduna-variant="warm-black-aurora"] .media-row {
+  background: var(--option-panel-gradient);
+  border-color: #42758670;
+  box-shadow: 0 0 18px #884dff14;
+}
+[data-kiduna-variant="warm-black-aurora"] .primary:not(.danger) {
+  background: var(--option-action-gradient);
+  color: #100611;
+  border-color: transparent;
+  box-shadow: 0 0 19px #8852ed38;
+}
+[data-kiduna-variant="warm-black-aurora"] .secondary {
+  background: #1c131d;
+  border-color: #9367fa66;
+}
+[data-kiduna-variant="warm-black-aurora"] .place-tile,
+[data-kiduna-variant="warm-black-aurora"] .presentation-preview {
+  box-shadow: 0 0 22px #8852ed38;
+}
+[data-kiduna-variant="warm-black-aurora"] .pole {
+  background: linear-gradient(90deg, #10232da6, #10232d00);
+}
+[data-kiduna-variant="warm-black-aurora"] .connection-row {
+  background: linear-gradient(100deg, #10232d66, #160e2100);
+}
+[data-kiduna-variant="warm-black-aurora"] .vibe-fill {
+  background: var(--option-action-gradient);
+}
+[data-kiduna-variant="warm-black-aurora"] .theme-choice.selected,
+[data-kiduna-variant="warm-black-aurora"] .role-options .selected {
+  box-shadow: 0 0 18px #9367fa33;
+}

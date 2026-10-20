@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="fist-title">
+<title id="fist-title">Fist</title>
+<g transform="translate(-16.2 -4.1) scale(.22)" stroke-width="7.9545">
+<path d="M115.2 122.2 115.5 105 104.5 89.7Q102.5 86.9 103.6 83L110.2 65.1 128 71Q134 73 130 78Q128 81 123 79L117.4 77.6Q122 85 129 89L134.4 93"/>
+<path d="m112 65.5 6-16 13 4.5-6 16m6-16 13 5-9 24m9-24 12 6-8 22-13-4"/>
+<path d="m150 82-2 16-7 8 1.5 16.2h-27.3"/>
+</g>
+<g transform="translate(-16.2 -4.1) scale(.22)" stroke-width="2.5" stroke-linecap="butt">
+<path d="m128.5 43.1-1.6-20.3m18.8 25.1 9-17.6m2.1 29 16.8-9.8m-12 30.8 19.2 2.7m-24 18.4 13.7 10.2m-65.9-7.3-13.7 14.9m5.7-31.4-17.6 5m18.9-26.4-19.7-4.3m29.4-12.7-13.4-14.7"/>
+</g>
+</svg>
