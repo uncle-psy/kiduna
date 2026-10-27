@@ -209,3 +209,11 @@
 .possibility-intro .intro-rally{font-size:30px;line-height:1.4;color:var(--kid-sun-gold);padding:12px 0}
 .footer-purpose .text-link{margin-top:14px}
 @media(max-width:700px){.possibility-intro .intro-callout{font-size:19px;margin-top:26px;padding-left:20px}.possibility-intro .intro-rally{font-size:27px}}
+
+/* Lunchbreakers: a working example alongside the DUNA story. */
+.duna-lunchbreakers{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:32px;border-top:1px solid var(--line)}
+.duna-lunchbreakers>img{width:230px;height:auto;flex-shrink:0}
+.duna-lunchbreakers .lunchbreakers-tagline{font-family:'Goudy Heavyface',serif;font-size:clamp(27px,2.6vw,38px);line-height:1.12;color:var(--kid-sun-gold);margin:0}
+.duna-lunchbreakers .button{flex-shrink:0}
+@media(max-width:1000px){.duna-lunchbreakers{flex-wrap:wrap;justify-content:center;text-align:center}.duna-lunchbreakers .button{margin-inline:auto}}
+@media(max-width:600px){.duna-lunchbreakers{flex-direction:column;gap:24px}.duna-lunchbreakers>img{width:min(250px,100%)}}
