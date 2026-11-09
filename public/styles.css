@@ -248,3 +248,51 @@
 .economy-together{font:clamp(32px,4.5vw,62px)/1.17 var(--font-display);margin-top:42px;color:var(--fg)}
 @media(max-width:980px){.economy-opening,.economy-chapter{gap:40px}.economy-intro{font-size:18px;padding-left:22px}.economy-question-grid{gap:22px}.economy-token-grid{gap:30px}}
 @media(max-width:700px){.ki-economy{padding-block:65px}.economy-opening,.economy-chapter,.economy-token-grid,.economy-question-grid{grid-template-columns:1fr;gap:28px}.economy-opening{margin-bottom:38px}.economy-opening h2{font-size:clamp(44px,11vw,72px)}.economy-intro{max-width:none}.economy-question-grid{margin-block:30px}.economy-question-grid p,.economy-prose,.economy-transition{font-size:16px}.economy-chapter{padding-block:48px}.economy-token>header{gap:20px;align-items:flex-start;flex-direction:column;margin-bottom:28px}.economy-ki-mark{width:80px;height:80px;font-size:43px}.economy-token-grid{gap:24px}.economy-rally{margin-top:30px;padding-top:30px}.economy-finale{padding-top:30px}.economy-together{margin-top:30px}}
+
+/* The Social Fabric: connection, agency, composition, action. */
+.social-fabric{padding-block:100px;border-top:1px solid var(--line)}
+.fabric-opening{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:end;margin-bottom:50px}
+.fabric-opening h2{font-size:clamp(48px,5.8vw,84px);line-height:1.07;letter-spacing:-.02em}
+.fabric-prose{min-width:0;font-size:17px;color:var(--fg-muted)}
+.fabric-prose p{line-height:1.85;margin-bottom:24px}.fabric-prose p:last-child{margin-bottom:0}
+.fabric-opening-copy{border-left:2px solid var(--kin-skyblue);padding-left:30px;font-size:19px}
+.fabric-first-turn{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding-top:42px;border-top:1px solid var(--line);align-items:start}
+.fabric-pullquote{font-size:clamp(22px,2.2vw,30px);font-weight:700;line-height:1.5;color:var(--fg)}
+.fabric-chapter{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:80px;padding-block:80px}
+.fabric-chapter>h3,.fabric-questions>h3,.fabric-intro-heading h3,.fabric-composition>header h3{font-size:clamp(32px,3.4vw,48px);line-height:1.15;text-wrap:balance}
+.fabric-chapter>h3{max-width:420px}
+.fabric-cascade{font-size:22px;color:var(--fg);line-height:1.65!important}
+.fabric-prose .fabric-emphasis{color:var(--fg);font-weight:700}
+.fabric-chapter .fabric-emphasis{padding:23px 0 23px 26px;border-left:2px solid var(--kid-sun-gold);font-size:20px}
+.fabric-question{font-size:23px;color:var(--kid-sun-gold);font-weight:700}
+.fabric-questions{padding:clamp(26px,4.4vw,60px);border:1px solid #03ccd944;border-radius:16px;background:radial-gradient(ellipse at 100% 0,#103c4055,transparent 65%),#101116}
+.fabric-questions>h3{max-width:900px}
+.fabric-question-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px 50px;margin-block:40px}
+.fabric-question-grid p{border-top:1px solid #03ccd944;padding-top:22px;font-size:19px;color:var(--fg-muted);line-height:1.7}
+.fabric-question-finale{max-width:900px;font:clamp(28px,3vw,42px)/1.25 var(--font-display);color:var(--kin-skyblue)}
+.fabric-introduction{padding-top:85px}
+.fabric-intro-heading{display:flex;gap:30px;align-items:center;margin-bottom:34px}.fabric-intro-heading img{width:100px;height:100px;flex-shrink:0}
+.fabric-intro-lead{font-size:clamp(23px,2.5vw,34px);line-height:1.5;font-weight:700;color:var(--fg);max-width:1060px}
+.fabric-intro-context{display:grid;grid-template-columns:1fr 1fr;gap:65px;margin-block:40px;align-items:start}
+.fabric-missing{border-left:2px solid var(--kid-sun-gold);padding-left:28px;font-size:23px;line-height:1.6;color:var(--fg)}.fabric-missing p+p{margin-top:18px;color:var(--kid-sun-gold);font-weight:700}
+.fabric-alternatives{display:grid;grid-template-columns:1fr 1fr;gap:0 55px}
+.fabric-alternatives>div{position:relative;border-top:1px solid var(--line);padding:28px 0 28px 27px}
+.fabric-alternatives>div:before{content:'↗';position:absolute;left:0;top:29px;color:var(--kin-skyblue);font-size:20px}
+.fabric-alternatives p{font-size:18px;line-height:1.8;color:var(--fg-muted)}
+.fabric-intro-close{font-size:clamp(23px,2.5vw,32px);font-weight:700;line-height:1.55;color:var(--fg);margin-top:28px;max-width:1050px}
+.fabric-action{margin-top:65px;border-top:1px solid var(--line)}
+.fabric-three{margin:34px 0;padding:25px 30px;border:1px solid #eaaa0033;border-radius:10px;background:linear-gradient(120deg,#eaaa000a,#03ccd90a)}
+.fabric-three p{margin-bottom:12px;font-size:20px;color:var(--fg)}.fabric-three strong{color:var(--kid-sun-gold)}
+.fabric-composition{border-top:1px solid var(--line);padding-top:65px}
+.fabric-composition>header{max-width:950px;margin-bottom:35px}
+.fabric-composition-lead{font-size:clamp(23px,2.6vw,34px);line-height:1.5;color:var(--kin-skyblue);margin-top:25px}
+.fabric-composition-copy{display:grid;grid-template-columns:1fr 1fr;gap:55px}.fabric-composition-copy p{margin:0}
+.fabric-dimensions-intro{margin:45px 0 22px;font-size:21px;color:var(--fg);max-width:850px}
+.fabric-growth{display:grid;grid-template-columns:1fr 1fr;gap:55px;margin-top:36px;padding-top:35px;border-top:1px solid var(--line)}
+.fabric-finale{display:grid;grid-template-columns:.7fr 1.3fr;gap:65px;align-items:center;padding:clamp(28px,4.5vw,64px);margin-top:65px;border:1px solid #03ccd944;border-radius:16px;background:radial-gradient(ellipse at 100% 100%,#164c4855,transparent 65%),#15131b55}
+.fabric-finale>h3{font-size:clamp(48px,5.6vw,80px);line-height:1.07}
+.fabric-finale-promise{font-size:22px;line-height:1.6;color:var(--fg)}
+.fabric-rally{font:clamp(28px,3.3vw,45px)/1.3 var(--font-display);margin-block:30px;color:var(--kin-skyblue)}.fabric-rally span{display:block}
+.fabric-invitation{font-size:21px;line-height:1.6;font-weight:700;color:var(--fg)}
+@media(max-width:980px){.fabric-opening,.fabric-first-turn,.fabric-chapter,.fabric-intro-context,.fabric-growth,.fabric-finale{gap:36px}.fabric-opening-copy{font-size:17px;padding-left:24px}.fabric-question-grid,.fabric-alternatives,.fabric-composition-copy{gap:30px}}
+@media(max-width:700px){.social-fabric{padding-block:65px}.fabric-opening,.fabric-first-turn,.fabric-chapter,.fabric-question-grid,.fabric-intro-context,.fabric-alternatives,.fabric-composition-copy,.fabric-growth,.fabric-finale{grid-template-columns:1fr;gap:28px}.fabric-opening{margin-bottom:32px}.fabric-opening h2{font-size:clamp(42px,10.8vw,65px)}.fabric-opening-copy{font-size:18px}.fabric-first-turn{padding-top:30px}.fabric-chapter{padding-block:48px}.fabric-prose{font-size:16px}.fabric-question-grid p,.fabric-alternatives p{font-size:17px}.fabric-question-grid{margin-block:30px}.fabric-introduction{padding-top:55px}.fabric-intro-heading{gap:20px;align-items:flex-start;flex-direction:column}.fabric-intro-heading img{width:76px;height:76px}.fabric-intro-context{margin-block:30px}.fabric-missing{font-size:21px;padding-left:22px}.fabric-alternatives{gap:0}.fabric-alternatives>div{padding-block:23px}.fabric-action{margin-top:45px}.fabric-three{padding:22px;margin-block:28px}.fabric-three p{font-size:18px}.fabric-composition{padding-top:45px}.fabric-dimensions-intro{font-size:19px;margin-top:30px}.fabric-growth{margin-top:24px;padding-top:26px}.fabric-finale{margin-top:45px}.fabric-finale-promise,.fabric-invitation{font-size:19px}}
