@@ -217,3 +217,34 @@
 .duna-lunchbreakers .button{flex-shrink:0}
 @media(max-width:1000px){.duna-lunchbreakers{flex-wrap:wrap;justify-content:center;text-align:center}.duna-lunchbreakers .button{margin-inline:auto}}
 @media(max-width:600px){.duna-lunchbreakers{flex-direction:column;gap:24px}.duna-lunchbreakers>img{width:min(250px,100%)}}
+
+/* KI: an editorial journey from economic questions to shared prosperity. */
+.ki-economy{padding-block:100px;border-top:1px solid var(--line)}
+.economy-opening{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:72px}
+.economy-opening h2{font-size:clamp(52px,6vw,88px);line-height:1.04;letter-spacing:-.02em}
+.economy-intro{border-left:2px solid var(--kin-skyblue);padding-left:30px;font-size:21px;color:var(--fg);max-width:560px}
+.ki-economy h3{font-size:clamp(32px,3.3vw,48px);line-height:1.15;text-wrap:balance}
+.economy-questions{padding:clamp(25px,4vw,56px);background:radial-gradient(ellipse at 100% 0,#103a3b77,transparent 65%),#111015;border:1px solid #03ccd933;border-radius:16px}
+.economy-question-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:42px 0}
+.economy-question-grid p{border-top:1px solid #03ccd955;padding-top:22px;font-size:17px;line-height:1.8;color:var(--fg-muted)}
+.economy-stakes{font-size:clamp(22px,2.2vw,30px);line-height:1.5;max-width:980px;color:var(--fg)}
+.economy-transition{font-size:17px;max-width:820px;margin-top:26px;color:var(--kin-skyblue)}
+.economy-chapter{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:80px;padding-block:80px}
+.economy-chapter>h3{max-width:420px}
+.economy-prose{font-size:17px;color:var(--fg-muted);min-width:0}
+.economy-prose p{line-height:1.85;margin-bottom:24px}.economy-prose p:last-child{margin-bottom:0}
+.economy-prose strong{color:var(--fg)}
+.economy-prose .economy-emphasis{padding:24px 0 24px 25px;border-left:2px solid var(--kid-sun-gold);font-size:21px;line-height:1.65;color:var(--fg)}
+.economy-token{padding:clamp(26px,4.5vw,64px);border:1px solid #eaaa0055;border-radius:16px;background:radial-gradient(ellipse at 0 0,#eaaa0012,transparent 60%),radial-gradient(ellipse at 100% 100%,#03ccd912,transparent 65%)}
+.economy-token>header{display:flex;align-items:center;gap:35px;margin-bottom:36px}
+.economy-ki-mark{position:relative;display:grid;place-items:center;width:116px;height:116px;flex-shrink:0;border:1px solid #eaaa0066;border-radius:50%;font:60px/1 var(--font-display);color:var(--kid-sun-gold);box-shadow:0 0 60px #eaaa000d}
+.economy-ki-mark span{position:absolute;right:0;top:0;font-size:24px;color:var(--kin-skyblue)}
+.economy-token-lead{font-size:clamp(22px,2.3vw,31px);line-height:1.5;max-width:1000px;color:var(--fg);margin-bottom:40px}
+.economy-token-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.economy-rally{font:clamp(30px,4vw,56px)/1.2 var(--font-display);text-align:center;padding-top:40px;margin-top:44px;border-top:1px solid #eaaa0033;color:var(--fg)}.economy-rally strong{font-weight:400}
+.economy-principles{border-left:2px solid #03ccd955;padding-left:26px;margin-top:35px}.economy-principles p{padding-bottom:24px;border-bottom:1px solid var(--line)}.economy-principles p:last-child{padding-bottom:0;border-bottom:0}
+.economy-finale{max-width:1000px;margin-inline:auto;text-align:center;padding-top:35px;border-top:1px solid var(--line)}
+.economy-finale>p:first-child{font-size:clamp(22px,2.4vw,32px);line-height:1.6;color:var(--fg)}
+.economy-together{font:clamp(32px,4.5vw,62px)/1.17 var(--font-display);margin-top:42px;color:var(--fg)}
+@media(max-width:980px){.economy-opening,.economy-chapter{gap:40px}.economy-intro{font-size:18px;padding-left:22px}.economy-question-grid{gap:22px}.economy-token-grid{gap:30px}}
+@media(max-width:700px){.ki-economy{padding-block:65px}.economy-opening,.economy-chapter,.economy-token-grid,.economy-question-grid{grid-template-columns:1fr;gap:28px}.economy-opening{margin-bottom:38px}.economy-opening h2{font-size:clamp(44px,11vw,72px)}.economy-intro{max-width:none}.economy-question-grid{margin-block:30px}.economy-question-grid p,.economy-prose,.economy-transition{font-size:16px}.economy-chapter{padding-block:48px}.economy-token>header{gap:20px;align-items:flex-start;flex-direction:column;margin-bottom:28px}.economy-ki-mark{width:80px;height:80px;font-size:43px}.economy-token-grid{gap:24px}.economy-rally{margin-top:30px;padding-top:30px}.economy-finale{padding-top:30px}.economy-together{margin-top:30px}}
