@@ -296,3 +296,25 @@
 .fabric-invitation{font-size:21px;line-height:1.6;font-weight:700;color:var(--fg)}
 @media(max-width:980px){.fabric-opening,.fabric-first-turn,.fabric-chapter,.fabric-intro-context,.fabric-growth,.fabric-finale{gap:36px}.fabric-opening-copy{font-size:17px;padding-left:24px}.fabric-question-grid,.fabric-alternatives,.fabric-composition-copy{gap:30px}}
 @media(max-width:700px){.social-fabric{padding-block:65px}.fabric-opening,.fabric-first-turn,.fabric-chapter,.fabric-question-grid,.fabric-intro-context,.fabric-alternatives,.fabric-composition-copy,.fabric-growth,.fabric-finale{grid-template-columns:1fr;gap:28px}.fabric-opening{margin-bottom:32px}.fabric-opening h2{font-size:clamp(42px,10.8vw,65px)}.fabric-opening-copy{font-size:18px}.fabric-first-turn{padding-top:30px}.fabric-chapter{padding-block:48px}.fabric-prose{font-size:16px}.fabric-question-grid p,.fabric-alternatives p{font-size:17px}.fabric-question-grid{margin-block:30px}.fabric-introduction{padding-top:55px}.fabric-intro-heading{gap:20px;align-items:flex-start;flex-direction:column}.fabric-intro-heading img{width:76px;height:76px}.fabric-intro-context{margin-block:30px}.fabric-missing{font-size:21px;padding-left:22px}.fabric-alternatives{gap:0}.fabric-alternatives>div{padding-block:23px}.fabric-action{margin-top:45px}.fabric-three{padding:22px;margin-block:28px}.fabric-three p{font-size:18px}.fabric-composition{padding-top:45px}.fabric-dimensions-intro{font-size:19px;margin-top:30px}.fabric-growth{margin-top:24px;padding-top:26px}.fabric-finale{margin-top:45px}.fabric-finale-promise,.fabric-invitation{font-size:19px}}
+
+/* Kinship Intelligence: editorial opening and paired diagrams. */
+.kinship-intro{padding-block:80px 90px;max-width:1168px}
+.kinship-opening{max-width:1000px;margin:0 auto 38px}
+.kinship-opening h1{font-size:clamp(48px,6.2vw,86px);line-height:1.06;max-width:1000px}
+.kinship-prose{max-width:880px;margin-inline:auto;font-size:19px}
+.kinship-prose p+p{margin-top:26px}
+.kinship-prose em{font-style:italic}
+.kinship-shift{font-size:clamp(25px,3vw,34px);line-height:1.4;color:var(--kid-sun-gold);padding-block:12px}
+.kinship-diagram{margin:48px 0}
+.kinship-diagram a{display:block;border-radius:12px;overflow:hidden}
+.kinship-diagram img{width:100%;height:auto}
+.kinship-diagram figcaption{max-width:880px;margin:20px auto 0;text-align:center;font-size:17px;line-height:1.65;color:var(--fg)}
+.kinship-comparison{margin:48px auto;max-width:1040px}
+.kinship-comparison table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:17px;line-height:1.65}
+.kinship-comparison th,.kinship-comparison td{width:50%;text-align:left;vertical-align:top;padding:22px 28px;border-bottom:1px solid var(--line);overflow-wrap:break-word}
+.kinship-comparison th{font-size:13px;letter-spacing:.09em;color:var(--kin-skyblue)}
+.kinship-comparison th+th,.kinship-comparison td+td{border-left:1px solid var(--line);background:color-mix(in srgb,var(--kin-skyblue) 4%,transparent)}
+.kinship-table-emphasis{color:var(--fg);font-size:20px}
+.kinship-takeaway{border-left:3px solid var(--kid-sun-gold);padding-left:28px;color:var(--fg);font-size:21px}
+@media(min-width:981px) and (max-width:1200px){.site-header{padding-inline:24px;gap:14px}.site-header .brand,.site-header .brand img{width:145px}.site-header nav{gap:10px}.site-header nav a{font-size:12px}.site-header .app-link{padding-inline:10px}}
+@media(max-width:700px){.kinship-intro{padding-block:48px 60px}.kinship-opening{margin-bottom:28px}.kinship-opening h1{font-size:clamp(44px,10vw,64px)}.kinship-opening .eyebrow{font-size:10px;letter-spacing:.12em}.kinship-prose{font-size:17px}.kinship-diagram{margin-block:32px}.kinship-diagram a{border-radius:7px}.kinship-diagram figcaption{font-size:15px;text-align:left;margin-top:16px}.kinship-comparison{margin-block:32px}.kinship-comparison table{font-size:14px;line-height:1.6}.kinship-comparison th,.kinship-comparison td{padding:16px 12px}.kinship-comparison th{font-size:10px;letter-spacing:.04em}.kinship-table-emphasis{font-size:16px}.kinship-takeaway{font-size:18px;padding-left:20px}}
