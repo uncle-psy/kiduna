@@ -46,3 +46,5 @@
 .crypto-berry blockquote p{font-size:20px;line-height:1.8;color:var(--fg)}
 .crypto-berry blockquote p+p{margin-top:24px}
 @media(max-width:700px){.crypto-berry{grid-template-columns:1fr;gap:28px;margin-top:36px;padding:28px 24px}.crypto-berry figcaption{position:relative;padding-left:42px}.crypto-quote-mark{position:absolute;left:-5px;top:4px;font-size:64px;height:46px}.crypto-berry #berry-name{font-size:27px;margin:0 0 12px}.crypto-berry cite br{display:none}.crypto-berry cite br:after{content:" "}.crypto-quote-source{margin-top:8px}.crypto-berry blockquote p{font-size:18px;line-height:1.75}.crypto-berry blockquote p+p{margin-top:22px}}
+
+.crypto-berry blockquote em{font-style:italic;color:inherit}
