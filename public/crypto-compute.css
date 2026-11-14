@@ -66,3 +66,26 @@
 .collective-closing{margin-top:64px}
 .collective-closing p:first-child,.collective-closing p:nth-child(6),.collective-closing p:last-child{color:var(--fg);font-size:23px}
 @media(max-width:700px){.collective-prose{font-size:18px}.collective-diagram{margin:36px 0 44px}.collective-closing,.collective-altruism .duna-system-intro{margin-top:40px}.collective-closing p:first-child,.collective-closing p:nth-child(6),.collective-closing p:last-child{font-size:21px}}
+
+/* Editorial pacing: clear reading columns and statements in the original copy. */
+.altruism-editorial{color:var(--fg-muted);font-size:19px;line-height:1.8}
+.altruism-editorial p{margin:0}
+.altruism-editorial p+p{margin-top:26px}
+.altruism-editorial .altruism-deck{max-width:800px;margin:0 auto 52px;color:var(--fg);font-size:24px;line-height:1.55}
+.altruism-cost-columns{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(36px,6vw,88px);align-items:start}
+.altruism-worth{padding:28px 32px;border-left:2px solid #8fe0bd;background:linear-gradient(100deg,rgba(143,224,189,.075),transparent)}
+.altruism-worth p{font-size:23px;line-height:1.65;color:#c4e6d7}
+.altruism-editorial .altruism-statement{max-width:960px;margin:58px auto;font-family:var(--font-display);font-size:clamp(30px,3.2vw,45px);line-height:1.3;color:var(--fg);text-align:center;text-wrap:balance}
+.altruism-limits{padding:34px 0;border-top:1px solid rgba(218,166,116,.3);border-bottom:1px solid rgba(218,166,116,.3)}
+.altruism-editorial .altruism-limits-lead{font-size:25px;line-height:1.5;color:#efc19a;margin-bottom:28px}
+.altruism-two-columns{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px)}
+.altruism-two-columns p+p{margin-top:0}
+.altruism-editorial .altruism-three-lines{max-width:800px;margin:44px auto;font-size:25px;line-height:1.65;color:var(--fg);text-wrap:pretty}
+.altruism-editorial .altruism-question{margin:0;padding:30px 40px;border-left:2px solid #b59adb;background:linear-gradient(100deg,rgba(181,154,219,.1),transparent);font-size:25px;line-height:1.6;color:#d8c9ec;text-wrap:pretty}
+.altruism-economic-columns{display:grid;grid-template-columns:.95fr 1.15fr;gap:clamp(38px,6vw,88px)}
+.altruism-extraction,.altruism-renewal{padding-top:30px;border-top:2px solid #bd8757}
+.altruism-renewal{border-color:#8fe0bd}
+.altruism-editorial .altruism-pivot{font-family:var(--font-display);font-size:31px;line-height:1.35;color:#efc19a;margin-top:32px}
+.altruism-renewal p+p{padding-top:28px;border-top:1px solid rgba(143,224,189,.2);color:#c4e6d7}
+.altruism-editorial .altruism-premium{margin:44px 0 0;padding:30px 38px;background:linear-gradient(110deg,rgba(143,224,189,.085),rgba(181,154,219,.055));border-radius:12px;color:var(--fg);font-size:21px;line-height:1.7}
+@media(max-width:800px){.altruism-editorial{font-size:18px}.altruism-cost-columns,.altruism-two-columns,.altruism-economic-columns{grid-template-columns:1fr;gap:28px}.altruism-editorial .altruism-deck{font-size:22px;margin-bottom:32px}.altruism-worth{padding:20px 24px}.altruism-worth p{font-size:21px}.altruism-editorial .altruism-statement{margin:36px 0;font-size:30px;text-align:left}.altruism-editorial .altruism-limits-lead{font-size:22px}.altruism-limits{padding:26px 0}.altruism-editorial .altruism-three-lines{font-size:22px;margin:30px 0}.altruism-editorial .altruism-question{padding:22px 24px;font-size:22px}.altruism-editorial .altruism-pivot{font-size:28px}.altruism-editorial .altruism-premium{padding:24px;font-size:19px;margin-top:30px}}
