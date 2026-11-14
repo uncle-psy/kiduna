@@ -34,3 +34,15 @@
 @media(max-width:700px){
 .crypto-opening{padding-top:32px}.crypto-scene{display:flex;flex-direction:column;overflow:visible}.crypto-heading{position:relative;width:100%;padding:0 0 28px;text-shadow:none}.crypto-heading:before{display:none}.crypto-heading .eyebrow{font-size:9px;max-width:none;margin-bottom:24px;letter-spacing:.1em;color:var(--kin-skyblue)}.crypto-heading h1{font-size:clamp(42px,11.5vw,70px);line-height:1.03}.crypto-scene .workshop-art{border-radius:9px}.crypto-intro{grid-template-columns:1fr;gap:28px;padding:34px 0 52px}.crypto-lead{font-size:20px;line-height:1.65}.crypto-model{padding:24px}.crypto-model p,.crypto-flow-intro p,.crypto-governance-card p{font-size:17px;line-height:1.75}.crypto-flow{padding-top:48px}.crypto-flow-intro{grid-template-columns:1fr;gap:28px;margin-bottom:32px}.crypto-flow-intro h2{font-size:38px}.crypto-diagram{margin-inline:-10px}.crypto-diagram figcaption{margin:18px 10px 0;text-align:left;font-size:13px}.crypto-governance{grid-template-columns:1fr;gap:18px;margin-top:40px}.crypto-governance-card{padding:26px}.crypto-transparency{grid-template-columns:1fr;gap:18px;padding:28px 0;margin-top:28px}.crypto-transparency p{font-size:18px}.crypto-transparency .crypto-label{margin:0}.crypto-callout{padding:34px 22px;margin:48px 0 56px}.crypto-callout p{font-size:30px;line-height:1.35}
 }
+
+/* A literary pause within One Living System. */
+.crypto-berry{display:grid;grid-template-columns:minmax(180px,.7fr) 2fr;gap:clamp(32px,5vw,72px);margin:64px 0 0;padding:clamp(30px,4vw,58px);border:1px solid rgba(219,169,74,.26);border-left:3px solid var(--kid-sun-gold);border-radius:0 14px 14px 0;background:linear-gradient(125deg,rgba(199,146,47,.075),rgba(89,55,123,.045))}
+.crypto-berry figcaption{display:flex;flex-direction:column;align-items:flex-start}
+.crypto-quote-mark{font-family:var(--font-display);font-size:108px;line-height:.85;color:var(--kid-sun-gold);height:74px}
+.crypto-berry #berry-name{font-family:var(--font-display);font-size:30px;line-height:1.2;color:var(--fg);margin:12px 0 22px}
+.crypto-berry cite{font-size:16px;line-height:1.65;color:var(--fg-muted);font-style:italic}
+.crypto-quote-source{font-size:13px;line-height:1.7;color:var(--fg-soft);margin-top:14px}
+.crypto-berry blockquote{margin:0;padding:0;border:0}
+.crypto-berry blockquote p{font-size:20px;line-height:1.8;color:var(--fg)}
+.crypto-berry blockquote p+p{margin-top:24px}
+@media(max-width:700px){.crypto-berry{grid-template-columns:1fr;gap:28px;margin-top:36px;padding:28px 24px}.crypto-berry figcaption{position:relative;padding-left:42px}.crypto-quote-mark{position:absolute;left:-5px;top:4px;font-size:64px;height:46px}.crypto-berry #berry-name{font-size:27px;margin:0 0 12px}.crypto-berry cite br{display:none}.crypto-berry cite br:after{content:" "}.crypto-quote-source{margin-top:8px}.crypto-berry blockquote p{font-size:18px;line-height:1.75}.crypto-berry blockquote p+p{margin-top:22px}}
