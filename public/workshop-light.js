@@ -1,6 +1,5 @@
 (() => {
-  const art = document.querySelector('.workshop-art');
-  if (!art) return;
+  document.querySelectorAll('.workshop-art').forEach(art => {
   const image = art.querySelector('img');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let visible = false;
@@ -22,4 +21,5 @@
     sync();
   });
   sync();
+  });
 })();
