@@ -53,3 +53,16 @@
 .berry-illustration img{display:block;width:100%;height:auto}
 .berry-illustration + .crypto-berry{margin-top:24px}
 @media(max-width:700px){.berry-illustration{margin-top:36px;border-radius:9px}.berry-illustration + .crypto-berry{margin-top:18px}}
+
+/* Collective Altruism: long-form reading with accessible diagram views. */
+.collective-prose{max-width:800px;margin-inline:auto;font-size:19px}
+.collective-altruism>header{margin-inline:auto;max-width:800px}
+.collective-altruism>header h2{margin-bottom:36px}
+.collective-altruism>.collective-prose:first-of-type p:first-child{font-size:24px;color:var(--fg);line-height:1.5}
+.collective-diagram{margin:56px 0 64px}
+.collective-diagram figcaption a{display:inline;color:var(--kin-skyblue);text-underline-offset:4px}
+.collective-diagram a:focus-visible{outline:2px solid var(--kin-skyblue);outline-offset:6px}
+.collective-altruism .duna-system-intro{margin-top:64px}
+.collective-closing{margin-top:64px}
+.collective-closing p:first-child,.collective-closing p:nth-child(6),.collective-closing p:last-child{color:var(--fg);font-size:23px}
+@media(max-width:700px){.collective-prose{font-size:18px}.collective-diagram{margin:36px 0 44px}.collective-closing,.collective-altruism .duna-system-intro{margin-top:40px}.collective-closing p:first-child,.collective-closing p:nth-child(6),.collective-closing p:last-child{font-size:21px}}
