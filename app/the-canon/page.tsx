@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     url: "/the-canon",
     siteName: "Kiduna",
     type: "website",
-    images: [{ url: "/og-home-design-system.png", width: 1659, height: 948, alt: "Kiduna — The Canon" }],
+    images: [{ url: "/og/the-canon.png", width: 1200, height: 630, alt: "Kiduna — The Canon: Name the parts. See the whole." }],
   },
   twitter: {
     card: "summary_large_image",
     title: "The Canon — Kiduna",
     description: "Name the parts. See the whole. Explore the shared language of Kiduna.",
-    images: ["/og-home-design-system.png"],
+    images: ["/og/the-canon.png"],
   },
 };
 

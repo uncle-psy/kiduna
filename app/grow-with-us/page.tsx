@@ -15,17 +15,17 @@ export const metadata: Metadata = {
     siteName: "Kiduna",
     type: "website",
     images: [{
-      url: "/og-home-design-system.png",
-      width: 1659,
-      height: 948,
-      alt: "Kiduna — Grow With Us",
+      url: "/og/grow-with-us.png",
+      width: 1200,
+      height: 630,
+      alt: "Kiduna — Grow With Us: Build value. Advance the mission. Share the gains.",
     }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Grow With Us — Kiduna",
     description: "Build value. Advance the mission. Share the gains.",
-    images: ["/og-home-design-system.png"],
+    images: ["/og/grow-with-us.png"],
   },
 };
 
